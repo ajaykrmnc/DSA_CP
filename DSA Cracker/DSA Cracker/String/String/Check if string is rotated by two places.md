@@ -1,0 +1,1 @@
+# Check if string is rotated by two places
