@@ -1,5 +1,12 @@
 # Rabin Karp - Pattern Searching
 
+**Problem Statement:**
+Implement the Rabin-Karp algorithm for pattern searching in a text. This algorithm uses hashing to find any one of a set of
+pattern strings in a text. The key idea is to compute hash values for the pattern and for each substring of text with the
+same length as pattern. If hash values match, then characters are compared. The algorithm uses rolling hash technique to
+compute hash values efficiently in O(1) time for each position. Average time complexity is O(n+m) but worst case is O(nm)
+when many hash collisions occur. The algorithm is particularly useful for searching multiple patterns simultaneously.
+
 ```cpp
 //User function Template for C++
 

@@ -1,5 +1,11 @@
 # B- frog2
 
+**Problem Statement:**
+Similar to Frog 1, but now the frog can jump to any stone from i+1 to i+k (instead of just i+1 or i+2). Given N stones
+and a parameter k, find the minimum cost for the frog to reach stone N from stone 1. The cost of jumping from stone i to
+stone j is |h[i] - h[j]|. Use dynamic programming where dp[i] represents minimum cost to reach stone i, considering all
+possible jumps from previous k stones. This extends the basic DP concept to handle variable jump distances.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

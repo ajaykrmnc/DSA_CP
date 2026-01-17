@@ -1,5 +1,8 @@
 # Train spliitting
 
+**Problem Statement:**
+Given a graph with n nodes and m edges, assign each edge a color from 1 to k such that for any two nodes, all paths between them use the same set of colors. Find the minimum k and output the coloring. The solution involves analyzing the graph structure - if the graph is not complete, we can use 2 colors by finding a node with degree < n-1. Otherwise, we need 3 colors and can use a specific coloring strategy based on a spanning tree.
+
 problem link: https://codeforces.com/contest/1776/problem/F
 
 ```cpp

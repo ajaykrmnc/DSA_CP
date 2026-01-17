@@ -1,5 +1,11 @@
 # Array differentiation
 
+**Problem Statement:**
+Given an array of n integers, determine if it's possible to assign + or - signs to each element such that all possible
+subset sums are distinct. In other words, check if you can make all 2^n possible subset sums different by choosing
+appropriate signs for each element. The solution involves generating all possible subset sums using bitmask iteration
+and checking if the number of distinct sums equals 2^n. If all sums are distinct, output "NO", otherwise output "YES".
+
 problem link: https://codeforces.com/problemset/problem/1552/D
 
 ```cpp

@@ -1,5 +1,12 @@
 # Minimum Number in a sorted rotated array
 
+**Problem Statement:**
+Given a sorted array that has been rotated at some pivot point, find the minimum element in the array. The array was originally
+sorted in ascending order, then rotated at some unknown pivot. For example, [4,5,6,7,0,1,2] is a rotation of [0,1,2,4,5,6,7].
+This problem can be solved efficiently using binary search in O(log n) time by comparing middle element with the rightmost element
+to determine which half contains the minimum. The key insight is that in a rotated sorted array, one half will always be sorted
+while the other half contains the rotation point where the minimum element lies.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

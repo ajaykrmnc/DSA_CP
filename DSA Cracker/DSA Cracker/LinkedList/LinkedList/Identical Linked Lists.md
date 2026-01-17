@@ -1,5 +1,8 @@
 # Identical Linked Lists
 
+**Problem Statement:**
+Given two singly linked lists, determine if they are identical. Two linked lists are considered identical if they have the same number of nodes and the corresponding nodes have the same data values in the same order. You need to traverse both lists simultaneously and compare the data of each corresponding node. If at any point the data doesn't match or one list ends before the other, return false. If both lists end at the same time with all corresponding nodes having identical data, return true. The solution should have O(n) time complexity and O(1) space complexity.
+
 ```cpp
 //Initial Template for C
 

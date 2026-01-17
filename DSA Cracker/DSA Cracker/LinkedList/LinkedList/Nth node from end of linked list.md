@@ -1,5 +1,12 @@
 # Nth node from end of linked list
 
+**Problem Statement:**
+Given a linked list and a positive integer n, find the nth node from the end of the linked list. If n is greater than the
+number of nodes in the list, return -1. The nodes are numbered from 1 to the length of the list from the end. This problem
+can be solved efficiently using the two-pointer technique where one pointer is moved n steps ahead first, then both pointers
+are moved together until the first pointer reaches the end. This approach requires only one pass through the list with O(n)
+time complexity and O(1) space complexity, making it optimal for this problem.
+
 ```cpp
 //Initial Template for C
 #include<stdio.h>

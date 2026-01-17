@@ -1,5 +1,8 @@
 # Interval Problem
 
+**Problem Statement:**
+This section contains problems involving intervals and sweep line algorithms. Interval problems typically involve processing ranges or segments on a coordinate system to find overlaps, merge intervals, or calculate properties like maximum overlap count. The sweep line technique processes events (interval start/end points) in sorted order to efficiently solve these problems. Common applications include finding maximum number of overlapping intervals, merging overlapping ranges, and calculating coverage areas. These problems are fundamental in computational geometry and scheduling algorithms.
+
 This technique is useful when you have some intervals and you have to figure out the value of some expression.
 
 —> we will iterate on the x coordinate and try to maintain some important in a data structure.

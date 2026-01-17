@@ -1,5 +1,12 @@
 # Add two numbers represented by linked lists
 
+**Problem Statement:**
+Given two non-empty linked lists representing two non-negative integers, where digits are stored in reverse order and each
+node contains a single digit, add the two numbers and return the sum as a linked list. The most significant digit comes
+first and each node should contain exactly one digit. You may assume the two numbers do not contain any leading zero,
+except the number 0 itself. Handle carry propagation properly when the sum of digits exceeds 9. The solution should work
+for numbers of different lengths and return the result in the same reverse order format.
+
 ```cpp
 /* node for linked list:
 

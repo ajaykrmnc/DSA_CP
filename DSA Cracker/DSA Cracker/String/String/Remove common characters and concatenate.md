@@ -1,5 +1,8 @@
 # Remove common characters and concatenate
 
+**Problem Statement:**
+Given two strings s1 and s2, modify both strings by removing all common characters and then concatenate the remaining uncommon characters. First, find all characters that appear in both strings and remove them from both strings. Then concatenate the remaining characters from s1 and s2. If all characters are removed (i.e., both strings become empty), print -1. Use frequency counting or sets to identify common characters efficiently. The solution should handle duplicate characters properly within each string.
+
 Tags: unsolved
 
 ![](https://media.geeksforgeeks.org/img-practice/external-1657081738.svg)

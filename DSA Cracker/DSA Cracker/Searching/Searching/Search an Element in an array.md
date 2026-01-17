@@ -1,5 +1,12 @@
 # Search an Element in an array
 
+**Problem Statement:**
+Given an array of integers and a target element, find the index of the target element in the array. If the element is not
+found, return -1. This is a basic linear search problem where you iterate through the array and compare each element with
+the target. The algorithm checks each element sequentially until the target is found or the array is exhausted. Time
+complexity is O(n) in the worst case when the element is not present or is at the last position. Space complexity is O(1)
+as no extra space is required. This forms the foundation for more advanced searching algorithms.
+
 ```cpp
 //Initial Template for C
 

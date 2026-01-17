@@ -1,5 +1,12 @@
 # Solve the Sudoku
 
+**Problem Statement:**
+Given an incomplete 9×9 Sudoku grid, fill the empty cells to complete the puzzle. Use backtracking algorithm to try different
+numbers (1-9) in empty cells, checking if the placement is valid according to Sudoku rules. If a placement leads to a dead end,
+backtrack and try the next possibility. The algorithm recursively explores all possibilities until a solution is found.
+Time complexity is exponential in worst case but pruning makes it practical. This problem demonstrates the power of backtracking
+for constraint satisfaction problems.
+
 Given an incomplete [**Sudoku**](https://en.wikipedia.org/wiki/Sudoku) configuration in terms of a 9 x 9  2-D square matrix (grid[][]), the task is to find a solved Sudoku. For simplicity, you may assume that there will be only one unique solution.
 
 A sudoku solution must satisfy **all of the following rules**:

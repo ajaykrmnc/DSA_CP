@@ -1,5 +1,8 @@
 # Pairwise swap elements of a linked list | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a singly linked list, swap every two adjacent nodes by changing the links (not just swapping data). For example, if the input list is 1->2->3->4, the output should be 2->1->4->3. The challenge is to swap the actual nodes, not just their data values. This can be solved iteratively by maintaining pointers to track current, previous, and next nodes, or recursively by swapping the first two nodes and recursively calling for the rest. Time complexity is O(n) and space complexity is O(1) for iterative approach.
+
 [https://practice.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1](https://practice.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1)
 
 Given a singly linked list of size **N**. The task is to swap elements in the linked list pairwise.

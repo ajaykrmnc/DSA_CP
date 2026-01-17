@@ -1,5 +1,8 @@
 # The Celebrity Problem
 
+**Problem Statement:**
+In a party of N people, find the celebrity if one exists. A celebrity is defined as a person who knows nobody at the party but everybody at the party knows the celebrity. Given a 2D array where M[i][j] = 1 means person i knows person j, find the celebrity in O(N) time complexity. Use a stack-based approach: push all people onto stack, then pop two people and eliminate one based on whether they know each other. The remaining person is a potential celebrity - verify by checking if they know nobody and everybody knows them.
+
 ## The Celebrity Problem
 
 The Celebrity Problem is a popular algorithmic problem often encountered in coding interviews. Here's the problem statement:

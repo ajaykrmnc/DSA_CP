@@ -1,5 +1,11 @@
 # Railway System
 
+**Problem Statement:**
+You have a railway system with n stations and m bidirectional railways. Each railway has a cost to use. You need to find
+the minimum cost to travel from station 1 to station n. However, some railways might be broken, and you need to determine
+which ones are working by making queries. Each query costs 1 unit, and you want to minimize the total cost (queries + travel).
+This is a shortest path problem with interactive elements where you need to balance query costs with travel costs.
+
 problem link: https://codeforces.com/contest/1687/problem/B
 
 ```cpp

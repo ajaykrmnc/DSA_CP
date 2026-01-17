@@ -1,5 +1,8 @@
 # Number to string
 
+**Problem Statement:**
+Given a non-negative integer, convert it to its English words representation. For example, 123 becomes "One Hundred Twenty Three", 12345 becomes "Twelve Thousand Three Hundred Forty Five". Handle all cases including zero, teens (10-19), and large numbers up to billions. The solution involves breaking the number into groups of three digits and converting each group separately, then combining with appropriate scale words (Thousand, Million, Billion). Pay attention to edge cases like zero, teens, and trailing spaces.
+
 ```cpp
 class Solution {
 public:

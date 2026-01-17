@@ -1,5 +1,11 @@
 # Right View of Binary Tree
 
+**Problem Statement:**
+Given a binary tree, print the right view of the tree. The right view contains all nodes that are visible when the tree is
+viewed from the right side. This means the last node at each level when traversed from left to right. Use level order
+traversal (BFS) and print the last node of each level, or use recursive approach with level tracking where you process
+right subtree before left subtree. Time complexity is O(n) and space complexity is O(h) for recursive or O(w) for iterative.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

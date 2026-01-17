@@ -1,5 +1,8 @@
 # Find length of Loop | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list, determine if it contains a loop and if so, return the count of nodes in the loop. If no loop exists, return 0. Use Floyd's Cycle Detection Algorithm (tortoise and hare) to detect the loop first. Once a loop is detected, keep one pointer fixed at the meeting point and move another pointer one step at a time until they meet again. Count the steps taken to complete one full cycle through the loop. This approach has O(n) time complexity and O(1) space complexity.
+
 [https://practice.geeksforgeeks.org/problems/find-length-of-loop/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article](https://practice.geeksforgeeks.org/problems/find-length-of-loop/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article)
 
 **Easy**Accuracy: **44.26%**Submissions: **116K+**Points: **2**

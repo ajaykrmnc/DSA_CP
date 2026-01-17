@@ -1,5 +1,8 @@
 # No of components
 
+**Problem Statement:**
+Given an undirected graph with n nodes and m edges, find the number of connected components and output the minimum number of edges needed to make the graph connected. A connected component is a maximal set of nodes where there's a path between any two nodes. Use DFS or BFS to find all connected components. To make the graph connected, you need to add (number of components - 1) edges. The solution involves graph traversal to identify separate components and then connecting them optimally.
+
 URL: https://cses.fi/problemset/task/1666
 
 ```cpp

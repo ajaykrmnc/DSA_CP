@@ -1,5 +1,12 @@
 # Infected Tree
 
+**Problem Statement:**
+You have a tree where one node is initially infected. In each turn, the infection spreads to all adjacent uninfected nodes,
+but you can remove one node (and its subtree) to prevent further spread. Find the maximum number of nodes you can save
+from infection. Use tree DP with DFS to calculate for each node the maximum nodes that can be saved if infection starts
+from that node. The key insight is that you want to remove the subtree that will minimize the total infected nodes.
+Consider the trade-off between removing nodes immediately vs. letting infection spread and removing later.
+
 [Problem - C - Codeforces](https://codeforces.com/contest/1689/problem/C)
 
 ```cpp

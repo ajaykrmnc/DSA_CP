@@ -1,5 +1,12 @@
 # Longest Valid Parentheses
 
+**Problem Statement:**
+Given a string containing only '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+A valid parentheses string is one where every opening bracket has a corresponding closing bracket in the correct order.
+This can be solved using dynamic programming where dp[i] represents the length of the longest valid parentheses ending
+at index i. The key insight is that valid parentheses can be extended by previous valid sequences. Alternative approaches
+include using a stack to track indices or two-pass scanning. Time complexity is O(n) and space complexity is O(n).
+
 ```cpp
 class Solution {
 public:

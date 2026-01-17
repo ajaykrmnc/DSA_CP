@@ -1,5 +1,8 @@
 # Binary Heap Operations
 
+**Problem Statement:**
+Implement basic operations on a binary min-heap including extractMin (remove and return minimum element), deleteKey (delete element at given index), and insertKey (insert new element). A binary heap is a complete binary tree where parent nodes are smaller than their children (min-heap property). ExtractMin removes root, replaces it with last element, and heapifies. DeleteKey decreases the key to negative infinity, then extracts it. These operations maintain heap property through heapify operations with O(log n) time complexity.
+
 ```cpp
 /*The structure of the class is
 struct MinHeap

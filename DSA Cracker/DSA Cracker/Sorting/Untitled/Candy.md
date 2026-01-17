@@ -1,5 +1,8 @@
 # Candy
 
+**Problem Statement:**
+There are n children standing in a line, each with a rating. You need to distribute candies to these children such that: each child gets at least one candy, and children with higher ratings get more candies than their neighbors with lower ratings. Find the minimum number of candies needed. This problem can be solved using a two-pass approach: first pass from left to right ensures that if a child has a higher rating than the left neighbor, they get more candies. Second pass from right to left ensures the same for right neighbors. The solution requires careful handling of edge cases and optimal candy distribution.
+
 ```cpp
 class Solution {
 public:

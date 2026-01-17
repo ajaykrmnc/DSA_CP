@@ -1,1 +1,4 @@
-# Untitled
+# Binary Search Tree Operations
+
+**Problem Statement:**
+This section covers various operations and problems related to Binary Search Trees (BST). A BST is a binary tree where for each node, all values in the left subtree are smaller and all values in the right subtree are larger. Common operations include insertion, deletion, searching, and traversals. BST problems often involve finding specific elements, validating BST properties, converting between different tree representations, and optimizing tree operations. The average time complexity for basic operations is O(log n), but can degrade to O(n) in worst case for unbalanced trees.

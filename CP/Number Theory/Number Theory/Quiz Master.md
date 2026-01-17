@@ -1,5 +1,12 @@
 # Quiz Master
 
+**Problem Statement:**
+Given n students with smartness values and m topics (1 to m), form a team that is collectively proficient in all topics such that
+the maximum difference between smartness of any two students is minimized. A student is proficient in topic T if (smartness % T) = 0.
+The team must have at least one student proficient in each topic from 1 to m. This problem combines number theory (divisibility),
+sorting, and two pointers/sliding window technique. The key insight is to sort students and use a sliding window approach to find
+the minimum range that covers all required topics, checking divisibility conditions efficiently.
+
 problem link: https://codeforces.com/contest/1777/problem/C
 
 ```cpp

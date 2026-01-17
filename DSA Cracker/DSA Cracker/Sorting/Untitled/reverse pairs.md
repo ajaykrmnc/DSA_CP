@@ -1,4 +1,7 @@
-# reverse pairs
+# Reverse Pairs
+
+**Problem Statement:**
+Given an array of integers, find the number of reverse pairs. A reverse pair is a pair (i, j) where i < j and nums[i] > 2 * nums[j]. This problem can be efficiently solved using a modified merge sort algorithm. During the merge process, count pairs where elements from the left half are greater than twice the elements from the right half. The key insight is to count reverse pairs before merging the sorted halves, ensuring O(n log n) time complexity instead of the naive O(n²) approach.
 
 ```cpp
 class Solution {

@@ -1,5 +1,12 @@
 # Lexicographic Rank Of A String
 
+**Problem Statement:**
+Given a string, find its rank among all possible permutations of its characters when arranged in lexicographic order. For example,
+if the string is "abc", its permutations in lexicographic order are: abc, acb, bac, bca, cab, cba. So "abc" has rank 1, "acb"
+has rank 2, etc. The solution involves calculating how many permutations come before the given string. For each position,
+count characters smaller than current character and multiply by factorial of remaining positions. Handle duplicate characters
+by dividing by factorial of their frequencies. Time complexity is O(n²) and requires modular arithmetic for large results.
+
 ```cpp
 class Solution
 {

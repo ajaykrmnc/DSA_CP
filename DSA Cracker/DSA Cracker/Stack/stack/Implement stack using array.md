@@ -1,5 +1,11 @@
 # Implement stack using array
 
+**Problem Statement:**
+Implement a stack data structure using an array. A stack follows LIFO (Last In First Out) principle where elements are
+added and removed from the same end called the top. Implement the basic operations: push (add element to top), pop (remove
+and return top element), and handle edge cases like stack overflow and underflow. The implementation should use a fixed-size
+array and maintain a top pointer to track the current top element. This is a fundamental data structure implementation problem.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

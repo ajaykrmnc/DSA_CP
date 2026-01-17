@@ -1,5 +1,12 @@
 # Merge K sorted linked lists
 
+**Problem Statement:**
+Given an array of k sorted linked lists, merge all the linked lists into one sorted linked list and return the head of the
+merged list. Each linked list is sorted in ascending order. The challenge is to efficiently merge all k lists while maintaining
+the sorted order. This problem can be solved using various approaches: brute force (merge lists one by one), divide and conquer
+(merge pairs of lists), or using a min-heap/priority queue for optimal performance. The min-heap approach provides O(n log k)
+time complexity where n is the total number of nodes and k is the number of linked lists.
+
 Here's the optimized C++ code for merging K sorted linked lists using a min-heap approach:
 
 ```

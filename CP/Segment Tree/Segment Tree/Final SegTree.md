@@ -1,5 +1,8 @@
 # Final SegTree
 
+**Problem Statement:**
+This is a comprehensive segment tree implementation for range GCD queries and point updates. Given an array of integers, support two operations: update a single element and find the GCD (Greatest Common Divisor) of elements in a given range [L, R]. The segment tree stores GCD values for each segment, allowing O(log n) time complexity for both operations. The key insight is that GCD is associative, so we can combine GCD values from child segments to get the parent segment's GCD. This implementation includes build, query, and update functions for a complete GCD segment tree.
+
 ```cpp
 class Segtree {
 public:

@@ -1,4 +1,6 @@
 # 2 Groups
+**Problem Statement:**
+Given n pupils and m friendships, divide pupils into two teams such that no two friends are on the same team. This is a graph bipartiteness problem. Use BFS/DFS to color the graph with two colors (representing two teams). If you can successfully 2-color the graph without conflicts, output the team assignments. If any edge connects two nodes of the same color, the graph is not bipartite and division is impossible. Time complexity is O(n+m) and space complexity is O(n) for the coloring array.
 
 URL: https://cses.fi/problemset/task/1668/
 
@@ -7,14 +9,14 @@ There are n pupils in Uolevi's class, and m friendships between them. Your task 
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-#define pb push_back 
+#define pb push_back
 #define int long long
 #define mkp make_pair
 #define all(x) (x).begin(), (x).end()
 #define nline '\n'
 #define mac(i,x,y) for(int i=(int)x; i<y; i++)
 #define speed() ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
- 
+
 int32_t main()
 {
     speed()
@@ -58,10 +60,10 @@ int32_t main()
                 cout<<vis[i].second+1<<' ';
         }
     }
- 
 
- 
- 
+
+
+
     return 0;
 }
 ```

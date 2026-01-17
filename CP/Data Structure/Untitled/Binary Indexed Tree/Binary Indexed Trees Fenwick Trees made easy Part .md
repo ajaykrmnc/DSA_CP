@@ -1,5 +1,12 @@
 # Binary Indexed Trees / Fenwick Trees made easy | Part 1
 
+**Problem Statement:**
+Binary Indexed Tree (BIT) or Fenwick Tree is a data structure that efficiently supports range sum queries and point updates
+on an array. Given an array of n elements, you need to handle two operations: 1) Update an element at index i, 2) Find the
+sum of elements from index 1 to i. Both operations should run in O(log n) time. BIT uses the property that any number can
+be represented as sum of powers of 2. The key insight is using (i & -i) to get the rightmost set bit, which determines
+the range of responsibility for each BIT node. This allows efficient prefix sum calculations and updates.
+
 ![Untitled](Binary%20Indexed%20Trees%20Fenwick%20Trees%20made%20easy%20Part%20/Untitled.png)
 
 ![Untitled](Binary%20Indexed%20Trees%20Fenwick%20Trees%20made%20easy%20Part%20/Untitled%201.png)

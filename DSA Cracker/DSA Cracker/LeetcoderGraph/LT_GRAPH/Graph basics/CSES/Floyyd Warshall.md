@@ -1,9 +1,13 @@
 # Floyyd Warshall
 
+**Problem Statement:**
+There are n cities and m roads between them. Your task is to process q queries where you have to determine the length of
+the shortest route between two given cities. This is a classic all-pairs shortest path problem solved using Floyd-Warshall
+algorithm. The algorithm uses dynamic programming with O(n³) time complexity to find shortest distances between all pairs
+of vertices. It can handle negative edge weights but not negative cycles. Perfect for multiple shortest path queries.
+
 URL: https://cses.fi/problemset/task/1672
 Tags: floyyd warshall
-
-There are n cities and m roads between them. Your task is to process q queries where you have to determine the length of the shortest route between two given cities.****
 
 ```cpp
 #include <bits/stdc++.h>

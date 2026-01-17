@@ -1,5 +1,8 @@
 # Node at distance
 
+**Problem Statement:**
+Given a binary tree and an integer k, find the count of nodes that are at exactly distance k from any leaf node. A node is at distance k from a leaf if there exists a path of length k from that node to some leaf node. Use DFS to find all leaf nodes and their parent relationships. For each leaf node, traverse k steps upward using parent pointers and mark all such nodes. Use a set to avoid counting duplicate nodes that are at distance k from multiple leaves. Time complexity is O(n) where n is the number of nodes.
+
 ```cpp
 //Node Structure
 /*struct Node

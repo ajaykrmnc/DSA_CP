@@ -1,5 +1,8 @@
 # Find Second Maximum
 
+**Problem Statement:**
+Given an array and multiple queries, handle two types of operations: 1) Update an element at a given index, 2) Find the count of occurrences of the second maximum element in a given range [L, R]. For each range query, you need to identify the second largest value and return how many times it appears in that range. This problem requires a segment tree that maintains both the maximum and second maximum values along with their counts for efficient range queries and updates. Each segment tree node stores the maximum, second maximum, and their respective counts to enable efficient merging of child node information.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

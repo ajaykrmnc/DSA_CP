@@ -1,5 +1,8 @@
 # Magic Triples
 
+**Problem Statement:**
+Given an array of integers, count the number of triples (i, j, k) where i < j < k and arr[i] * arr[j] = arr[k]. These are called "magic triples" because the product of the first two elements equals the third element. The challenge is to efficiently count such triples without checking all possible combinations. This can be solved using frequency maps and mathematical properties. For each pair (i, j), check if their product exists in the array at a position k > j. Use data structures like maps or sets to optimize the search and counting process.
+
 problem link: https://codeforces.com/contest/1822/problem/G1
 
 ```cpp

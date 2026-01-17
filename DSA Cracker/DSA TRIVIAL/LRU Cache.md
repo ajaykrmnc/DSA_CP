@@ -1,5 +1,12 @@
 # LRU Cache
 
+**Problem Statement:**
+Design and implement a data structure for Least Recently Used (LRU) cache that supports GET and SET operations in O(1) time complexity.
+The cache has a fixed capacity and when it reaches maximum capacity, it should invalidate the least recently used item before
+inserting a new item. The LRU cache can be efficiently implemented using a combination of HashMap and Doubly Linked List, where
+HashMap provides O(1) access and Doubly Linked List maintains the order of usage with most recently used items at the head
+and least recently used items at the tail.
+
 ```c
 //{ Driver Code Starts
 #include <bits/stdc++.h>

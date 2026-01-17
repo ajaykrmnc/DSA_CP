@@ -1,5 +1,8 @@
 # Insert in Middle of Linked List
 
+**Problem Statement:**
+Given a singly linked list and a value x, insert a new node with value x at the middle position of the linked list. If the list has an even number of nodes, insert the new node after the first half. Use the efficient two-pointer technique (slow and fast pointers) to find the middle in a single traversal. The slow pointer moves one step while the fast pointer moves two steps - when fast reaches the end, slow will be at the middle. This approach has O(n) time complexity and O(1) space complexity.
+
 ```cpp
 
 ```

@@ -1,5 +1,8 @@
 # Shortes path visiting all nodes
 
+**Problem Statement:**
+Given an undirected connected graph, find the shortest path that visits every node at least once and can start and end at any node. This is a variation of the Traveling Salesman Problem. Use BFS with bitmask to represent visited nodes. The state is (current_node, visited_mask). Start BFS from all nodes simultaneously and find the first state where all nodes are visited (mask equals 2^n - 1). The solution uses dynamic programming with bitmasks to efficiently track visited nodes and find the optimal path length.
+
 ```cpp
 class Solution {
 public:

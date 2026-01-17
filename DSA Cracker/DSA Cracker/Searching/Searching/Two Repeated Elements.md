@@ -1,5 +1,11 @@
 # Two Repeated Elements
 
+**Problem Statement:**
+Given an array of size n+2 containing integers from 1 to n, where exactly two numbers appear twice and all others appear
+once, find the two repeated numbers. The challenge is to solve this in O(n) time and O(1) space without modifying the array.
+This can be solved using XOR operations and bit manipulation. First XOR all elements to get XOR of the two repeated numbers,
+then use the rightmost set bit to separate elements into two groups and find each repeated number individually.
+
 ```cpp
 //Initial template for C++
 

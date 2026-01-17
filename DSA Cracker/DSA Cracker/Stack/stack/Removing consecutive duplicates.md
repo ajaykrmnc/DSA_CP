@@ -1,5 +1,8 @@
 # Removing consecutive duplicates
 
+**Problem Statement:**
+Given a string, remove all consecutive duplicate characters from it. Use a stack-based approach where you compare each character with the top of the stack. If the current character is different from the top of the stack, push it onto the stack. If they are the same, skip the current character (don't push). Finally, pop all characters from the stack to form the result string. This approach ensures that no two consecutive characters in the final string are the same, effectively removing consecutive duplicates.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,11 @@
 # Inorder Traversal
 
+**Problem Statement:**
+Given a binary tree, perform inorder traversal and return the values of nodes in inorder sequence. Inorder traversal visits
+nodes in the order: left subtree, root, right subtree. For binary search trees, inorder traversal gives nodes in sorted order.
+This can be implemented recursively (simple but uses O(h) stack space) or iteratively using an explicit stack (more complex
+but demonstrates stack usage). Both approaches have O(n) time complexity where n is the number of nodes.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

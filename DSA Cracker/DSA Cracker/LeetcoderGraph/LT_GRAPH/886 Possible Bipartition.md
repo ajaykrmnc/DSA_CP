@@ -1,5 +1,12 @@
 # 886. Possible Bipartition
 
+**Problem Statement:**
+Given n people and a list of dislikes, determine if it's possible to split everyone into two groups such that people who
+dislike each other are in different groups. This is a classic bipartite graph problem. Model the dislikes as edges in a
+graph and check if the graph is bipartite using DFS or BFS coloring. Try to color each person with one of two colors,
+ensuring that adjacent people (who dislike each other) have different colors. If you can successfully color the entire
+graph, then bipartition is possible. Time complexity is O(V + E) and space complexity is O(V) for the color array.
+
 Tags: bipartite
 
 We want to split a group of `n` people (labeled from `1` to `n`) into two groups of **any size**. Each person may dislike some other people, and they should not go into the same group.

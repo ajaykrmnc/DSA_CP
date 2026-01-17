@@ -1,5 +1,12 @@
 # Binary Indexed tree
 
+**Problem Statement:**
+Binary Indexed Tree (BIT) or Fenwick Tree is a data structure that efficiently supports range sum queries and point updates
+in O(log n) time. Given an array, you need to handle two types of operations: update a single element and query the sum
+of elements in a range [l, r]. BIT uses the binary representation of indices to store partial sums in a tree-like structure.
+The key insight is that each index in BIT is responsible for a range of elements determined by the least significant bit.
+This allows both updates and queries to be performed by traversing at most log n nodes in the tree.
+
 [Problem - E2 - Codeforces](https://codeforces.com/contest/1579/problem/E2)
 
 ```cpp

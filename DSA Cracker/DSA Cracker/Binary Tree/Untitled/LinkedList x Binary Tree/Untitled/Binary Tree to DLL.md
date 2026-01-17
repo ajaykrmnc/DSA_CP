@@ -1,5 +1,8 @@
 # Binary Tree to DLL
 
+**Problem Statement:**
+Given a binary tree, convert it to a Doubly Linked List (DLL) in place. The left and right pointers in nodes are to be used as previous and next pointers respectively in the converted DLL. The order of nodes in DLL should be the same as the inorder traversal of the binary tree. The first node of inorder traversal should be the head of the DLL. Use inorder traversal approach and maintain a previous node pointer to link nodes properly. This problem demonstrates tree-to-list conversion with O(n) time complexity.
+
 ```cpp
 /* Structure for tree and linked list
 

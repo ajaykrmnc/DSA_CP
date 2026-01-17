@@ -1,5 +1,8 @@
 # Implement Queue using Linked List | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Implement a queue data structure using a linked list. The queue should support two main operations: enqueue (to add an element to the rear) and dequeue (to remove and return the front element). Unlike array-based implementation, linked list implementation doesn't have size limitations and grows dynamically. Use two pointers: front (for dequeue operations) and rear (for enqueue operations). Enqueue adds a new node at the rear, and dequeue removes the front node. Both operations should run in O(1) time complexity with O(1) space complexity per operation.
+
 [https://practice.geeksforgeeks.org/problems/implement-queue-using-linked-list/1](https://practice.geeksforgeeks.org/problems/implement-queue-using-linked-list/1)
 
 **Basic**Accuracy: **45.6%**Submissions: **85K+**Points: **1**

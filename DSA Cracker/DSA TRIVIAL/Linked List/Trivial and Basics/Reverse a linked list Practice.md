@@ -1,5 +1,8 @@
 # Reverse a linked list | Practice
 
+**Problem Statement:**
+Given a singly linked list, reverse it and return the head of the reversed list. Reversing a linked list means changing the direction of all the next pointers so that they point to the previous node instead of the next node. This fundamental problem can be solved iteratively using three pointers (previous, current, next) or recursively. The iterative approach has O(n) time complexity and O(1) space complexity, while the recursive approach has O(n) space complexity due to the call stack. This operation is commonly used in many linked list algorithms.
+
 [https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1)
 
 Given a linked list of **N** nodes. The task is to reverse this list.

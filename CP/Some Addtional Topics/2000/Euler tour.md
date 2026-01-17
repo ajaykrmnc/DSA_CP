@@ -1,5 +1,12 @@
 # Euler tour
 
+**Problem Statement:**
+This problem involves Euler tour technique on trees, which is a method to flatten a tree into an array while preserving
+the tree structure. An Euler tour visits each node exactly twice - once when entering and once when leaving the subtree.
+This technique is useful for answering range queries on trees, such as subtree sum queries, LCA queries, and tree path
+queries. The flattened array allows us to use segment trees or other range query data structures to efficiently process
+tree queries in O(log n) time.
+
 problem link: https://codeforces.com/problemset/problem/1891/F
 
 ```cpp

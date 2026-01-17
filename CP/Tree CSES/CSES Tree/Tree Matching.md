@@ -1,8 +1,11 @@
 # Tree Matching
 
-You are given a tree consisting of n nodes.
-
-A *matching* is a set of edges where each node is an endpoint of at most one edge. What is the maximum number of edges in a matching?
+**Problem Statement:**
+You are given a tree consisting of n nodes. A matching is a set of edges where each node is an endpoint of at most one edge.
+Your task is to find the maximum number of edges in a matching. This is a classic tree DP problem where for each node we
+decide whether to include it in the matching or not. We maintain two states: dp[node][0] = maximum matching in subtree of
+node where node is not matched, and dp[node][1] = maximum matching where node is matched with its parent. The answer is
+dp[root][0]. Time complexity is O(n) with a single DFS traversal.
 
 [DP on Trees - Introduction](https://usaco.guide/gold/dp-trees?lang=cpp#taking-no-edges)
 

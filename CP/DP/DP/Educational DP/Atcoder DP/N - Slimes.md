@@ -1,5 +1,11 @@
 # N - Slimes
 
+**Problem Statement:**
+There are N slimes in a row, each with a size a[i]. When two adjacent slimes merge, the cost is the sum of their sizes,
+and they become one slime with size equal to the sum. Find the minimum total cost to merge all slimes into one. This is
+a classic Matrix Chain Multiplication (MCM) variant where dp[i][j] represents the minimum cost to merge slimes from index i
+to j. The recurrence tries all possible split points k and takes the minimum cost among all possibilities.
+
 Tags: mcm
 
 ```cpp

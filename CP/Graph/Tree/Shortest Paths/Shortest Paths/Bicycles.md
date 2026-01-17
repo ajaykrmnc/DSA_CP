@@ -1,5 +1,8 @@
 # Bicycles
 
+**Problem Statement:**
+You have a graph with n cities and m roads. Each city has bicycles with different slowness factors. You start at city 1 and want to reach city n in minimum time. At each city, you can switch to a bicycle with a different slowness factor. The time to travel on a road equals road_length * current_bicycle_slowness. This is a shortest path problem with state (city, bicycle_type). Use Dijkstra's algorithm with states representing both current city and current bicycle. The key insight is that you might want to take a longer path to get a faster bicycle for future roads.
+
 [Problem - G - Codeforces](https://codeforces.com/contest/1915/problem/G)
 
 ```cpp

@@ -1,4 +1,6 @@
 # Maximum Profit in Job Scheduling
+**Problem Statement:**
+Given n jobs with start times, end times, and profits, find the maximum profit you can obtain by scheduling non-overlapping jobs. This is a classic weighted job scheduling problem solved using dynamic programming with binary search. Sort jobs by start time, then for each job, use binary search to find the latest non-overlapping job. The DP recurrence is: dp[i] = max(profit[i] + dp[next_non_overlapping], dp[i+1]). Time complexity is O(n log n) due to sorting and binary search operations.
 
 # **Intuition**
 

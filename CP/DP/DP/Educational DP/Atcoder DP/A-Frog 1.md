@@ -1,5 +1,11 @@
 # A-Frog 1
 
+**Problem Statement:**
+There are N stones numbered 1, 2, ..., N. A frog is initially on stone 1 and wants to reach stone N. From stone i,
+the frog can jump to stone i+1 or i+2. The cost of jumping from stone i to stone j is |h[i] - h[j]| where h[i] is the
+height of stone i. Find the minimum total cost for the frog to reach stone N. This is a classic dynamic programming
+problem where dp[i] represents the minimum cost to reach stone i from stone 1.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

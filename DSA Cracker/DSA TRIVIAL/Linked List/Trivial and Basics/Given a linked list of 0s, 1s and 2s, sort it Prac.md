@@ -1,5 +1,8 @@
 # Given a linked list of 0s, 1s and 2s, sort it. | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list containing only 0s, 1s, and 2s, sort the linked list so that all 0s come first, followed by all 1s, and then all 2s. This is similar to the Dutch National Flag problem but applied to linked lists. The solution can be implemented by counting occurrences of each value and then modifying the list, or by using three separate pointers to maintain three different lists for 0s, 1s, and 2s, then connecting them. Time complexity is O(n) and space complexity is O(1).
+
 [https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1](https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1)
 
 Given a linked list of **N** nodes where nodes can contain values **0s**, **1s,** and **2s** only. The task is to segregate **0s**, **1s,** and **2s** linked list such that all zeros segregate to head side, 2s at the end of the linked list, and 1s in the mid of 0s and 2s.

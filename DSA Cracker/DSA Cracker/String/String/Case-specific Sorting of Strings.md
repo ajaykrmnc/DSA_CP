@@ -1,5 +1,8 @@
 # Case-specific Sorting of Strings
 
+**Problem Statement:**
+Given a string of both uppercase and lowercase letters, sort the string such that uppercase and lowercase letters maintain their relative positions but are sorted within their respective cases. For example, if input is "geeKSForGeeKS", the output should be "eeeFGKKSgoreks" where uppercase letters are sorted among themselves and lowercase letters are sorted among themselves, but their original positions (uppercase/lowercase) are preserved. Use two separate arrays to store uppercase and lowercase characters, sort them individually, then reconstruct the string by placing sorted characters back in their original case positions.
+
 ```cpp
 //User function Template for C++
 

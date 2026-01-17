@@ -1,5 +1,11 @@
 # Zero sum subarrays
 
+**Problem Statement:**
+Given an array of integers, count the number of subarrays that have a sum equal to zero. Use the prefix sum technique
+where if two prefix sums are equal, the subarray between them has sum zero. Maintain a frequency map of prefix sums
+and for each prefix sum, add the count of how many times it has appeared before. This gives the number of zero-sum
+subarrays ending at the current position. Time complexity is O(n) and space complexity is O(n).
+
 ```cpp
 class Solution{
 public:

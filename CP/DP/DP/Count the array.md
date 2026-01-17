@@ -1,5 +1,8 @@
 # Count the array
 
+**Problem Statement:**
+Given an array of integers, find the minimum number of subarrays needed to partition the array such that each subarray can be reduced to a single element by repeatedly merging adjacent equal elements. When two adjacent elements are equal, they can be merged into a single element with value increased by 1. This is an interval dynamic programming problem where you need to find the optimal way to partition the array. Use DP to compute for each subarray [i,j] the final value it can be reduced to, then use another DP to find the minimum partitions needed.
+
 ![Untitled](Count%20the%20array/Untitled.png)
 
 ```cpp

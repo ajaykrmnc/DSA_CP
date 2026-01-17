@@ -1,5 +1,12 @@
 # Intersection Point in Y Shaped Linked Lists
 
+**Problem Statement:**
+Given two singly linked lists that intersect at some point, find the intersection node. The intersection means that at some
+point, both linked lists share the same node (not just the same value). After the intersection point, both lists will have
+the same nodes. If the two linked lists have no intersection, return null. The solution should run in O(m+n) time complexity
+and use O(1) extra space, where m and n are the lengths of the two lists. This problem can be solved using the two-pointer
+technique by calculating the difference in lengths or using the elegant approach of switching pointers.
+
 ```cpp
 /* Linked List Node
 struct Node {

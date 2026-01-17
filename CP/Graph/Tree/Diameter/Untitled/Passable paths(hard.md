@@ -1,5 +1,12 @@
 # Passable paths(hard
 
+**Problem Statement:**
+Given a tree with n nodes, answer q queries. Each query gives a set of k nodes and asks whether there exists a simple path
+that passes through all these nodes. A simple path visits each node at most once. For the nodes to lie on a simple path,
+they must form a "chain" in the tree - meaning they can be ordered such that consecutive nodes in the order are connected
+by the path. Use LCA (Lowest Common Ancestor) and tree properties to check if the given nodes can form such a path.
+The key insight is that nodes lie on a simple path if and only if they form a contiguous segment on some root-to-leaf path.
+
 problem link: https://codeforces.com/problemset/problem/1702/G2
 
 ```cpp

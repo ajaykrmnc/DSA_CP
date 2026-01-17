@@ -1,5 +1,8 @@
 # Multiply the matrices
 
+**Problem Statement:**
+Given two matrices A and B, multiply them to get the resultant matrix C. Matrix multiplication is possible only when the number of columns in matrix A equals the number of rows in matrix B. If A is of size p×q and B is of size q×r, then the resultant matrix C will be of size p×r. Each element C[i][j] is calculated as the dot product of the i-th row of A and j-th column of B. The time complexity is O(p×q×r). If matrices cannot be multiplied due to incompatible dimensions, return a matrix with -1.
+
 ```cpp
 class Solution
 {   

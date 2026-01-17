@@ -1,5 +1,12 @@
 # Multisource BFS
 
+**Problem Statement:**
+Multisource BFS is a variation of BFS where we start the traversal from multiple source nodes simultaneously. Instead of starting
+from a single source, we add all source nodes to the queue initially and then perform standard BFS. This technique is useful
+for problems like finding the shortest distance from any source to all other nodes, or problems involving multiple starting points.
+Common applications include finding the nearest exit in a maze with multiple exits, or calculating minimum time for all cells
+to be affected when multiple sources spread simultaneously. Time complexity remains O(V + E) where V is vertices and E is edges.
+
 ```cpp
 #include<iostream>
 #include<vector>

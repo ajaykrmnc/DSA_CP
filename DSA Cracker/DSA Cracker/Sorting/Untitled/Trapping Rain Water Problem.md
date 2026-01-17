@@ -1,5 +1,12 @@
 # Trapping Rain Water Problem
 
+**Problem Statement:**
+Given an array representing the height of bars, calculate how much rainwater can be trapped after raining. Water can be trapped
+between bars if there are higher bars on both sides. This classic problem can be solved using multiple approaches: brute force
+O(n²), dynamic programming with extra space O(n), or optimal two-pointer technique O(n) time and O(1) space. The key insight is
+that water level at any position is determined by the minimum of maximum heights on left and right sides. The two-pointer approach
+maintains left and right pointers with their respective maximum heights, moving the pointer with smaller maximum height.
+
 ```cpp
 class Solution {
 public:

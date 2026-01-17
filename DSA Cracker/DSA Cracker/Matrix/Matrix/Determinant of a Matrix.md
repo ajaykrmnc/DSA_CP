@@ -1,5 +1,8 @@
 # Determinant of a Matrix
 
+**Problem Statement:**
+Given a square matrix, calculate its determinant. For a 1x1 matrix, determinant is the single element. For 2x2 matrix, determinant is ad-bc. For larger matrices, use cofactor expansion along the first row: determinant equals sum of elements multiplied by their cofactors. Recursively calculate determinants of smaller matrices formed by removing current row and column. The algorithm has O(n!) time complexity due to recursive nature, but demonstrates the mathematical concept of matrix determinants effectively.
+
 ```cpp
 class Solution
 {   

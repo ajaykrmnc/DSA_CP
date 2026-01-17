@@ -1,5 +1,12 @@
 # Peak element
 
+**Problem Statement:**
+A peak element is an element that is greater than its neighbors. Given an array where no two adjacent elements are equal,
+find any peak element and return its index. The array may contain multiple peaks, and you can return any one of them.
+For corner elements, we only need to compare with one neighbor. This problem can be solved efficiently using binary search
+in O(log n) time by comparing the middle element with its neighbors and moving towards the side that has a larger neighbor,
+as that side is guaranteed to contain a peak element.
+
 ```cpp
 //Initial Template for C
 

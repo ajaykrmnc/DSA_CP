@@ -1,5 +1,8 @@
 # A wide, wide graph
 
+**Problem Statement:**
+Given a tree with n nodes, for each k from 1 to n, find the minimum number of nodes that need to be removed such that the remaining tree has diameter at most k. The diameter of a tree is the longest path between any two nodes. Use tree diameter algorithms to find the endpoints of the diameter, then for each node calculate its maximum distance to either endpoint. Sort these distances and use binary search to find how many nodes to remove for each k. This problem combines tree diameter computation with optimization techniques.
+
 [Problem - 1805D - Codeforces](https://codeforces.com/problemset/problem/1805/D)
 
 ```cpp

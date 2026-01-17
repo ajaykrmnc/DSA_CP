@@ -1,5 +1,12 @@
 # Floor in a Sorted Array
 
+**Problem Statement:**
+Given a sorted array and a target value x, find the floor of x in the array. The floor of x is the largest element in the array
+that is smaller than or equal to x. If no such element exists, return -1. This problem can be efficiently solved using binary
+search with a slight modification. We maintain the result as we search, updating it whenever we find an element ≤ x. The time
+complexity is O(log n) using binary search, which is optimal compared to the O(n) linear search approach. This is a fundamental
+binary search variation problem commonly asked in interviews.
+
 ```cpp
 //Initial Template for C
 

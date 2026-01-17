@@ -1,5 +1,8 @@
 # Delete without head pointer | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a pointer to a node in a linked list (not the head), delete that node from the linked list. You don't have access to the head pointer, only the node to be deleted. The key insight is that you cannot actually delete the given node, but you can copy the data from the next node to the current node and then delete the next node. This effectively "deletes" the current node from the user's perspective. Note: This approach won't work if the node to be deleted is the last node, as there's no next node to copy from.
+
 [https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1](https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1)
 
 **Easy**Accuracy: **78.57%**Submissions: **162K+**Points: **2**

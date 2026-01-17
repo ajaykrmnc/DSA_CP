@@ -1,5 +1,12 @@
 # Quick Sort
 
+**Problem Statement:**
+Implement the quicksort algorithm to sort an array in ascending order. Quicksort is a divide-and-conquer algorithm that works
+by selecting a 'pivot' element and partitioning the array around it such that elements smaller than the pivot come before it
+and elements greater come after it. Then recursively apply the same process to the sub-arrays. The average time complexity
+is O(n log n), but worst case is O(n²) when the pivot is always the smallest or largest element. The algorithm sorts in-place
+with O(log n) space complexity for the recursion stack.
+
 ```cpp
 class Solution
 {

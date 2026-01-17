@@ -1,5 +1,8 @@
 # Binary Jumpinp
 
+**Problem Statement:**
+Binary jumping (also known as binary lifting) is a technique used to answer LCA (Lowest Common Ancestor) queries efficiently in a tree. Given a tree with n nodes and q queries, each query asks for the LCA of two nodes. Preprocess the tree by computing 2^k-th ancestors for each node using dynamic programming. For each node, store its parent, grandparent, great-grandparent, etc. This allows answering LCA queries in O(log n) time after O(n log n) preprocessing. The technique is fundamental for many tree algorithms and can be extended to answer other types of queries like k-th ancestor.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

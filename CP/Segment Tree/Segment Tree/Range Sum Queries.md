@@ -1,5 +1,12 @@
 # Range Sum Queries
 
+**Problem Statement:**
+Given an array and multiple queries, efficiently answer range sum queries and handle point updates. This is the classic segment
+tree problem where we need to support two operations: update a single element and query the sum of elements in a given range.
+Segment tree provides O(log n) time complexity for both operations, which is optimal for this problem. The tree is built by
+recursively dividing the array into segments, storing the sum of each segment. Updates propagate from leaf to root, and queries
+combine results from relevant segments. This forms the foundation for more complex range query problems.
+
 ```cpp
 // User function template for C++
 

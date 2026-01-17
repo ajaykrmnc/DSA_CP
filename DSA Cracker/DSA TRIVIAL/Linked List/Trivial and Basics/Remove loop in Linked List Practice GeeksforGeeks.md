@@ -1,5 +1,8 @@
 # Remove loop in Linked List | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list that may contain a loop, remove the loop if it exists. After detecting the loop using Floyd's cycle detection algorithm (tortoise and hare), find the start of the loop and break it by setting the appropriate next pointer to NULL. The algorithm involves two phases: detection (using two pointers at different speeds) and removal (finding the loop start and breaking the connection). This problem combines loop detection with loop removal, requiring careful pointer manipulation to maintain list integrity while eliminating the cycle.
+
 [https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1](https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1)
 
 **Medium**Accuracy: **27.66%**Submissions: **389K+**Points: **4**

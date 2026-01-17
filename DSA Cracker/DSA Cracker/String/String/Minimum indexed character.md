@@ -1,5 +1,8 @@
 # Minimum indexed character
 
+**Problem Statement:**
+Given a string str and a pattern patt, find the minimum index of a character in str that also appears in patt. Return the smallest index of any character from patt that appears in str. If no character from patt is found in str, return -1. The approach involves creating an index array to store the minimum index of each character in str, then iterate through patt to find the character with the smallest index. This problem demonstrates efficient character lookup and indexing techniques with O(n+m) time complexity.
+
 ```cpp
 //User function template for C++
 

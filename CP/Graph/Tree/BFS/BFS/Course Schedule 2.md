@@ -1,4 +1,10 @@
 # Course Schedule 2
+**Problem Statement:**
+Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish
+all courses. If it's impossible to finish all courses, return an empty array. This is a topological sorting problem using
+Kahn's algorithm (BFS-based). Build a directed graph where each prerequisite creates an edge, calculate in-degrees, then
+process nodes with zero in-degree. Add processed nodes to result and reduce in-degrees of their neighbors. If all courses
+are processed, return the order; otherwise, return empty array (cycle detected). Time complexity is O(V + E).
 
 ```cpp
 class Solution {

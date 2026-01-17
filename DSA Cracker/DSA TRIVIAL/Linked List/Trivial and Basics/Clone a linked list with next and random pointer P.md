@@ -1,5 +1,8 @@
 # Clone a linked list with next and random pointer | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list where each node has a next pointer and a random pointer (arbitrary pointer), create a deep copy of the list. The challenge is to maintain the random pointer relationships in the cloned list. Use a hash map to store the mapping between original nodes and cloned nodes. First pass: create all nodes and store in map. Second pass: set next and random pointers using the map. Alternative approach: interweave original and cloned nodes, then separate them. Time complexity O(n), space complexity O(n) for hash map approach or O(1) for interweaving approach.
+
 [https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article](https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article)
 
 You are given a special linked list with **N** nodes where each node has a next pointer pointing to its next node. You are also given **M** random pointers, where you will be given **M** number of pairs denoting two nodes **a** and **b** **i.e. a->arb = b** (arb is pointer to random node)**.**

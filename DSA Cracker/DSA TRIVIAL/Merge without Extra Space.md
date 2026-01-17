@@ -1,5 +1,12 @@
 # Merge without Extra Space
 
+**Problem Statement:**
+Given two sorted arrays arr1[] and arr2[] of sizes n and m respectively, merge them in-place without using any
+extra space. After merging, arr1[] should contain the first n smallest elements and arr2[] should contain the
+remaining m largest elements, both in sorted order. The challenge is to achieve this without using additional
+space proportional to the input size. This problem typically uses the gap method or shell sort approach for
+efficient in-place merging with O((n+m)log(n+m)) time complexity.
+
 ```cpp
 class Solution{
 

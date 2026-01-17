@@ -1,4 +1,10 @@
 # Merge two BST 's
+**Problem Statement:**
+Given two Binary Search Trees, merge them into a single balanced BST containing all elements from both trees. The merged BST
+should maintain the BST property and be as balanced as possible. One approach is to perform inorder traversal of both BSTs
+to get sorted arrays, then merge these arrays and construct a balanced BST from the merged sorted array. Alternatively,
+convert BSTs to sorted linked lists, merge the lists, then construct BST from the merged list. Time complexity is O(m + n)
+where m and n are the number of nodes in the two BSTs. Space complexity is O(m + n) for storing the merged elements.
 
 ```cpp
 /*
@@ -16,7 +22,7 @@ struct Node {
 class Solution
 {
     public:
-    //Function to return a list of integers denoting the node 
+    //Function to return a list of integers denoting the node
     //values of both the BST in a sorted order.
     void helper(Node *root,vector<int>&vec){
         if(root->left!=NULL){
@@ -49,6 +55,6 @@ class Solution
        }
        return ans;
     }
-    
+
 };
 ```

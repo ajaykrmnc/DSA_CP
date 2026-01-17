@@ -1,5 +1,8 @@
 # All Possible Digits
 
+**Problem Statement:**
+Given n digits in base p and a target to make all digits from 0 to p-1 appear at least once, find the minimum number of operations needed. In each operation, you can increment the number by 1. The key insight is to determine whether it's better to increment the current number or to "wrap around" by adding enough to make the most significant digit carry over. Consider two strategies: incrementing until missing digits appear, or incrementing to cause a carry and then finding missing digits in the new configuration.
+
 problem link: https://codeforces.com/problemset/problem/1759/F
 
 ```cpp

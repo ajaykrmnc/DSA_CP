@@ -1,5 +1,8 @@
 # Multiplicity
 
+**Problem Statement:**
+Given an array of n positive integers, count the number of subsequences where the i-th element (1-indexed) in the subsequence is divisible by i. Use dynamic programming where dp[i] represents the number of valid subsequences of length i. For each element, check all possible lengths it can extend and update the DP accordingly. The key insight is to iterate through divisors efficiently and maintain DP states for different subsequence lengths.
+
 problem link: https://codeforces.com/problemset/problem/1061/C
 
 ```cpp

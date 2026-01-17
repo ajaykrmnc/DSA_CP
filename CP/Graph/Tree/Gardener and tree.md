@@ -1,5 +1,12 @@
 # Gardener and tree
 
+**Problem Statement:**
+You have a tree with n nodes and a gardener who performs k operations. In each operation, the gardener removes all
+leaf nodes (nodes with degree ≤ 1) simultaneously. After k operations, find how many nodes remain in the tree.
+The solution involves simulating the process by repeatedly identifying and removing leaf nodes in each iteration.
+Use BFS/level-order traversal to process nodes level by level, updating degrees as nodes are removed, and continue
+until k operations are completed or no nodes remain.
+
 ```cpp
 bool solve()
 {

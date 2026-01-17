@@ -1,4 +1,10 @@
 # Largest number in K swaps
+**Problem Statement:**
+Given a string of digits and a number K, find the largest possible number by performing at most K swap operations on the
+digits. Use backtracking to explore all possible swaps: for each position, try swapping with all positions to its right
+that contain a larger digit. Keep track of the maximum number found so far and the remaining swaps. The key optimization
+is to avoid unnecessary swaps and prune branches that cannot lead to a better solution. This problem demonstrates how
+backtracking can be used for optimization problems with constraints.
 
 Given a number **K** and string **str** of digits denoting a positive integer, build the largest number possible by performing swap operations on the digits of **str** at most **K** times.
 

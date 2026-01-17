@@ -1,5 +1,12 @@
 # Smallest window in a string containing all the characters of another string
 
+**Problem Statement:**
+Given two strings s and p, find the minimum window substring in s that contains all characters of p (including duplicates).
+If no such window exists, return empty string. This is solved using the sliding window technique with two pointers. Maintain
+character frequency maps for both strings. Expand the right pointer to include characters until all characters of p are covered,
+then contract the left pointer to minimize the window while maintaining the coverage. Keep track of the minimum window found.
+Time complexity is O(|s| + |p|) and space complexity is O(|p|) for the frequency maps.
+
 ```cpp
 class Solution
 {

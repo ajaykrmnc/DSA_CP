@@ -1,5 +1,12 @@
 # Counting Factorizations
 
+**Problem Statement:**
+Given 2n integers, you need to pair them such that each pair forms a factorization a*b where a is prime and b is composite.
+Count the number of ways to create n such pairs. This problem involves number theory concepts like prime factorization
+and combinatorics. You need to identify which numbers are prime and which are composite, then use dynamic programming
+or combinatorial counting to determine valid pairings. The solution involves sieve for prime detection, factorial
+calculations for permutations, and careful handling of constraints to avoid invalid pairings.
+
 problem link: https://codeforces.com/problemset/problem/1794/D
 
 ```cpp

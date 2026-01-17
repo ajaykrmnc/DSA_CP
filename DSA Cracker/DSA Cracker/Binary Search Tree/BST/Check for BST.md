@@ -1,5 +1,12 @@
 # Check for BST
 
+**Problem Statement:**
+Given a binary tree, determine if it is a valid Binary Search Tree (BST). A valid BST is defined as: the left subtree of a node
+contains only nodes with keys less than the node's key, the right subtree contains only nodes with keys greater than the node's
+key, and both left and right subtrees are also BSTs. The key insight is to maintain valid ranges (min, max) for each node during
+traversal. For each node, check if its value lies within the valid range and recursively validate subtrees with updated ranges.
+Time complexity is O(n) and space complexity is O(h) due to recursion stack.
+
 ```cpp
 class Solution
 {

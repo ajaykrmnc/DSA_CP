@@ -1,5 +1,8 @@
 # Candy Store
 
+**Problem Statement:**
+Given n candies with prices (a[i], b[i]) where you pay a[i] coins and get b[i] candies, find the minimum number of days needed to buy all candies such that on each day the ratio of total coins spent to total candies received is an integer. This problem involves number theory concepts like GCD and LCM. For each day, maintain the cumulative ratio and check if it remains integral. Use GCD to simplify fractions and determine when ratios become non-integral, requiring a new day to start.
+
 problem link: https://codeforces.com/contest/1798/problem/C
 
 ```cpp

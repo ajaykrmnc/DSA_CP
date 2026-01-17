@@ -1,5 +1,8 @@
 # Isomorphic Strings
 
+**Problem Statement:**
+Two strings are isomorphic if the characters in one string can be replaced to get the other string, maintaining the one-to-one character mapping. For example, "egg" and "add" are isomorphic because 'e' maps to 'a' and 'g' maps to 'd'. However, "foo" and "bar" are not isomorphic because 'o' would need to map to both 'a' and 'r'. The solution involves creating a bidirectional mapping between characters of both strings and ensuring no character maps to multiple characters. Use two hash maps to track the mapping from first string to second and vice versa.
+
 ```cpp
 class Solution
 {

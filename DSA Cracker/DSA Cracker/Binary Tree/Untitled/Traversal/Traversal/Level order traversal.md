@@ -1,5 +1,11 @@
 # Level order traversal
 
+**Problem Statement:**
+Given a binary tree, perform level order traversal (also known as breadth-first traversal) and return the values of nodes
+level by level from left to right. Use a queue data structure to implement BFS where you process all nodes at the current
+level before moving to the next level. This traversal is useful for finding the shortest path in unweighted trees, level-wise
+processing, and printing tree structure. Time complexity is O(n) and space complexity is O(w) where w is maximum width.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

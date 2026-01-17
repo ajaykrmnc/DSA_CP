@@ -1,5 +1,12 @@
 # Range Min Max Queries
 
+**Problem Statement:**
+Given an array and multiple queries, efficiently answer range minimum and maximum queries along with point updates. For each
+query, find both the minimum and maximum elements in a given range [L, R]. The segment tree approach stores pairs (min, max)
+for each segment, allowing O(log n) time complexity for both queries and updates. When combining two segments, take the
+minimum of minimums and maximum of maximums. This dual-purpose segment tree efficiently handles both min and max operations
+simultaneously, making it optimal for problems requiring both statistics.
+
 ```cpp
 //User function template for C++
 

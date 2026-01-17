@@ -1,5 +1,11 @@
 # Maximum Width of Tree
 
+**Problem Statement:**
+Given a binary tree, find the maximum width of the tree. The width of a tree is the maximum number of nodes at any level.
+Use level-order traversal (BFS) with a queue to traverse the tree level by level. For each level, count the number of nodes
+and keep track of the maximum count seen so far. This approach ensures that you process all nodes at each level before
+moving to the next level. Time complexity is O(n) and space complexity is O(w) where w is the maximum width.
+
 ```cpp
 /*struct Node
 {

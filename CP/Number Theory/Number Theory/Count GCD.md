@@ -1,5 +1,12 @@
 # Count GCD
 
+**Problem Statement:**
+Given an array of integers, count the number of pairs (i, j) such that GCD(arr[i], arr[j]) equals a given value k. This problem
+involves number theory concepts, particularly the Greatest Common Divisor (GCD). A naive approach would check all pairs and
+compute GCD for each, resulting in O(n² log(max_value)) complexity. More efficient approaches might involve preprocessing
+divisors, using inclusion-exclusion principle, or mathematical optimizations. The key insight is to group numbers by their
+GCD relationships and count efficiently.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,8 @@
 # Bitmask && BFS
 
+**Problem Statement:**
+This section covers problems that combine BFS (Breadth-First Search) with bitmask techniques for state compression. These problems typically involve visiting all nodes/states where the current state can be represented using bits. Common applications include traveling salesman variants, shortest path visiting all nodes, and game state exploration. Use BFS with state (current_position, visited_mask) where the mask represents which nodes/items have been visited. This technique is powerful for problems with small state spaces (typically ≤ 20 items) due to exponential space complexity.
+
 [Shortest Path Visiting All Nodes - LeetCode](https://leetcode.com/problems/shortest-path-visiting-all-nodes/submissions/986826596/)
 
 [Maximum Number of Moves to Kill All Pawns - LeetCode](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/)

@@ -1,5 +1,11 @@
 # Menorah
 
+**Problem Statement:**
+You have two binary strings a and b of length n. You can perform two types of operations: (1) flip any bit in string a,
+or (2) swap any two bits in string a. Find the minimum number of operations needed to make string a equal to string b.
+The solution involves counting mismatched positions and analyzing different cases: when you can use swaps to fix pairs
+of mismatches, or when you need to use flips. Consider the optimal strategy of using swaps first to minimize total operations.
+
 problem link: https://codeforces.com/problemset/problem/1615/C
 
 ```cpp

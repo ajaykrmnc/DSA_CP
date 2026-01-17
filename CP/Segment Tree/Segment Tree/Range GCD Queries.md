@@ -1,5 +1,8 @@
 # Range GCD Queries
 
+**Problem Statement:**
+Given an array of integers and multiple queries, efficiently answer range GCD queries and handle point updates. For each query, find the GCD (Greatest Common Divisor) of all elements in a given range [L, R]. The segment tree approach divides the array into segments and stores the GCD of each segment. Since GCD is associative (gcd(a, gcd(b, c)) = gcd(gcd(a, b), c)), we can combine GCD values from child segments. Both range queries and point updates can be performed in O(log n) time complexity, making this approach efficient for multiple operations.
+
 ```cpp
 // User function template in C++
 

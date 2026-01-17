@@ -1,5 +1,8 @@
 # Smaller on Right
 
+**Problem Statement:**
+Given an array of integers, for each element, count how many elements to its right are smaller than it. This problem can be solved using various approaches: brute force O(n²), merge sort with inversion counting O(n log n), or using data structures like BST or Fenwick tree. An efficient approach is to process the array from right to left, maintaining a set of seen elements, and for each element, count how many elements in the set are smaller using binary search. The maximum count across all elements gives the answer.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,8 @@
 # Level order traversal in spiral form | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a binary tree, perform level order traversal in spiral form. In spiral traversal, nodes are visited level by level, but the direction alternates: left to right for even levels (0, 2, 4...) and right to left for odd levels (1, 3, 5...). This creates a zigzag or spiral pattern. The problem can be solved using two stacks or a deque to maintain the alternating direction, or by using level order traversal with a flag to reverse alternate levels. Time complexity is O(n) and space complexity is O(w) where w is the maximum width of the tree.
+
 [https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article](https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article)
 
 Given a binary tree and the task is to find the spiral order traversal of the tree.

@@ -1,5 +1,8 @@
 # Implement Queue using Linked List
 
+**Problem Statement:**
+Implement a queue data structure using a singly linked list. A queue follows FIFO (First In First Out) principle with operations enqueue (add to rear) and dequeue (remove from front). Use two pointers: front pointing to the first node and rear pointing to the last node. For enqueue, add new node at rear and update rear pointer. For dequeue, remove node from front and update front pointer. Handle edge cases like empty queue and single element queue. This implementation provides O(1) time complexity for both operations.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

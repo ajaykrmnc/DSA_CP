@@ -1,5 +1,11 @@
 # Serialize and Deserialize a Binary Tree
 
+**Problem Statement:**
+Design algorithms to serialize and deserialize a binary tree. Serialization converts the tree into a string representation,
+while deserialization reconstructs the tree from the string. Use preorder traversal for serialization, marking null nodes
+with a special character (like '#'). For deserialization, use the same traversal order to reconstruct the tree. This approach
+preserves the tree structure and allows perfect reconstruction. Handle edge cases like empty trees and single nodes carefully.
+
 ```cpp
 #include <bits/stdc++.h>
 /**

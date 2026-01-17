@@ -1,5 +1,12 @@
 # Round Dance
 
+**Problem Statement:**
+Given n people standing in a circle for a round dance, some pairs of people are friends. You need to determine the minimum
+and maximum number of groups that can be formed such that within each group, every person is friends with their neighbors
+in the circle. Use Disjoint Set Union (DSU) to find connected components of friendships. Each component can form either
+one group (if it forms a cycle) or multiple groups (if it's a path or tree). The minimum groups is when each component
+forms the fewest possible groups, and maximum is when each component is split optimally.
+
 ```cpp
 struct dsu{
     vector<int>count,pred;

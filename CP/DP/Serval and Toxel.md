@@ -1,5 +1,12 @@
 # Serval and Toxel
 
+**Problem Statement:**
+This is a Codeforces problem involving dynamic programming and combinatorics. The problem typically involves finding the number of
+ways to arrange or select elements under certain constraints. Based on the code structure, it appears to involve calculating
+combinations or permutations with modular arithmetic. The solution uses dynamic programming to build up the answer incrementally,
+often involving factorial calculations, modular inverse, or combinatorial formulas. Such problems require understanding of number
+theory concepts like modular arithmetic and efficient computation of large factorials.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

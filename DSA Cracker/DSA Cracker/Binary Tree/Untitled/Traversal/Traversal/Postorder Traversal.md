@@ -1,5 +1,11 @@
 # Postorder Traversal
 
+**Problem Statement:**
+Given a binary tree, perform postorder traversal and return the values of nodes in postorder sequence. Postorder traversal
+visits nodes in the order: left subtree, right subtree, root. This traversal is useful for deleting trees, calculating
+directory sizes, or postfix expression evaluation. Can be implemented recursively or iteratively using two stacks or one
+stack with a flag. The recursive approach is simpler while iterative requires careful handling of the visiting order.
+
 ```cpp
 //Initial Template for C++
 

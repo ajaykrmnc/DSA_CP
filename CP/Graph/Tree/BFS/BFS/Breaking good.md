@@ -1,5 +1,8 @@
 # Breaking good
 
+**Problem Statement:**
+Given a graph with some edges marked as "good" and others as "bad", find the minimum number of operations to make the graph connected. You can either add a good edge or remove a bad edge in one operation. The goal is to ensure there's a path between two specific nodes while minimizing operations. Use BFS/DFS to find the shortest path and determine which edges need to be added or removed. The solution involves graph traversal, path finding, and optimization to minimize the total number of edge modifications required.
+
 problem link: https://codeforces.com/contest/507/problem/E
 
 ```cpp

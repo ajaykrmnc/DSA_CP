@@ -1,5 +1,12 @@
 # Integers Have Friends
 
+**Problem Statement:**
+Given an array of n integers, find the maximum length of a subarray where all pairwise GCDs are greater than 1. This means
+for any two elements in the chosen subarray, their GCD should be at least 2. The problem can be solved using sqrt decomposition
+or segment tree with GCD operations. The key insight is that if all pairwise GCDs in a subarray are > 1, then the GCD of
+the entire subarray is also > 1. Use binary search on the answer length and check if a subarray of that length exists
+with the required property. Time complexity is O(n log n log(max_value)).
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,12 @@
 # Social Network
 
+**Problem Statement:**
+Given n people and d friendship pairs, with some friendships being unreliable, determine the maximum number of people that can
+be in the same connected component after adding edges optimally. You can add edges between people to maximize connectivity.
+This problem uses Disjoint Set Union (DSU) to track connected components and their sizes. The strategy involves connecting
+smaller components to larger ones to maximize the size of the largest component. Consider both reliable and unreliable friendships
+when building the optimal social network structure.
+
 problem link: https://codeforces.com/problemset/problem/1609/D
 
 ```cpp

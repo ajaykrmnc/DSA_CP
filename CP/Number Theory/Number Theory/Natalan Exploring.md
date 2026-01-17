@@ -1,5 +1,8 @@
 # Natalan Exploring
 
+**Problem Statement:**
+Given an array of n integers, find the number of ways to choose a subsequence such that the product of GCD of all pairs in the subsequence equals the LCM of all elements in the subsequence. This is an advanced number theory problem requiring deep understanding of GCD, LCM properties, and prime factorization. Use inclusion-exclusion principle and mathematical analysis of prime factor contributions. The solution involves complex combinatorial counting with modular arithmetic.
+
 problem link: https://codeforces.com/contest/2037/problem/G
 
 ```cpp

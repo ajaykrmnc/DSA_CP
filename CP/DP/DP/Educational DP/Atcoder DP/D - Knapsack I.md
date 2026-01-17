@@ -1,5 +1,8 @@
 # D - Knapsack I
 
+**Problem Statement:**
+Given N items, each with a weight w[i] and value v[i], and a knapsack with capacity W, find the maximum value that can be obtained by selecting items such that their total weight doesn't exceed W. This is the classic 0/1 knapsack problem where each item can be either included or excluded. Use dynamic programming where dp[i][w] represents the maximum value achievable using the first i items with weight limit w. The recurrence relation is: dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight[i]] + value[i]) if weight[i] <= w.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

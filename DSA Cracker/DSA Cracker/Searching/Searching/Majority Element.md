@@ -1,5 +1,12 @@
 # Majority Element
 
+**Problem Statement:**
+Given an array of integers, find the majority element that appears more than n/2 times in the array. The majority element
+always exists in the given array. This classic problem can be solved using Boyer-Moore Voting Algorithm in O(n) time and
+O(1) space complexity. The algorithm maintains a candidate element and a counter, incrementing counter for same elements and
+decrementing for different elements. When counter becomes zero, we update the candidate. The final candidate is guaranteed
+to be the majority element due to the problem constraint.
+
 ```cpp
 //Initial template for C++
 

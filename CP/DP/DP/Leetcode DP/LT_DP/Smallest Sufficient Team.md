@@ -1,5 +1,12 @@
 # Smallest Sufficient Team
 
+**Problem Statement:**
+Given a list of required skills and a list of people with their skills, find the smallest team of people that collectively
+has all the required skills. This is a classic bitmask DP problem where each skill is represented by a bit in a mask.
+For each person, create a bitmask representing their skills. Use recursive backtracking with memoization to try all
+combinations of people and find the minimum team size that covers all required skills (mask = (1<<m)-1). The state is
+defined by current person index and current skill mask. Time complexity is O(n * 2^m) where n is people count and m is skills count.
+
 ```cpp
 class Solution {
 public:

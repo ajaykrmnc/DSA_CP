@@ -1,5 +1,12 @@
 # Linear Probing in Hashing
 
+**Problem Statement:**
+Implement linear probing collision resolution technique in hash tables. When a collision occurs (two keys hash to the same
+index), linear probing searches for the next available slot by checking consecutive positions. If position h(key) is occupied,
+check h(key)+1, h(key)+2, and so on until an empty slot is found. For insertion, place the element in the first available
+slot. For searching, probe until the element is found or an empty slot is encountered. This technique maintains O(1) average
+time complexity but can suffer from clustering where consecutive occupied slots form clusters.
+
 ```cpp
 class Solution{
   public:

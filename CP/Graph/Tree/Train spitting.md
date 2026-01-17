@@ -1,5 +1,11 @@
 # Train spitting
 
+**Problem Statement:**
+You have a train system with n stations connected by railways. The train can split into multiple parts at certain stations.
+Given the train's route and splitting rules, determine the final configuration or solve a related optimization problem.
+This involves graph traversal, possibly with state tracking for different train parts, and may require dynamic programming
+or greedy approaches depending on the specific constraints and objectives of the train splitting problem.
+
 problem link: https://codeforces.com/problemset/problem/1776/F
 
 ```cpp

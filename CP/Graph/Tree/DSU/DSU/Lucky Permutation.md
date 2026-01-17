@@ -1,5 +1,12 @@
 # Lucky Permutation
 
+**Problem Statement:**
+Given a permutation of n integers, you can swap any two adjacent elements. Find the minimum number of swaps needed to sort
+the permutation. This problem can be solved using cycle decomposition with DSU (Disjoint Set Union). Each cycle in the
+permutation requires (cycle_length - 1) swaps to sort. The total number of swaps is the sum of (cycle_length - 1) for all
+cycles. Use DSU to efficiently find cycles by connecting each position i with the position where element i should go.
+The key insight is that sorting a permutation is equivalent to breaking all cycles.
+
 [Problem - 1768D - Codeforces](https://codeforces.com/problemset/problem/1768/D)
 
 ```cpp

@@ -1,5 +1,8 @@
 # Print Matrix in snake Pattern
 
+**Problem Statement:**
+Given an n×m matrix, print the elements in snake pattern. In snake pattern, we traverse the first row from left to right, second row from right to left, third row from left to right, and so on, alternating the direction for each row. This creates a snake-like traversal pattern. Use a flag to keep track of the current direction - when flag is 0, traverse left to right; when flag is 1, traverse right to left. Toggle the flag after each row. Time complexity is O(n×m) and space complexity is O(1) excluding the result array.
+
 ```cpp
 class Solution
 {   

@@ -1,5 +1,8 @@
 # Heap Sort
 
+**Problem Statement:**
+Implement heap sort algorithm to sort an array in ascending order. Heap sort works in two phases: first build a max heap from the input array, then repeatedly extract the maximum element and place it at the end of the array. The algorithm involves heapify operation to maintain heap property, buildHeap to convert array to heap, and the main heapSort function. Time complexity is O(n log n) and space complexity is O(1), making it an efficient in-place sorting algorithm with guaranteed worst-case performance.
+
 ```cpp
 // The functions should be written in a way that array become sorted 
 // in increasing order when heapSort() is called.

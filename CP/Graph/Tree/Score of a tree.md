@@ -1,5 +1,11 @@
 # Score of a tree
 
+**Problem Statement:**
+Given a tree with n nodes, calculate the score of the tree. The score is typically defined as the sum of distances between
+all pairs of nodes, or some other tree-based metric. This problem involves tree traversal, distance calculations, and
+possibly dynamic programming on trees. Use DFS to calculate distances or apply tree DP techniques to compute the required
+score efficiently. The exact scoring function depends on the specific problem requirements.
+
 Select: unsolved
 
 ```cpp

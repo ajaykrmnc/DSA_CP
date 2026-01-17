@@ -1,5 +1,12 @@
 # Longest Simple Cycle
 
+**Problem Statement:**
+You have n chains of nodes, where each chain i has c[i] nodes. Adjacent chains are connected by edges with given weights.
+Find the longest simple cycle that visits nodes from different chains. A simple cycle cannot repeat nodes or edges.
+Use dynamic programming where dp[i][j] represents the longest path ending at node j in chain i that can potentially
+form a cycle. The key insight is to track paths that can be extended to form cycles by connecting back to earlier chains.
+Consider both continuing existing paths and starting new paths at each chain.
+
 problem link: https://codeforces.com/problemset/problem/1476/C
 
 ```cpp

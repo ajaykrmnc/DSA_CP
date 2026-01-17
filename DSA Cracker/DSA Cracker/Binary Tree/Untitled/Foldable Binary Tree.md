@@ -1,5 +1,8 @@
 # Foldable Binary Tree
 
+**Problem Statement:**
+Given a binary tree, determine if it is foldable. A binary tree is foldable if the left and right subtrees are mirror images of each other when folded along the root. This means that the structure of the left subtree should be the mirror of the right subtree (not considering the data values, only the structure). Use recursion to check if left subtree's left child mirrors right subtree's right child, and left subtree's right child mirrors right subtree's left child. The solution has O(n) time complexity where n is the number of nodes.
+
 ```cpp
 /* A binary tree node has data, pointer to left child
 and a pointer to right child */

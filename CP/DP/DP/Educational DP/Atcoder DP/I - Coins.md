@@ -1,5 +1,12 @@
 # I - Coins
 
+**Problem Statement:**
+Given N coins (where N is odd), each with a probability p[i] of landing heads, find the probability that more than half
+of the coins land heads when all coins are tossed. Since N is odd, "more than half" means at least (N+1)/2 coins show heads.
+This is a probability DP problem where dp[i][j] represents the probability of getting exactly j heads using the first i coins.
+The recurrence is: dp[i][j] = dp[i-1][j] * (1-p[i]) + dp[i-1][j-1] * p[i]. Sum up probabilities for all cases where
+heads count is at least (N+1)/2.
+
 Tags: probability
 
 ```cpp

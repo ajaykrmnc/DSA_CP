@@ -1,5 +1,12 @@
 # Cycles in a maze
 
+**Problem Statement:**
+Given a maze represented as a grid with walls and empty spaces, find if there exists a cycle in the maze. A cycle means
+you can start from a cell, move through adjacent empty cells, and return to the starting cell without retracing your path.
+Use BFS or DFS to detect cycles in the grid graph. Treat each empty cell as a node and adjacent empty cells as connected.
+The key insight is to track parent information during traversal - if you reach a visited cell that is not your immediate
+parent, you've found a cycle. Time complexity is O(n*m) where n and m are grid dimensions.
+
 ```cpp
 #include <bits/stdc++.h>
 

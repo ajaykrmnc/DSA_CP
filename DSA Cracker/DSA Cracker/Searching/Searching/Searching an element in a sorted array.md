@@ -1,5 +1,12 @@
 # Searching an element in a sorted array
 
+**Problem Statement:**
+Given a sorted array of integers and a target element, find the index of the target element using binary search. Binary
+search is an efficient algorithm that works on sorted arrays by repeatedly dividing the search space in half. Compare the
+target with the middle element: if equal, return the index; if target is smaller, search the left half; if larger, search
+the right half. This approach reduces the search space by half in each iteration, achieving O(log n) time complexity.
+Space complexity is O(1) for iterative implementation or O(log n) for recursive implementation.
+
 ```cpp
 //Initial Template for C
 

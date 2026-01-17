@@ -1,5 +1,12 @@
 # Count Number of LIS
 
+**Problem Statement:**
+Given an array of integers, find the number of Longest Increasing Subsequences (LIS). Unlike the standard LIS problem that
+finds the length, this problem counts how many different subsequences achieve the maximum length. Use dynamic programming
+with two arrays: dp[i] for LIS length ending at index i, and count[i] for number of LIS ending at index i. For each position,
+if we find a longer subsequence, reset the count; if we find an equal length subsequence, add to the count. The answer is
+the sum of counts for all positions that achieve the maximum LIS length.
+
 ```cpp
 class Solution {
 public:

@@ -1,5 +1,8 @@
 # Add two numbers represented by linked lists | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given two numbers represented as linked lists, where each node contains a single digit, add the two numbers and return the sum as a linked list. The digits are stored in forward order (most significant digit first). Handle carry propagation properly when the sum of digits exceeds 9. The solution involves traversing both lists simultaneously, adding corresponding digits along with any carry from the previous addition, and creating a new linked list for the result. Time complexity is O(max(m,n)) where m and n are lengths of the two lists.
+
 [https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1](https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1)
 
 Given two decimal numbers represented by two linked lists of size **N** and **M** respectively. The task is to return a linked list that represents the sum of these two numbers.

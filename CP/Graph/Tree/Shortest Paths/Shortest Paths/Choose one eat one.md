@@ -1,5 +1,8 @@
 # Choose one eat one
 
+**Problem Statement:**
+Given N balls with values A[i], you need to choose pairs of balls to maximize the total score. When you choose balls i and j, you get a score of (A[i]^A[i] + A[j]^A[j]) mod M. The goal is to find the maximum possible total score by optimally pairing all balls. This problem can be modeled as finding the maximum spanning tree in a complete graph where edge weights represent the scores from pairing balls. Use Kruskal's or Prim's algorithm to find the maximum spanning tree and calculate the total score.
+
 problem link: https://atcoder.jp/contests/abc282/tasks/abc282_e
 
 ```cpp

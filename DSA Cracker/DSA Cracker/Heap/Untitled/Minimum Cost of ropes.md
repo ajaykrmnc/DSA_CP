@@ -1,5 +1,12 @@
 # Minimum Cost of ropes
 
+**Problem Statement:**
+Given N ropes of different lengths, connect them into one rope with minimum cost. The cost to connect two ropes equals
+the sum of their lengths. This is a classic greedy problem solved using a min-heap. Always connect the two shortest ropes
+first to minimize the total cost, as shorter ropes contribute to the cost multiple times when connected with longer ones.
+Use a min-heap to efficiently get the two shortest ropes, connect them, and add the result back to the heap. Time complexity
+is O(n log n) and space complexity is O(n) for the heap.
+
 This problem is from LeetCode and is known as "Minimum Cost to Connect Ropes" or "Connect n ropes with minimum cost". Here's a description of the problem:
 
 Problem Statement:

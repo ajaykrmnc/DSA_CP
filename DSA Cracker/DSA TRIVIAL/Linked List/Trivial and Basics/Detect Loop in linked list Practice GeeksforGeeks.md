@@ -1,5 +1,8 @@
 # Detect Loop in linked list | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list, determine if it contains a cycle (loop). A cycle exists if a node in the linked list can be reached again by continuously following the next pointer. The linked list may contain a self-loop where a node points to itself. This classic problem can be solved using Floyd's Cycle Detection Algorithm (tortoise and hare approach) where two pointers move at different speeds. If there's a cycle, the fast pointer will eventually meet the slow pointer. Time complexity is O(n) and space complexity is O(1).
+
 [https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1](https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1)
 
 Given a linked list of **N** nodes. The task is to check if the linked list has a loop. Linked list can contain self loop.

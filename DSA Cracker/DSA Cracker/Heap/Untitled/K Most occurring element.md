@@ -1,5 +1,8 @@
 # K Most occurring element
 
+**Problem Statement:**
+Given an array of integers and a number k, find the sum of frequencies of k most occurring elements. First, count the frequency of each element using a hash map. Then find the k elements with the highest frequencies and return the sum of their frequencies. This can be solved using a min-heap of size k to efficiently track the k most frequent elements. The approach involves building frequency map, using heap to find top k frequencies, and summing them up.
+
 ```cpp
 // Function to print the k numbers with most occurrences 
 

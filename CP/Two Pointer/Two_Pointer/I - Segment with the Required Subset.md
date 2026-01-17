@@ -1,10 +1,7 @@
 # I - Segment with the Required Subset
 
-```cpp
-Given an array of 𝑛 integers 𝑎𝑖. Let's say that a segment of this array 𝑎[𝑙..𝑟]
-is good if on this segment it is possible to choose a certain set of numbers whose sum is equal to 𝑠
-Your task is to find the shortest good segment.
-```
+**Problem Statement:**
+Given an array of n integers, find the shortest segment [l, r] such that there exists a subset of elements within this segment whose sum equals a target value s. A segment is "good" if you can choose some elements from positions l to r (inclusive) that sum to exactly s. Use dynamic programming with sliding window optimization to track possible sums for each segment length and find the minimum length segment that can achieve the target sum.
 
 ```cpp
 #include<bits/stdc++.h>

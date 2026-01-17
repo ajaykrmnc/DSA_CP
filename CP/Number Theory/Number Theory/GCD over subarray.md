@@ -1,5 +1,8 @@
 # GCD over subarray
 
+**Problem Statement:**
+Given an array A of n integers, for each length k from 1 to n, find the maximum GCD among all subarrays of length k. The key insight is that there are only O(n log max(A)) distinct subarray GCDs due to the halving property of GCD operations. Use dynamic programming where dp[i][x] represents the length of the longest subarray ending at position i with GCD x. For each position, compute all possible GCDs by taking GCD of current element with all previous GCDs. This approach efficiently computes all subarray GCDs and finds the maximum for each length.
+
 ```cpp
 You can given an array A. For each K from 1 to N. compute the maximum GCD of a subarray of length K.
 Explanantion: 2

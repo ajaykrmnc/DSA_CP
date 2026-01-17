@@ -1,5 +1,12 @@
 # Tree distance 1
 
+**Problem Statement:**
+Given a tree with n nodes, calculate for each node the maximum distance to any other node in the tree. This problem
+requires finding the diameter endpoints of the tree and then computing distances from each node to both endpoints.
+The maximum distance for any node is the maximum of its distances to the two diameter endpoints. Use two DFS traversals
+to find the diameter endpoints, then two more DFS traversals to compute distances from each endpoint to all nodes.
+Time complexity is O(n) and space complexity is O(n) for storing distances.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

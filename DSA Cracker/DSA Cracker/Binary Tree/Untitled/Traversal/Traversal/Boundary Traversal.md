@@ -1,5 +1,11 @@
 # Boundary Traversal
 
+**Problem Statement:**
+Given a binary tree, perform boundary traversal which includes: left boundary (excluding leaf nodes), all leaf nodes from
+left to right, and right boundary in reverse order (excluding leaf nodes). The result should be the boundary of the tree
+in anti-clockwise direction starting from the root. Use separate functions to collect left boundary, leaf nodes, and right
+boundary, then combine them. Handle edge cases like single node trees and ensure no node is printed twice.
+
 ```cpp
 #include <iostream>
 using namespace std;

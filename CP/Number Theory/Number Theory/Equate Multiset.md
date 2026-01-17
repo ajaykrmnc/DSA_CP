@@ -1,5 +1,8 @@
 # Equate Multiset
 
+**Problem Statement:**
+Given two multisets A and B of equal size, determine if you can make them equal by performing operations on B. The allowed operation is to replace any element x in B with x/2 (only if x is even). The key insight is to reduce all numbers to their odd parts by dividing by 2 repeatedly. Then use a greedy approach: for each element in B (processed in descending order), try to match it with an element in A by repeatedly dividing by 2 until a match is found or the element becomes odd.
+
 problem link: https://codeforces.com/contest/1702/problem/F
 
 ```cpp

@@ -1,6 +1,13 @@
 # Detect cycle in a directed graph using DFS
 
-For the different recursion stack we have to built different visited array and mark then visited array 
+**Problem Statement:**
+Given a directed graph, determine if it contains a cycle. Use DFS with two arrays: visited[] to track visited nodes and
+recursionStack[] to track nodes in the current DFS path. A cycle exists if during DFS traversal, we encounter a node that
+is already in the current recursion stack. This indicates a back edge in the directed graph. The algorithm explores all
+unvisited nodes and for each node, performs DFS while maintaining the recursion stack. Time complexity is O(V + E) where
+V is vertices and E is edges. This approach correctly handles directed graphs unlike undirected cycle detection.
+
+For the different recursion stack we have to built different visited array and mark then visited array
 
 ```cpp
 #include <bits/stdc++.h>

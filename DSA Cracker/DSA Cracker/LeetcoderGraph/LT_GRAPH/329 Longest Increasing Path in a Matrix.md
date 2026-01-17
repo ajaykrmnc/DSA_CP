@@ -1,4 +1,6 @@
 # 329. Longest Increasing Path in a Matrix
+**Problem Statement:**
+Given an m×n matrix of integers, find the length of the longest increasing path. You can move in 4 directions (up, down, left, right) but not diagonally. Each step must be to a cell with a strictly greater value. Use DFS with memoization to avoid recomputing paths from the same cell. For each cell, recursively explore all valid neighbors (greater values) and cache the result. The answer is the maximum path length starting from any cell. Time complexity is O(m×n) due to memoization, and space complexity is O(m×n) for the cache.
 
 Given an `m x n` integers `matrix`, return *the length of the longest increasing path in* `matrix`.
 

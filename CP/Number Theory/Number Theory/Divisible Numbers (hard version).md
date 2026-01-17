@@ -1,5 +1,8 @@
 # Divisible Numbers (hard version)
 
+**Problem Statement:**
+Given four integers a, b, c, d, find two integers x and y such that a < x ≤ b, c < y ≤ d, and x*y is divisible by a*c. The hard version has larger constraints requiring efficient algorithms. The key insight is to iterate through divisors of a*c and for each divisor, check if valid x and y can be found. Use mathematical properties to optimize the search and handle large numbers efficiently. Consider factorization and divisor enumeration techniques.
+
 problem link: https://codeforces.com/problemset/problem/1744/E2
 
 ```cpp

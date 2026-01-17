@@ -1,5 +1,8 @@
 # Tree Tag
 
+**Problem Statement:**
+Alice and Bob play a game on a tree. Alice starts at node a and Bob starts at node b. They take turns moving to adjacent nodes, with Alice going first. Alice wins if she can reach Bob's current position, while Bob wins if he can avoid Alice for a certain number of moves. The game involves strategic movement on the tree where Alice tries to catch Bob and Bob tries to stay away. The solution involves analyzing tree distances, optimal strategies, and understanding when Alice can guarantee a win based on the tree structure and starting positions.
+
 problem link: https://codeforces.com/contest/1404/problem/B
 
 ```cpp

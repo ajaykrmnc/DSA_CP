@@ -1,5 +1,8 @@
 # Rearrange characters
 
+**Problem Statement:**
+Given a string, rearrange the characters such that no two adjacent characters are the same. If such arrangement is possible, return the rearranged string; otherwise return an empty string. Use a max heap (priority queue) to always pick the character with the highest frequency that is different from the previously placed character. The greedy approach ensures that we use the most frequent characters first while maintaining the constraint. This problem demonstrates the application of heaps in string manipulation and greedy algorithms.
+
 ```cpp
 class Solution
 {

@@ -1,5 +1,12 @@
 # teleport
 
+**Problem Statement:**
+You are given a grid where you can move in 4 directions and also teleport to specific locations. Find the minimum number
+of moves to reach from start to destination. Use BFS to explore all possible moves including regular movement and teleportation.
+Each cell can be reached either by normal movement (cost 1) or by teleportation (cost varies). Model this as a graph where
+each cell is connected to its 4 neighbors and also to teleportation destinations. The key insight is to treat teleportation
+as special edges in the graph and use standard BFS for shortest path finding.
+
 problem link: bfs
 
 ```cpp

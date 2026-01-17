@@ -1,1 +1,4 @@
-# Untitled
+# Advanced Competitive Programming Topics (2000+ Rating)
+
+**Problem Statement:**
+This section contains advanced competitive programming problems typically rated 2000+ on platforms like Codeforces. These problems require deep understanding of complex algorithms and data structures including advanced graph algorithms, number theory, computational geometry, string algorithms, and mathematical concepts. Solutions often involve combining multiple techniques, optimizing time/space complexity, and handling edge cases carefully. These problems are designed for experienced competitive programmers aiming for high ratings and contest performance.

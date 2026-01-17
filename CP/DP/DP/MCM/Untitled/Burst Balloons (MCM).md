@@ -1,5 +1,12 @@
 # Burst  Balloons (MCM)
 
+**Problem Statement:**
+You have n balloons indexed from 0 to n-1, each with a number written on it. You can burst balloons to collect coins.
+When you burst balloon i, you get nums[left] * nums[i] * nums[right] coins, where left and right are adjacent balloons.
+After bursting, the adjacent balloons become neighbors. Find the maximum coins you can collect by bursting all balloons.
+This is a Matrix Chain Multiplication variant where you use interval DP. Consider each balloon as the last one to burst
+in a range, and the answer is the sum of coins from bursting that balloon plus optimal solutions for left and right subarrays.
+
 ```cpp
 class Solution {
 public:

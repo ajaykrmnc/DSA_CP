@@ -1,5 +1,11 @@
 # Height of Binary Tree
 
+**Problem Statement:**
+Given a binary tree, find its height (or depth). The height of a binary tree is the number of edges in the longest path
+from the root node to any leaf node. If the tree is empty, return 0. If the tree has only one node (root), return 1.
+This problem can be solved recursively by finding the maximum height between left and right subtrees and adding 1.
+The time complexity is O(n) where n is the number of nodes, and space complexity is O(h) where h is the height.
+
 ```cpp
 /*
 struct Node

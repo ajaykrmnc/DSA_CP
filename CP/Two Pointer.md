@@ -1,5 +1,8 @@
 # Two Pointer
 
+**Problem Statement:**
+This section covers the two-pointer technique, a powerful algorithmic approach for solving array and string problems efficiently. The technique uses two pointers that traverse the data structure, typically moving in the same direction or towards each other. Common applications include finding pairs with target sum, removing duplicates, finding subarrays with specific properties, and solving sliding window problems. This technique often reduces time complexity from O(n²) to O(n) by eliminating the need for nested loops and leveraging sorted data or specific patterns.
+
 [Two_Pointer](Two%20Pointer/Two_Pointer%2026b0d900f62e492a934ba9473a812e90.csv)
 
 *Iterating two monotonic pointers across an array to search for a pair of indices satisfying some condition in linear time.*

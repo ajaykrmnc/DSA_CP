@@ -1,5 +1,8 @@
 # Doubly linked list Insertion at given position
 
+**Problem Statement:**
+Given a doubly linked list and a position, insert a new node with given data at the specified position. In a doubly linked list, each node has pointers to both the next and previous nodes. When inserting at a given position, traverse to that position, create a new node, and update the next and prev pointers of the surrounding nodes appropriately. Handle edge cases like insertion at the beginning, end, or in an empty list. The position is typically 0-indexed, and proper pointer management is crucial to maintain the doubly linked structure.
+
 ```cpp
 # include <stdio.h>
 # include <stdlib.h>

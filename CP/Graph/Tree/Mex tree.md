@@ -1,5 +1,12 @@
 # Mex tree
 
+**Problem Statement:**
+Given a tree with n nodes, each node has a value. For each node, calculate the MEX (minimum excludant) of all values in its
+subtree. MEX is the smallest non-negative integer that is not present in the set. This problem involves tree traversal (DFS),
+subtree processing, and efficient MEX calculation. You can use DFS to traverse the tree, collect all values in each subtree,
+and then compute the MEX for each subtree. Optimization techniques like small-to-large merging or coordinate compression
+might be needed for larger constraints.
+
 ```cpp
 const int N=2e5+5;
 vector<int>v[N];

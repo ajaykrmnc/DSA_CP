@@ -1,5 +1,8 @@
 # Make Matrix Beautiful
 
+**Problem Statement:**
+Given an n×n matrix, find the minimum number of operations required to make the matrix beautiful. A matrix is beautiful if the sum of each row equals the sum of each column. In each operation, you can increment any element by 1. The strategy is to find the maximum row sum and maximum column sum, then determine the target sum that all rows and columns should have. Calculate the total operations needed by finding the difference between the target sum and current sums.
+
 ```cpp
 class Solution
 {

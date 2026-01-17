@@ -1,5 +1,11 @@
 # Determine if Two Trees are Identical
 
+**Problem Statement:**
+Given two binary trees, determine if they are identical. Two binary trees are considered identical if they have the same
+structure and the same node values at corresponding positions. Use a recursive approach to compare the trees: if both nodes
+are null, they are identical; if one is null and the other isn't, they are not identical; if both are non-null, check if
+their values are equal and recursively check left and right subtrees. Time complexity is O(min(m,n)) where m and n are the sizes.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

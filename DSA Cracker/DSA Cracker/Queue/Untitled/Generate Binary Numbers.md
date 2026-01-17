@@ -1,1 +1,4 @@
 # Generate Binary Numbers
+
+**Problem Statement:**
+Given a positive integer n, generate binary representations of all numbers from 1 to n. This problem can be efficiently solved using a queue-based approach. Start by enqueuing "1" to the queue. For each iteration, dequeue a string, print it, and then enqueue two new strings by appending "0" and "1" to the dequeued string. Continue this process until you have generated n binary numbers. This approach leverages the property that binary representation of any number can be formed by appending digits to smaller numbers. Time complexity is O(n) and space complexity is O(n) for storing the queue.

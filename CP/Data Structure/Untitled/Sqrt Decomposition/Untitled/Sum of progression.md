@@ -1,5 +1,12 @@
 # Sum of progression
 
+**Problem Statement:**
+Given an array of n integers, answer q queries. Each query asks for the sum of an arithmetic progression starting from index s,
+with step size d, and length k. In other words, calculate sum of elements at positions s, s+d, s+2d, ..., s+(k-1)d. Use sqrt
+decomposition to optimize queries. For small step sizes (≤ sqrt(n)), precompute prefix sums for each possible step. For large
+step sizes, directly iterate and calculate the sum. This approach balances preprocessing time and query time, achieving
+O(n√n) preprocessing and O(√n) per query. The key insight is treating small and large steps differently for optimal performance.
+
 problem link: https://codeforces.com/contest/1921/problem/F
 
 ```cpp

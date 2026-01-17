@@ -1,5 +1,12 @@
 # Tree from Postorder and Inorder
 
+**Problem Statement:**
+Given inorder and postorder traversal arrays of a binary tree, construct the original binary tree. The key insight is that
+the last element in postorder is always the root. Find this root in inorder array to determine left and right subtrees.
+Recursively build left and right subtrees using the corresponding subarrays. Use a hashmap to store inorder indices for
+O(1) lookup. The algorithm works because postorder visits left, right, then root, while inorder visits left, root, right.
+Time complexity is O(n) and space complexity is O(n) for the hashmap and recursion stack.
+
 ```cpp
 /* Tree node structure
 

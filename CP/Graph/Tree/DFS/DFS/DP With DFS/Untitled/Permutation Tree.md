@@ -1,5 +1,12 @@
 # Permutation Tree
 
+**Problem Statement:**
+Given a tree with n nodes, each node has a value from 1 to n forming a permutation. You need to count the number of
+ways to assign values to nodes such that for every node, the values in its subtree form a contiguous range when sorted.
+Use tree DP with DFS to solve this problem. For each subtree, calculate how many valid permutations can be assigned
+considering the constraint that subtree values must be contiguous. The key insight is that if a subtree has k nodes,
+its values must be some contiguous range of length k from the overall permutation.
+
 [Problem - 1856E1 - Codeforces](https://codeforces.com/problemset/problem/1856/E1)
 
 ```cpp

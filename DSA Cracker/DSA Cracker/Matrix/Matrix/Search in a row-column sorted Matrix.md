@@ -1,5 +1,12 @@
 # Search in a row-column sorted Matrix
 
+**Problem Statement:**
+Given an n×m matrix where each row and each column is sorted in ascending order, search for a target element x in the matrix.
+Return true if the element is found, false otherwise. The matrix has the property that elements in each row are sorted from
+left to right, and elements in each column are sorted from top to bottom. This problem can be solved efficiently using a
+staircase search algorithm starting from the top-right or bottom-left corner, achieving O(n+m) time complexity. Alternatively,
+binary search can be applied on each row for O(n log m) complexity.
+
 ```cpp
 class Solution
 {

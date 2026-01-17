@@ -1,5 +1,12 @@
 # Pattern Search KMP
 
+**Problem Statement:**
+Implement the Knuth-Morris-Pratt (KMP) algorithm for pattern searching in a text. Given a text and a pattern, find all occurrences
+of the pattern in the text efficiently. KMP algorithm preprocesses the pattern to create a Longest Proper Prefix which is also
+Suffix (LPS) array, which helps skip characters during matching. This avoids the O(nm) time complexity of naive approach and
+achieves O(n+m) time complexity. The key insight is that when a mismatch occurs, we don't need to start matching from the beginning
+but can use the LPS array to determine the next position to match from.
+
 ```cpp
 //User function Template for C++
 

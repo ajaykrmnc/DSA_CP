@@ -1,5 +1,8 @@
 # Longest Palindromic Substring
 
+**Problem Statement:**
+Given a string s, return the longest palindromic substring in s. A palindrome is a string that reads the same forward and backward. You need to find the longest contiguous substring that is a palindrome. This can be solved using dynamic programming with a 2D table where dp[i][j] represents whether the substring from index i to j is a palindrome. The approach involves checking all possible substrings and expanding around centers. The time complexity is O(n²) and space complexity is O(n²) for the DP approach, though it can be optimized to O(1) space using the expand-around-centers technique.
+
 ```cpp
 class Solution {
 public:

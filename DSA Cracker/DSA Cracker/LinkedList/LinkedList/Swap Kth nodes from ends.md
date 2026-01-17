@@ -1,5 +1,12 @@
 # Swap Kth nodes from ends
 
+**Problem Statement:**
+Given a linked list and an integer k, swap the kth node from the beginning with the kth node from the end. The nodes should be
+swapped by changing their positions, not just their values. This problem requires careful pointer manipulation and handling of
+edge cases. Key challenges include finding the kth nodes from both ends, handling cases where k is out of bounds, and properly
+updating the links when swapping nodes. The approach involves traversing the list to find both nodes, then carefully swapping
+their positions while maintaining the integrity of the linked list structure.
+
 ```cpp
 
 ```

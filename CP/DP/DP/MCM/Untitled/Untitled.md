@@ -1,1 +1,4 @@
-# Untitled
+# Matrix Chain Multiplication Problems
+
+**Problem Statement:**
+This section contains various problems related to Matrix Chain Multiplication (MCM) and interval dynamic programming. MCM problems involve finding optimal ways to parenthesize operations to minimize cost, such as matrix multiplications, boolean expressions, or string operations. The general approach uses interval DP where dp[i][j] represents the optimal solution for the range [i,j]. These problems demonstrate the power of divide-and-conquer with memoization and are fundamental in understanding interval-based dynamic programming techniques used in competitive programming.

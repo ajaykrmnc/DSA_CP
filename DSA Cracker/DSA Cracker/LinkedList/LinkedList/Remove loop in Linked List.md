@@ -1,5 +1,8 @@
 # Remove loop in Linked List
 
+**Problem Statement:**
+Given a linked list that may contain a loop (cycle), write a function to detect and remove the loop if it exists. A loop occurs when a node's next pointer points to a previous node in the list, creating a cycle. First detect if a loop exists using Floyd's cycle detection algorithm (tortoise and hare method), then find the starting point of the loop and remove it by setting the appropriate next pointer to NULL. The function should preserve all nodes and only break the cycle without losing any data.
+
 ```cpp
 class Solution {
     public:

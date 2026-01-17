@@ -1,5 +1,8 @@
 # Given a linked list of 0s, 1s and 2s, sort it.
 
+**Problem Statement:**
+Given a linked list containing only 0s, 1s, and 2s, sort the linked list in ascending order. The challenge is to sort the list efficiently without using extra space for creating new nodes. You can use a counting approach where you first count the occurrences of each value (0, 1, 2), then modify the existing nodes' data in place. Alternatively, you can use a three-pointer approach to separate the nodes into three groups. The expected time complexity is O(n) and space complexity should be O(1).
+
 Tags: unsolved
 
 Here's a C++ implementation to sort a linked list of 0s, 1s, and 2s:

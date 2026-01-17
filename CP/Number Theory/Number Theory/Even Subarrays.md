@@ -1,5 +1,8 @@
 # Even Subarrays
 
+**Problem Statement:**
+Given an array of n integers, count the number of subarrays with even XOR. A subarray has even XOR if the XOR of all its elements is even. Use the property that XOR of a range [l,r] equals prefix_xor[r] ⊕ prefix_xor[l-1]. The XOR is even when both prefix XORs have the same parity. Count prefix XORs with even and odd values, then use combinatorial counting to find the answer. The total count is (even_count * (even_count + 1))/2 + (odd_count * (odd_count + 1))/2.
+
 problem link: https://codeforces.com/contest/1731/problem/C
 
 ```cpp

@@ -1,5 +1,8 @@
 # K largest elements
 
+**Problem Statement:**
+Given an array of integers and a number k, find the k largest elements from the array. The elements can be returned in any order. This problem can be efficiently solved using a min-heap of size k. Iterate through the array: if heap size is less than k, add the element; otherwise, if the current element is larger than the heap's minimum (top), remove the minimum and add the current element. This maintains the k largest elements in the heap. Time complexity is O(n log k) and space complexity is O(k), which is better than sorting the entire array.
+
 ```cpp
 class Solution
 {

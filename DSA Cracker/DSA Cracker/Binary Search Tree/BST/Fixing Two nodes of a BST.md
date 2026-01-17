@@ -1,5 +1,8 @@
 # Fixing Two nodes of a BST
 
+**Problem Statement:**
+Given a Binary Search Tree where exactly two nodes have been swapped, restore the BST to its correct form. The key insight is that in an inorder traversal of a BST, elements should be in sorted order. When two nodes are swapped, there will be violations in this sorted order. Perform inorder traversal and identify the two nodes that are out of place, then swap their values back. This problem demonstrates the property of BST and inorder traversal, with O(n) time and O(1) space complexity (excluding recursion stack).
+
 ```cpp
 class Solution {
 public:

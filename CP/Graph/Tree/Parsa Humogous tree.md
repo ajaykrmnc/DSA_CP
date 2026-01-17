@@ -1,5 +1,8 @@
 # Parsa Humogous tree
 
+**Problem Statement:**
+Given a tree with n nodes, each node can be assigned one of two values from a given range [l_i, r_i]. The goal is to maximize the sum of absolute differences between adjacent nodes. This is a tree DP problem where for each node, you decide which of the two boundary values (l_i or r_i) to assign to maximize the total sum. Use DFS to traverse the tree and maintain DP states for both possible values at each node. The recurrence considers all children and chooses the optimal assignment.
+
 Tags: coloring, graph
 problem link: https://codeforces.com/contest/1529/problem/C
 

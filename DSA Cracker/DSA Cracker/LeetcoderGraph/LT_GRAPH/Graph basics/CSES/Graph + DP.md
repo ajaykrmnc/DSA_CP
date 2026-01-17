@@ -1,4 +1,6 @@
 # Graph + DP
+**Problem Statement:**
+Find the minimum-cost flight route from city 1 to city n with one discount coupon that can halve the price of any single flight (rounded down). Use modified Dijkstra's algorithm with state (node, coupon_used). Maintain two distance arrays: dp[i][0] for reaching node i without using coupon, dp[i][1] for reaching node i with coupon used. For each edge, consider both using and not using the coupon. The answer is min(dp[n][0], dp[n][1]). This combines shortest path algorithms with dynamic programming state management.
 
 URL: https://cses.fi/problemset/task/1195
 
@@ -61,7 +63,7 @@ int32_t main()
         }
     }
     cout<<min(dp[n][1],dp[n][0])<<nline;
- 
+
     return 0;
 }
 ```

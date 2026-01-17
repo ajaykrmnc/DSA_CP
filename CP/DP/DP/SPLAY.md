@@ -1,5 +1,8 @@
 # SPLAY
 
+**Problem Statement:**
+Given an array and multiple range queries, for each query [L, R], find the maximum element in that range. If starting with D equal to this maximum value, you can traverse the array from the maximum element's position and reach the end of the range without D becoming less than any array element, output the maximum value. Otherwise, output maximum value + 1. This problem combines segment trees for range maximum queries with dynamic programming to precompute reachability from each position. Use DP to calculate the farthest reachable index from each position.
+
 ```cpp
 #include <bits/stdc++.h>                    
 #define IOS std::ios::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);

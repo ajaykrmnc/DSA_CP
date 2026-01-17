@@ -1,5 +1,8 @@
 # CSES - Counting Roo
 
+**Problem Statement:**
+Given an n×m grid with walls ('#') and empty cells ('.'), count the number of connected components of empty cells. Two empty cells are connected if you can move from one to another using only up, down, left, right moves through empty cells. This is a classic graph connectivity problem that can be solved using DFS or BFS. Convert the 2D grid to a graph representation and count connected components by traversing unvisited empty cells and marking all reachable cells in each component.
+
 URL: https://cses.fi/problemset/task/1192
 
 ```cpp

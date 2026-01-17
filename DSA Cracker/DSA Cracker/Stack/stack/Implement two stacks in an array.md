@@ -1,5 +1,11 @@
 # Implement two stacks in an array
 
+**Problem Statement:**
+Implement two stacks using a single array efficiently. The key insight is to start one stack from the beginning (index 0)
+and the other from the end (index n-1) of the array, growing towards each other. Stack overflow occurs when the two stack
+tops meet. Implement push1, push2, pop1, and pop2 operations. This approach maximizes space utilization as both stacks
+can grow as needed until the total elements reach the array capacity.
+
 ```cpp
 #include<bits/stdc++.h>
 

@@ -1,5 +1,12 @@
 # DFS on Grid
 
+**Problem Statement:**
+Given a 2D grid with walls and empty spaces, find the shortest path from start to end position. This is typically the "Labyrinth"
+problem where you need to navigate through a maze. The grid contains '#' for walls, '.' for empty spaces, 'A' for start, and 'B'
+for end. Use BFS (not DFS) for shortest path, or DFS for path existence. The solution involves treating the grid as a graph where
+each cell is a node connected to its 4 adjacent cells. Track parent information to reconstruct the path. Time complexity is O(nm)
+where n and m are grid dimensions.
+
 URL: https://cses.fi/problemset/task/1194
 
 ```cpp

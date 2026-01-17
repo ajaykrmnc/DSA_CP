@@ -1,5 +1,12 @@
 # Merge k Sorted Arrays
 
+**Problem Statement:**
+Given k sorted arrays, merge them into a single sorted array. This is a classic problem that can be solved efficiently using a
+min-heap (priority queue). The approach involves inserting the first element of each array into the heap along with array and
+element indices. Repeatedly extract the minimum element from heap and insert the next element from the same array. This ensures
+we always get the globally minimum element among all arrays. Time complexity is O(n log k) where n is total elements and k is
+number of arrays. This problem demonstrates the power of heaps in merging multiple sorted sequences efficiently.
+
 ```cpp
 //User function Template for C++
 

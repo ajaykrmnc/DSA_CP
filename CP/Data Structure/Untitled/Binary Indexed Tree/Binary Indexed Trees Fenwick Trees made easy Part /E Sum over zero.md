@@ -1,5 +1,8 @@
 # E. Sum over zero
 
+**Problem Statement:**
+Given an array, find the maximum length of a subarray with sum greater than zero. This problem uses prefix sums and coordinate compression with Fenwick Tree for efficient range maximum queries. Convert the problem to finding the maximum difference between indices with specific prefix sum constraints. Use coordinate compression to map prefix sums to a smaller range, then apply dynamic programming with BIT to track maximum values efficiently. The solution runs in O(n log n) time complexity.
+
 ```bash
 #include<bits/stdc++.h>
 using namespace std;

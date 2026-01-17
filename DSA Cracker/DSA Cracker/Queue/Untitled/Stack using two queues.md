@@ -1,5 +1,8 @@
 # Stack using two queues
 
+**Problem Statement:**
+Implement a stack data structure using two queues. A stack follows LIFO (Last In First Out) principle while queue follows FIFO (First In First Out). The challenge is to simulate stack operations (push, pop, top, empty) using only queue operations. Two approaches exist: make push costly or make pop costly. The optimal approach makes push costly - for each push operation, add the element to one queue, then transfer all previous elements from the other queue to maintain LIFO order. This ensures O(1) pop operation and O(n) push operation.
+
 ```cpp
 /* The structure of the class is
 class QueueStack{

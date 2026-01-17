@@ -1,5 +1,8 @@
 # Theory
 
+**Problem Statement:**
+This section provides comprehensive theory and implementation details for Square Root Decomposition technique. Sqrt decomposition divides an array into √n blocks to achieve O(√n) time complexity for range queries and updates. The technique involves preprocessing blocks to store aggregate information, then answering queries by combining complete block results with partial block calculations. This approach is simpler than segment trees but still efficient for many range query problems including range sum, range minimum/maximum, and range updates.
+
 # Sqrt Decomposition
 
 Sqrt Decomposition is a method (or a data structure) that allows you to perform some common operations (finding sum of the elements of the sub-array, finding the minimal/maximal element, etc.) in $O(\sqrt n)$ operations, which is much faster than $O(n)$ for the trivial algorithm.

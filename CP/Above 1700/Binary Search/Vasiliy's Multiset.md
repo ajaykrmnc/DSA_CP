@@ -1,6 +1,9 @@
 
 # Vasiliy's Multiset
 
+**Problem Statement:**
+You have a multiset that initially contains only 0. You need to process q queries of three types: add number x to the multiset, remove one occurrence of number x from the multiset, or find the maximum XOR of number x with any element in the multiset. This problem is efficiently solved using a Trie (prefix tree) data structure to store binary representations of numbers. For each query, traverse the Trie bit by bit, choosing the path that maximizes XOR. The Trie allows us to find the maximum XOR in O(log(max_value)) time per query, making the overall solution efficient.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

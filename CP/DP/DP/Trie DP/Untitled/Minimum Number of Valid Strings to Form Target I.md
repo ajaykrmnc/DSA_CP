@@ -1,5 +1,8 @@
 # Minimum Number of Valid Strings to Form Target I
 
+**Problem Statement:**
+Given an array of strings and a target string, find the minimum number of strings from the array needed to form the target string by concatenation. Each string from the array can be used multiple times, and you need to use prefixes of the strings to build the target. This problem combines Trie data structure with dynamic programming. Build a Trie from all given strings, then use DP where dp[i] represents the minimum number of strings needed to form target[0...i-1]. For each position, find all valid prefixes using the Trie and update the DP accordingly.
+
 ```cpp
 class Node {
 public:

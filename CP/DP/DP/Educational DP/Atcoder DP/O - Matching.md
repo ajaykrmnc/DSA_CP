@@ -1,5 +1,11 @@
 # O - Matching
 
+**Problem Statement:**
+There are N men and N women. For each man i and woman j, you know whether they are compatible (a[i][j] = 1) or not (a[i][j] = 0).
+Find the number of ways to pair up all men and women such that each person is paired with exactly one person of the opposite
+gender, and all pairs are compatible. This is a classic bitmask DP problem where dp[mask] represents the number of ways to
+match the first popcount(mask) men with the women represented by the bitmask.
+
 Tags: bitmask-dp
 
 ```cpp

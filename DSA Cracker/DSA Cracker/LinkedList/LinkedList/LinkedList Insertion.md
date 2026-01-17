@@ -1,5 +1,8 @@
 # LinkedList Insertion
 
+**Problem Statement:**
+Implement functions to insert a node at the beginning and at the end of a singly linked list. For insertion at the beginning, create a new node with the given data and make it point to the current head, then update the head to point to the new node. For insertion at the end, traverse to the last node and make its next pointer point to the new node. Handle edge cases like inserting into an empty list. Both operations should maintain the integrity of the linked list structure.
+
 ```cpp
 #include <bits/stdc++.h> 
 using namespace std; 

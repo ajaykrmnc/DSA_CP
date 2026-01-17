@@ -1,6 +1,9 @@
 # Range Sum Query and Inversion Count Using BIT | Part 2
 
-### 
+**Problem Statement:**
+This problem demonstrates using Binary Indexed Tree (BIT) to efficiently count inversions in an array. An inversion is a pair of indices (i,j) where i < j but arr[i] > arr[j]. The naive approach takes O(n²) time, but using BIT with coordinate compression reduces it to O(n log n). Process elements from right to left, for each element query the count of smaller elements seen so far, then update the BIT. Coordinate compression maps array values to indices 1 to n for BIT operations.
+
+###
 
 ![Untitled](Range%20Sum%20Query%20and%20Inversion%20Count%20Using%20BIT%20Part/Untitled.png)
 

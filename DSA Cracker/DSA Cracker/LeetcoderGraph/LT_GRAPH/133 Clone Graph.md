@@ -1,5 +1,12 @@
 # 133. Clone Graph
 
+**Problem Statement:**
+Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph. Each node contains
+a value and a list of neighbors. Use DFS or BFS with a hash map to track visited nodes and their clones. For each node,
+create a clone if not already created, then recursively clone all neighbors. The key insight is to maintain a mapping
+between original nodes and their clones to avoid infinite loops and ensure each node is cloned exactly once. Time complexity
+is O(V + E) where V is vertices and E is edges, and space complexity is O(V) for the hash map and recursion stack.
+
 Given a reference of a node in a [**connected**](https://en.wikipedia.org/wiki/Connectivity_(graph_theory)#Connected_graph) undirected graph.
 
 Return a [**deep copy**](https://en.wikipedia.org/wiki/Object_copying#Deep_copy) (clone) of the graph.

@@ -1,5 +1,8 @@
 # Implement Queue using array
 
+**Problem Statement:**
+Implement a queue data structure using an array. A queue follows FIFO (First In First Out) principle where elements are added at the rear and removed from the front. Implement the basic operations: enqueue (add element to rear), dequeue (remove and return front element), and handle edge cases like queue overflow and underflow. Use two pointers - front and rear - to track the positions. The implementation should efficiently manage the array space and handle the circular nature when elements are dequeued from the front.
+
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;

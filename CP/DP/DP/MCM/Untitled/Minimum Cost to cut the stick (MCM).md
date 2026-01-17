@@ -1,5 +1,12 @@
 # Minimum Cost to cut the stick (MCM)
 
+**Problem Statement:**
+Given a wooden stick of length n and an array of cut positions, find the minimum cost to cut the stick into pieces.
+The cost of each cut is equal to the length of the stick being cut. You can make cuts in any order. This is a classic
+interval DP problem similar to Matrix Chain Multiplication. Sort the cuts and use DP where dp[i][j] represents the minimum
+cost to make all cuts between positions i and j. For each interval, try all possible cuts k and take the minimum cost.
+The recurrence is: dp[i][j] = min(dp[i][k] + dp[k][j] + length) for all k between i and j.
+
 ```cpp
 class Solution {
 public:

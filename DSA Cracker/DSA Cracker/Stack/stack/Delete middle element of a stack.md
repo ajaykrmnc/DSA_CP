@@ -1,5 +1,8 @@
 # Delete middle element of a stack
 
+**Problem Statement:**
+Given a stack, delete the middle element of the stack without using any additional data structure. The middle element is defined as the element at position (size/2 + 1) from the bottom of the stack (1-indexed). You need to implement this using recursion where you pop elements, recursively call the function, and then push back the elements except the middle one. This problem tests your understanding of recursion and stack operations. The solution should maintain the relative order of all other elements while removing only the middle element.
+
 ```cpp
 //Initial template for C++
 

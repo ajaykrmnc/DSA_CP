@@ -1,5 +1,8 @@
 # Nth node from end of linked list | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list and a positive integer n, find the nth node from the end of the linked list. This classic problem can be solved efficiently using the two-pointer technique: maintain two pointers with a gap of n nodes between them. Move both pointers simultaneously until the first pointer reaches the end. The second pointer will then be at the nth node from the end. This approach requires only one traversal of the list with O(n) time complexity and O(1) space complexity, making it more efficient than the naive approach of first counting total nodes.
+
 [https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
 
 Given a linked list consisting of **L** nodes and given a number **N**. The task is to find the **N**th node from the end of the linked list.

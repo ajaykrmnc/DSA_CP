@@ -1,5 +1,8 @@
 # Check if subtree
 
+**Problem Statement:**
+Given two binary trees T and S, determine if S is a subtree of T. A subtree of a tree T is a tree S consisting of a node in T and all of its descendants. The subtree must match exactly in structure and node values. Use a two-step approach: first find all nodes in T that have the same value as the root of S, then for each such node, check if the subtree rooted at that node is identical to S. This requires implementing both a search function and a tree comparison function.
+
 ```cpp
 /* A binary tree node
 

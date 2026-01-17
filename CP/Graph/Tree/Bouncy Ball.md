@@ -1,5 +1,12 @@
 # Bouncy Ball
 
+**Problem Statement:**
+You have an n×m grid and a ball that starts at position (sx, sy) and moves in a given direction (like "DR" for down-right).
+The ball bounces off the walls and changes direction accordingly. You need to find the minimum number of bounces required
+for the ball to reach the target position (ex, ey). If the ball never reaches the target (gets stuck in a cycle),
+output -1. The problem involves simulating the ball's movement, tracking visited states to detect cycles, and checking
+when the ball's trajectory intersects with the target position using mathematical conditions.
+
 problem link: https://codeforces.com/problemset/problem/1807/F
 
 ```cpp

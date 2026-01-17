@@ -1,4 +1,10 @@
 # Longest String Chain
+**Problem Statement:**
+Given an array of words, find the longest possible chain where each word can be formed by adding exactly one character to the
+previous word. A word chain is a sequence of words where each word is formed by adding exactly one character to the previous word.
+Sort words by length first, then use LIS-style DP where dp[i] represents the longest chain ending at word i. For each word,
+check all previous words that are exactly one character shorter and can form the current word by adding one character.
+Time complexity is O(n² * m) where n is number of words and m is average word length.
 
 ```cpp
 class Solution {

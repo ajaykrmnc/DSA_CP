@@ -1,5 +1,8 @@
 # Intersection Point in Y Shaped Linked Lists | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given two singly linked lists that intersect at some point, find the intersection node. The lists form a Y-shape where they merge at a common node and continue with the same nodes thereafter. This can be solved using multiple approaches: 1) Two-pointer technique where pointers traverse both lists and switch to the other list when reaching the end, 2) Calculate lengths of both lists and align the longer list, then traverse together, or 3) Use a hash set to store visited nodes. The two-pointer approach is most elegant with O(m+n) time and O(1) space complexity.
+
 [https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1](https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1)
 
 Given two singly linked lists of size **N** and **M,** write a program to get the point where two linked lists intersect each other.

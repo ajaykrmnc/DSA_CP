@@ -1,5 +1,8 @@
 # Level order traversal in spiral form - GeeksforGeeks
 
+**Problem Statement:**
+Given a binary tree, print its level order traversal in spiral form (also known as zigzag traversal). This means alternate levels should be printed in opposite directions - first level left to right, second level right to left, third level left to right, and so on. This can be solved using two stacks (one for current level, one for next level) or using a deque with alternating direction flags. The key is to maintain the alternating pattern while ensuring all nodes at each level are processed correctly.
+
 [https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/](https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/)
 
 Given a Binary Tree, the task is to print the [Level order traversal](https://www.geeksforgeeks.org/level-order-tree-traversal/) of the Binary Tree in spiral form i.e, alternate order.

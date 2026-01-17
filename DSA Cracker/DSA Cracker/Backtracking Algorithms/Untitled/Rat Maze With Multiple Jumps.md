@@ -1,5 +1,12 @@
 # Rat Maze With Multiple Jumps
 
+**Problem Statement:**
+A maze is given as an N×N matrix where the rat starts at maze[0][0] and needs to reach maze[N-1][N-1]. The value at
+maze[i][j] represents the maximum number of steps the rat can jump from that position. Use backtracking to explore all
+possible paths: from each position, try jumping 1 to maze[i][j] steps in both right and down directions. If a path leads
+to a dead end, backtrack and try alternative routes. Mark visited cells to avoid cycles and unmark them during backtracking.
+This problem combines maze traversal with variable step sizes, making it more complex than standard rat maze problems.
+
 A Maze is given as **N*N** matrix of blocks where source block is the upper left most block i.e., **maze[0][0]** and destination block is lower rightmost block i.e., **maze[N-1][N-1]**. Find if it is possible for the rat to reach from the source block to the destination block. The number of steps rat can jump from (i, j) is represented by maze[i][j].
 
 **Note:**

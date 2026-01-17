@@ -1,5 +1,11 @@
 # Binary tree reconstruction
 
+**Problem Statement:**
+Given three integers n0, n1, and n2, construct a binary string such that it has exactly n0 pairs of adjacent '00',
+n1 pairs of adjacent '01' or '10', and n2 pairs of adjacent '11'. The goal is to find any valid binary string that
+satisfies these constraints. The solution involves constructing an alternating pattern for the '01'/'10' pairs and
+then inserting additional '0's and '1's to achieve the required counts of '00' and '11' pairs respectively.
+
 problem link: https://codeforces.com/problemset/problem/1352/F
 
 ```cpp

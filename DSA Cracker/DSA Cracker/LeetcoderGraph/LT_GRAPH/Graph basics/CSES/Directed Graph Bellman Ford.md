@@ -1,10 +1,12 @@
 # Directed Graph  Bellman Ford
 
+**Problem Statement:**
+You play a game consisting of n rooms and m tunnels. Your initial score is 0, and each tunnel increases your score by x
+where x may be both positive or negative. You may go through a tunnel several times. Your task is to walk from room 1 to
+room n and find the maximum score you can get. This is a longest path problem in a directed graph with possible cycles.
+Use modified Bellman-Ford algorithm to detect positive cycles and find maximum distances. Handle infinite score cases carefully.
+
 URL: https://cses.fi/problemset/task/1673
-
-You play a game consisting of n rooms and m tunnels. Your initial score is 0, and each tunnel increases your score by x where x may be both positive or negative. You may go through a tunnel several times.
-
-Your task is to walk from room 1 to room n. What is the maximum score you can get
 
 ```cpp
 const int INF=LLONG_MAX;

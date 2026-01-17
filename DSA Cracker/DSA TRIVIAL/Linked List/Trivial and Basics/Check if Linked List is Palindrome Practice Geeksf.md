@@ -1,5 +1,8 @@
 # Check if Linked List is Palindrome | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a singly linked list, determine if it represents a palindrome (reads the same forwards and backwards). This can be solved using multiple approaches: 1) Use a stack to store the first half and compare with second half, 2) Reverse the second half of the list and compare with first half, or 3) Use recursion to compare nodes from both ends. The optimal approach uses two pointers to find the middle, reverses the second half, compares both halves, and then restores the original list structure. Time complexity is O(n) and space complexity is O(1).
+
 [https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1](https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1)
 
 Given a singly linked list of size **N** of integers. The task is to check if the given linked list is palindrome or not.

@@ -1,27 +1,33 @@
 # J - Shushi
 
+**Problem Statement:**
+There are N dishes, each containing 1, 2, or 3 pieces of sushi. Taro picks a dish uniformly at random and eats one piece
+from it. If a dish becomes empty, it's removed. Find the expected number of times Taro picks a dish until all dishes are empty.
+This is an expectation DP problem where the state is defined by the number of dishes with 1, 2, and 3 pieces respectively.
+Use dp[x][y][z] to represent expected picks needed when there are x dishes with 1 piece, y with 2 pieces, and z with 3 pieces.
+
 Tags: expectation-dp
 
-```cpp
-/ one of the big observation is you don’t have to mind in which outcome out of which 1..to ..N is coming instead you can mark you can divide in such a way a group to 0’s 1’s 2’s and 3’s.
+/ one of the big observation is you don’t have to mind in which outcome out of
+which 1..to ..N is coming instead you can mark you can divide in such a way a
+group to 0’s 1’s 2’s and 3’s.
 
-Here dp[x][y][z] will represent the state where this state depends upon x no’s of 1’s y no of 2’s, z no of 3’s 
+Here dp[x][y][z] will represent the state where this state depends upon x no’s of 1’s y no of 2’s, z no of 3’s
 
 Here p1=(x)/n; corresponding to number of which has exactly no of 1’s shushi’s are in plate
 Here p2=(y)/n; corresponding to number of which has exactly no of 2’s shushi’s are in plate
 Here p3=(z)/n; similarly
 
-To calculate the no of zeros are (n-(x+y+z)) 
+To calculate the no of zeros are (n-(x+y+z))
 p0 = (n-(x+y+z))/n
 
-So transition between dp state are as follow’s 
+So transition between dp state are as follow’s
 dp[i][j][k]= p1* dp[i+1][j][k] + p2* dp[i-1][j+1][k] + p3* dp[i][j-1][k+1] + p0*dp[i][j][k];
 
-since the dp state depends upon own state so we can’t do the same 
-(1-p0)dp[i][j][k]= p1* dp[i+1][j][k] + p2* dp[i-1][j+1][k] + p3* dp[i][j-1][k+1] 
+since the dp state depends upon own state so we can’t do the same
+(1-p0)dp[i][j][k]= p1* dp[i+1][j][k] + p2* dp[i-1][j+1][k] + p3\* dp[i][j-1][k+1]
 
-or , dp[i][j][k]= (p1* dp[i+1][j][k] + p2* dp[i-1][j+1][k] + p3* dp[i][j-1][k+1])/(1-p0);
-```
+or , dp[i][j][k]= (p1* dp[i+1][j][k] + p2* dp[i-1][j+1][k] + p3\* dp[i][j-1][k+1])/(1-p0);
 
 ```cpp
 ll dp[301][301][301];
@@ -75,3 +81,4 @@ int main() {
   return 0;
 }
 ```
+

@@ -1,5 +1,8 @@
 # Binary Jumping 2
 
+**Problem Statement:**
+This is an advanced binary jumping problem for answering LCA (Lowest Common Ancestor) queries on a tree. Given a tree with n nodes and q queries, each query asks for the LCA of two nodes. The solution uses binary lifting with DFS timestamps to efficiently determine ancestor relationships. Preprocess the tree by computing 2^k-th ancestors and DFS in/out times. Use the timestamp technique to check if one node is an ancestor of another in O(1) time. This optimization makes LCA queries faster and is essential for competitive programming tree problems.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

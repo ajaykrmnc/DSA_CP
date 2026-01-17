@@ -1,6 +1,12 @@
 # Design a stack that supports getMin() in O(1) time and O(1) extra space
 
-My Approach 
+**Problem Statement:**
+Design a data structure that supports all stack operations (push, pop, top) and retrieving the minimum element
+in constant time O(1). The challenge is to implement getMin() operation without using extra space proportional
+to the number of elements. This requires a clever approach using mathematical transformations or auxiliary data
+structures to track the minimum element efficiently while maintaining O(1) time complexity for all operations.
+
+My Approach
 
 ```cpp
 #include <bits/stdc++.h>

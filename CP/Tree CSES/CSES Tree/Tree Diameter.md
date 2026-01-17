@@ -1,8 +1,11 @@
 # Tree Diameter
 
-You are given a tree consisting of nnn nodes.
-
-The *diameter* of a tree is the maximum distance between two nodes. Your task is to determine the diameter of the tree.
+**Problem Statement:**
+You are given a tree consisting of n nodes. The diameter of a tree is the maximum distance between any two nodes in the tree.
+Your task is to determine the diameter of the tree. This classic problem can be solved using two DFS traversals: first DFS
+from any node to find the farthest node, then DFS from that farthest node to find the actual diameter. Alternatively, it
+can be solved using tree DP where for each node we calculate the maximum path passing through it. The diameter is the
+maximum among all such paths. Both approaches have O(n) time complexity.
 
 ```cpp
 #include <bits/stdc++.h>

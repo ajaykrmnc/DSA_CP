@@ -1,5 +1,12 @@
 # Spirally traversing the matrix
 
+**Problem Statement:**
+Given a 2D matrix, traverse it in spiral order (clockwise) and return the elements as a list. Start from the top-left corner,
+move right across the top row, then down the right column, then left across the bottom row, then up the left column, and repeat
+for inner layers. This problem requires careful boundary management using four variables (top, bottom, left, right) that shrink
+inward after each direction. The key is to handle the boundaries correctly and avoid revisiting elements. Time complexity is O(m*n)
+where m and n are matrix dimensions, and space complexity is O(1) excluding the output array.
+
 ```cpp
 class Solution
 {   

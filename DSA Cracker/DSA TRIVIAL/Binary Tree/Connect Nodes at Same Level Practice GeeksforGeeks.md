@@ -1,5 +1,8 @@
 # Connect Nodes at Same Level | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a binary tree with an additional nextRight pointer in each node, connect all nodes at the same level using these pointers. Initially, all nextRight pointers point to NULL. Your task is to set these pointers so that each node's nextRight points to the next node at the same level, and the rightmost node at each level points to NULL. This creates a horizontal connection between nodes at the same level. The problem can be solved using level order traversal or by utilizing the nextRight pointers of the previous level to traverse the current level.
+
 [https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1](https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1)
 
 Given a binary tree, connect the nodes that are at same level. You'll be given an addition **nextRight** pointer for the same.

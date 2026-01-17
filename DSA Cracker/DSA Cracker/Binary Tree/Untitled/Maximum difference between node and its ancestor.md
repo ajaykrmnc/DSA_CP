@@ -1,5 +1,8 @@
 # Maximum difference between node and its ancestor
 
+**Problem Statement:**
+Given a binary tree, find the maximum difference between a node and any of its ancestors. An ancestor of a node is any node that lies on the path from the root to that node. For each node, calculate the absolute difference with all its ancestors and find the maximum such difference across the entire tree. Use DFS traversal while maintaining the minimum and maximum ancestor values seen so far, then calculate the maximum difference for each node with these values.
+
 ```cpp
 class Node {
     constructor(value) {

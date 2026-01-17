@@ -1,5 +1,8 @@
 # Operations on Stack
 
+**Problem Statement:**
+Implement basic stack operations including insert (push), remove (pop), find an element, and get the top element (head). The stack follows LIFO (Last In First Out) principle where elements are added and removed from the same end called the top. Push operation adds an element to the top, pop removes the top element, find searches for an element in the stack, and head returns the top element without removing it. These are fundamental stack operations that form the basis for more complex stack-based algorithms and data structure implementations.
+
 ```cpp
 //Initial Template for C++
 

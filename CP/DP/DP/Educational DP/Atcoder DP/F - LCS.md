@@ -1,5 +1,11 @@
 # F - LCS
 
+**Problem Statement:**
+Given two strings s and t, find the Longest Common Subsequence (LCS). A subsequence is a sequence that can be derived from
+another sequence by deleting some or no elements without changing the order of remaining elements. The LCS problem asks
+for the longest subsequence that appears in both strings. Use dynamic programming where dp[i][j] represents the length
+of LCS of first i characters of s and first j characters of t. Also track the actual LCS string using backtracking.
+
 Tags: string
 
 ```cpp

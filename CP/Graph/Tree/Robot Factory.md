@@ -1,5 +1,11 @@
 # Robot Factory
 
+**Problem Statement:**
+You have an n×m grid representing a robot factory. Some cells have walls that block movement in certain directions.
+Find the number of connected components where robots can move freely. Two cells are connected if robots can move between
+them without crossing walls. Use DFS or BFS to explore each connected component, considering the wall constraints that
+prevent movement in blocked directions. This is a graph connectivity problem with directional constraints.
+
 problem link: https://codeforces.com/contest/1600/problem/J
 
 ```cpp

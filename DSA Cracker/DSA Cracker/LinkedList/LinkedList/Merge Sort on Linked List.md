@@ -1,5 +1,12 @@
 # Merge Sort on Linked List
 
+**Problem Statement:**
+Given a linked list, sort it using merge sort algorithm. Merge sort is particularly well-suited for linked lists because it doesn't
+require random access to elements. The algorithm works by recursively dividing the list into two halves, sorting each half, and
+then merging the sorted halves. Key steps include: finding the middle using slow-fast pointer technique, recursively sorting left
+and right halves, and merging two sorted lists. Time complexity is O(n log n) and space complexity is O(log n) due to recursion
+stack. This is more efficient than other O(n²) sorting algorithms for linked lists.
+
 ```
 #include <iostream>
 

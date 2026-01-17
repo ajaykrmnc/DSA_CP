@@ -1,5 +1,11 @@
 # Diameter of a Binary Tree
 
+**Problem Statement:**
+The diameter of a binary tree is the length of the longest path between any two nodes in the tree. This path may or may
+not pass through the root. The length of a path is represented by the number of edges between nodes. For each node,
+calculate the diameter passing through that node (left height + right height) and keep track of the maximum. Use a
+recursive approach that calculates height and diameter simultaneously for optimal O(n) time complexity.
+
 ```cpp
 
 class Solution {

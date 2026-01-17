@@ -1,4 +1,10 @@
 # Matrix  Chain  Multiplication (MCM)
+**Problem Statement:**
+Given a sequence of matrices, find the most efficient way to multiply them together. The problem is to determine the optimal
+parenthesization that minimizes the total number of scalar multiplications. For matrices with dimensions p[i-1] x p[i] and
+p[i] x p[i+1], the cost of multiplication is p[i-1] * p[i] * p[i+1]. This classic interval DP problem uses the recurrence:
+dp[i][j] = min(dp[i][k] + dp[k+1][j] + p[i-1]*p[k]*p[j]) for all k from i to j-1. Time complexity is O(n³) and space
+complexity is O(n²). This problem demonstrates optimal parenthesization and interval DP techniques.
 
 ```cpp
 // User function Template for C++

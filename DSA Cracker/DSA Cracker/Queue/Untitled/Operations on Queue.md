@@ -1,5 +1,11 @@
 # Operations on Queue
 
+**Problem Statement:**
+Implement basic operations on a queue data structure. A queue follows FIFO (First In First Out) principle where elements
+are added at the rear and removed from the front. Implement operations like enqueue (add element to rear), dequeue (remove
+element from front), front (get front element without removing), and find (search for an element). This problem tests
+understanding of queue operations and their implementation using STL queue or custom implementation with arrays/linked lists.
+
 ```cpp
 //Initial Template for C++
 #include <bits/stdc++.h>

@@ -1,5 +1,12 @@
 # Median of Two sorted arrays
 
+**Problem Statement:**
+Given two sorted arrays of sizes m and n respectively, find the median of the combined arrays. The overall run time complexity
+should be O(log(min(m,n))). This is a classic binary search problem where we need to partition both arrays such that the left
+partition contains exactly half the total elements and all elements in left partition are smaller than elements in right partition.
+The median is then calculated based on the maximum of left partition and minimum of right partition. This problem requires careful
+handling of edge cases and understanding of binary search on the smaller array for optimal time complexity.
+
 ```cpp
 /*
     Given 2 sorted arrays of size m & n, return the median of these arrays

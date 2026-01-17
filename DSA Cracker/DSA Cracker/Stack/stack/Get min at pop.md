@@ -1,5 +1,8 @@
 # Get min at pop
 
+**Problem Statement:**
+Given an array of integers, push all elements onto a stack such that when you pop elements, you can get the minimum element present in the stack at each pop operation. The key insight is to maintain the minimum element seen so far while pushing elements. When pushing, if the current element is smaller than or equal to the top of stack, push it; otherwise, push the current minimum (top of stack). This way, each element in the stack represents the minimum element up to that point, allowing O(1) access to minimum during pop operations.
+
 ```cpp
 //Initial Template for C++
 

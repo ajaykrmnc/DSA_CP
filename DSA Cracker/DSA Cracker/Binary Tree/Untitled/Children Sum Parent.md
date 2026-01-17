@@ -1,5 +1,8 @@
 # Children Sum Parent
 
+**Problem Statement:**
+Given a binary tree, check if it satisfies the children sum property. In this property, for every node, the value of the node should be equal to the sum of values of its left and right children. For leaf nodes, this property is considered satisfied. Use recursive approach to check each node: if it's a leaf, return true; otherwise, calculate the sum of children and compare with the node's value. The solution should handle cases where a node has only one child by considering the missing child as having value 0.
+
 ```cpp
 //Initial Template for C++
 

@@ -1,5 +1,11 @@
 # Reverse a linked list
 
+**Problem Statement:**
+Given the head of a singly linked list, reverse the list and return the reversed list. The reversal should be done in-place
+without using extra space for another linked list. You need to change the direction of pointers so that the last node becomes
+the first node and the first node becomes the last node. The function should return the new head of the reversed linked list.
+This is a fundamental linked list problem that can be solved both iteratively and recursively with O(n) time complexity.
+
 ```cpp
 /* Linked List Node structure:
 

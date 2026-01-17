@@ -1,5 +1,8 @@
 # Flattening a Linked List | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list where each node has a next pointer (horizontal) and a down pointer (vertical) forming sub-linked-lists, flatten it into a single sorted linked list. Each node's down pointer points to a sorted sub-list. The task is to merge all these sorted sub-lists into one sorted list using only the down pointers, with all next pointers set to NULL. This problem combines the concept of merging sorted lists with recursive/iterative approaches. Use a merge operation similar to merge sort to combine sub-lists efficiently.
+
 [https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1)
 
 **Medium**Accuracy: **51.53%**Submissions: **124K+**Points: **4**

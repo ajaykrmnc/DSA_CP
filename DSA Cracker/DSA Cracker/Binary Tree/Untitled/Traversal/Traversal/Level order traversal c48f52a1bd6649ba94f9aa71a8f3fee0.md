@@ -1,4 +1,6 @@
 # Level order traversal
+**Problem Statement:**
+Given a binary tree, perform level order traversal (also known as breadth-first search) and return the values of nodes level by level from left to right. Level order traversal visits all nodes at depth 0, then all nodes at depth 1, and so on. Use a queue data structure to implement this traversal: start with root in queue, then for each node, add its data to result and enqueue its children (left first, then right). This approach ensures nodes are processed in the correct level order. Time complexity is O(n) and space complexity is O(w) where w is the maximum width of the tree.
 
 ```cpp
 #include <bits/stdc++.h>

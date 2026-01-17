@@ -1,5 +1,11 @@
 # Lowest Common Ancestor in a Binary Tree
 
+**Problem Statement:**
+Given a binary tree and two nodes, find their Lowest Common Ancestor (LCA). The LCA is the deepest node that is an ancestor
+of both given nodes. Use a recursive approach: if the current node is null or matches one of the target nodes, return it.
+Recursively search in left and right subtrees. If both subtrees return non-null values, the current node is the LCA.
+If only one subtree returns a non-null value, that value is the LCA. Time complexity is O(n) and space complexity is O(h).
+
 ```cpp
 // Tree Node
 struct Node

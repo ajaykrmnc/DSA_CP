@@ -1,5 +1,8 @@
 # Reverse a Linked List in groups of given size | Practice | GeeksforGeeks
 
+**Problem Statement:**
+Given a linked list and an integer k, reverse every k consecutive nodes in the linked list. If the number of remaining nodes is less than k, reverse them as well. For example, if the list is 1->2->3->4->5->6->7->8 and k=3, the result should be 3->2->1->6->5->4->8->7. This problem can be solved recursively by reversing the first k nodes, then recursively calling the function for the remaining list. The iterative approach uses a stack or pointer manipulation to reverse groups of k nodes.
+
 [https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1)
 
 Given a linked list of size **N**. The task is to reverse every **k** nodes (where k is an input to the function) in the linked list. If the number of nodes is not a multiple of *k* then left-out nodes, in the end, should be considered as a group and must be reversed (See Example 2 for clarification).

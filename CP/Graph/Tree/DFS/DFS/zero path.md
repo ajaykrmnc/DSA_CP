@@ -1,5 +1,8 @@
 # zero path
 
+**Problem Statement:**
+Given an n×m grid with 0s and 1s, determine if there exists a path from top-left to bottom-right such that the difference between the number of 1s and 0s encountered is exactly 0. You can only move right or down. Use dynamic programming with bitset optimization to track all possible differences efficiently. The key insight is to maintain a bitset for each cell representing all possible difference values that can be achieved when reaching that cell.
+
 problem link: https://codeforces.com/problemset/problem/1695/C
 
 ```cpp

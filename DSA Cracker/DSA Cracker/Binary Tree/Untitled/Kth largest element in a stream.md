@@ -1,1 +1,4 @@
 # Kth largest element in a stream
+
+**Problem Statement:**
+Design a data structure to find the kth largest element in a stream of integers. You need to implement a class that supports adding new integers and querying the kth largest element efficiently. Use a min-heap of size k to maintain the k largest elements seen so far. The root of the min-heap will always be the kth largest element. When adding a new element, if heap size is less than k, add it directly. If heap is full and new element is larger than heap's minimum, remove the minimum and add the new element. Time complexity is O(log k) for both add and query operations.

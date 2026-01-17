@@ -1,4 +1,6 @@
 # BOOLEAN  PARENTHESIZATION  PROBLEM (MCM)
+**Problem Statement:**
+Given a boolean expression with operands (T/F) and operators (&, |, ^), count the number of ways to parenthesize the expression such that it evaluates to True. This is a variation of Matrix Chain Multiplication using interval DP. For each subexpression [i,j], calculate the number of ways it can evaluate to True and False. The recurrence considers all possible split points k and combines results based on the operator at position k. Use 3D DP: dp[i][j][isTrue] represents ways to get True/False for substring from i to j.
 
 ```cpp
 // User function Template for C++

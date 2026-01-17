@@ -1,5 +1,12 @@
 # Fake plastic Tree
 
+**Problem Statement:**
+Given a tree with n nodes, you can perform operations to remove edges and add new edges to create a new tree structure.
+The goal is to maximize the number of nodes that have exactly k neighbors in the final tree. Use tree DP with DFS to
+calculate the optimal way to restructure the tree. For each subtree, determine the maximum number of nodes that can
+achieve the target degree k by considering different ways to connect or disconnect subtrees. The solution involves
+dynamic programming on trees with careful state management for different connection possibilities.
+
 problem link: https://codeforces.com/problemset/problem/1694/D
 
 ```cpp

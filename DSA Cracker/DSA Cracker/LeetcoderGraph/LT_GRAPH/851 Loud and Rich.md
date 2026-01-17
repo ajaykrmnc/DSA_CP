@@ -1,4 +1,10 @@
 # 851. Loud and Rich
+**Problem Statement:**
+Given n people with different wealth levels and quietness values, and relationships indicating who is richer than whom,
+find for each person the quietest person among all people who have equal or more money. Build a directed graph where
+edges represent "richer than" relationships. Use DFS with memoization to find the quietest person reachable from each
+node (including the node itself). The key insight is that if person A is richer than B, then A can reach all people
+that B can reach. Time complexity is O(V + E) and space complexity is O(V) for memoization.
 
 There is a group of `n` people labeled from `0` to `n - 1` where each person has a different amount of money and a different level of quietness.
 

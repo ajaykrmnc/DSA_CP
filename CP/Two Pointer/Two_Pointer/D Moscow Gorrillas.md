@@ -1,5 +1,8 @@
 # D. Moscow Gorrillas
 
+**Problem Statement:**
+Given two permutations of length n, count the number of segments [l, r] such that the elements in both permutations within this segment form the same set of consecutive integers. This means for any valid segment, if we take positions l to r in both permutations, the union of elements should be exactly {min_element, min_element+1, ..., max_element}. Use the two-pointer technique to maintain the current segment and expand it as needed while counting valid segments efficiently.
+
 ![Untitled](D%20Moscow%20Gorrillas/Untitled.png)
 
 spoiderMan code

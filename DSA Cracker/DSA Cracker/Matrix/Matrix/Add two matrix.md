@@ -1,5 +1,8 @@
 # Add two matrix
 
+**Problem Statement:**
+Given two matrices A and B of the same dimensions, add them element-wise to get the resultant matrix C. Matrix addition is only possible when both matrices have the same number of rows and columns. Each element C[i][j] = A[i][j] + B[i][j]. If the matrices have different dimensions, return a matrix containing -1 to indicate that addition is not possible. The time complexity is O(m×n) where m and n are the dimensions of the matrices. This is a fundamental matrix operation used in various mathematical computations.
+
 ```cpp
 class Solution
 {   

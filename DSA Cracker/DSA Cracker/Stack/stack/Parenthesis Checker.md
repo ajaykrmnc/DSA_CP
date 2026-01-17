@@ -1,5 +1,8 @@
 # Parenthesis Checker
 
+**Problem Statement:**
+Given a string containing only parentheses characters '(', ')', '{', '}', '[', ']', determine if the input string is valid. A string is valid if: open brackets are closed by the same type of brackets, open brackets are closed in the correct order, and every close bracket has a corresponding open bracket. Use a stack to solve this problem - push opening brackets onto the stack and pop when encountering closing brackets. Check if the popped bracket matches the current closing bracket. The string is valid if the stack is empty at the end and all brackets were properly matched.
+
 ```cpp
 class Solution
 {

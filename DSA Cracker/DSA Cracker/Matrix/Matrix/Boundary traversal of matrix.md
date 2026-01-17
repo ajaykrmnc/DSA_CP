@@ -1,5 +1,8 @@
 # Boundary traversal of matrix
 
+**Problem Statement:**
+Given an n×m matrix, traverse and return the boundary elements in clockwise order. The boundary consists of the first row, last column, last row (in reverse), and first column (in reverse, excluding corners already covered). For a single row or column matrix, simply return all elements. The traversal should start from the top-left corner and move clockwise around the perimeter. Handle edge cases where the matrix has only one row or one column to avoid duplicate elements. Time complexity is O(n+m) and space complexity is O(1) excluding the result array.
+
 ```cpp
 class Solution
 {   

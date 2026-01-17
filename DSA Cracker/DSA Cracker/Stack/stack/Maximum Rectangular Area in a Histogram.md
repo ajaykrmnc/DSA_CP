@@ -1,5 +1,12 @@
 # Maximum Rectangular Area in a Histogram
 
+**Problem Statement:**
+Given an array representing heights of bars in a histogram, find the area of the largest rectangle that can be formed.
+For each bar, the maximum rectangle with that bar as the smallest height extends from the nearest smaller element on the left
+to the nearest smaller element on the right. This problem is efficiently solved using a stack to find the nearest smaller
+elements. The stack maintains indices of bars in increasing order of heights. When a smaller bar is encountered, calculate
+areas for all bars that can use previous bars as the smallest height. Time complexity is O(n) and space complexity is O(n).
+
 ```cpp
 class Solution {
 public:

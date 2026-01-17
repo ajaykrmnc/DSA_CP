@@ -1,5 +1,8 @@
 # Apple Man tree
 
+**Problem Statement:**
+Given a tree with n nodes where each node is either black or white, count the number of ways to remove some edges such that all remaining black nodes are in one connected component and all white nodes are in separate connected components (each white node forms its own component). This is a tree DP problem where you need to consider the state of each subtree. For each node, calculate the number of ways considering whether the subtree rooted at that node contributes to the main black component or forms separate components.
+
 problem link: https://codeforces.com/problemset/problem/461/B
 
 ![Untitled](Apple%20Man%20tree/Untitled.png)

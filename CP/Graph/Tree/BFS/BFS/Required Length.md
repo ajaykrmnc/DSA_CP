@@ -1,5 +1,12 @@
 # Required Length
 
+**Problem Statement:**
+Given a number x and target length n, find the minimum number of operations to make x have exactly n digits. In each operation,
+you can multiply x by any of its digits (except 0). If it's impossible to reach exactly n digits, output -1. Use BFS to
+explore all possible states (current number, current length) and find the minimum operations to reach target length.
+The key insight is that multiplying by larger digits grows the number faster, but you need to be careful about digit choices.
+State space can be large, so use pruning and early termination when the number becomes too large.
+
 problem link: https://codeforces.com/contest/1681/problem/D
 
 ```cpp

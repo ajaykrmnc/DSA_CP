@@ -1,5 +1,12 @@
 # Gardening Friends
 
+**Problem Statement:**
+You have a tree with n nodes where you can place gardeners. Each gardener can water plants within distance k from their
+position. Find the minimum number of gardeners needed to water all plants (nodes) in the tree. This is a tree covering
+problem that can be solved using tree diameter concepts and greedy placement. The key insight is to use tree DP to find
+optimal positions for gardeners such that their coverage areas (radius k) cover all nodes. Consider the tree diameter
+and place gardeners optimally to minimize their count while ensuring complete coverage.
+
 problem link: diameter
 
 [Problem - 1822F - Codeforces](https://codeforces.com/problemset/problem/1822/F)

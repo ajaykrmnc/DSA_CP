@@ -1,5 +1,8 @@
 # Minimum Ties
 
+**Problem Statement:**
+In a round-robin tournament with n teams, each team plays every other team exactly once. Each game results in a win (+1 point), loss (0 points), or tie (0.5 points each). Given that each team must end up with exactly n/2 points, determine the outcome of each game to minimize the total number of ties. The solution involves constructing a tournament schedule where teams are arranged optimally to achieve the required point distribution while minimizing ties through strategic win/loss assignments.
+
 problem link: https://codeforces.com/problemset/problem/1487/C
 
 ```cpp

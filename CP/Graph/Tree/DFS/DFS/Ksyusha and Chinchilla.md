@@ -1,5 +1,8 @@
 # Ksyusha and Chinchilla
 
+**Problem Statement:**
+Given a tree with n nodes, determine if it can be partitioned into subtrees where each subtree has exactly 3 nodes. If possible, output the edges to remove to create such a partition. Use DFS to calculate subtree sizes and identify edges that can be removed when a subtree has exactly 3 nodes. The key insight is that we can remove an edge if the subtree rooted at the child has exactly 3 nodes, and no node should have more than 2 children to ensure valid partitioning.
+
 ```cpp
 #include <bits/stdc++.h>
 

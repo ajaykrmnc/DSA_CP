@@ -1,5 +1,8 @@
 # Queue Reversal
 
+**Problem Statement:**
+Given a queue, reverse the order of its elements. The first element should become the last, the second element should become second last, and so on. This problem can be solved using a stack as an auxiliary data structure. Dequeue all elements from the queue and push them onto a stack, then pop all elements from the stack and enqueue them back to the queue. Alternatively, it can be solved recursively by dequeuing the front element, recursively reversing the remaining queue, and then enqueuing the dequeued element at the rear. Both approaches have O(n) time and space complexity.
+
 ```cpp
 //Initial Template for C++
 

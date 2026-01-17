@@ -1,5 +1,8 @@
 # Find Length of Loop
 
+**Problem Statement:**
+Given a linked list that contains a loop, find the length of the loop. First, detect if there's a loop using Floyd's cycle detection algorithm (tortoise and hare approach). Once a loop is detected and both pointers meet at some node inside the loop, keep one pointer fixed and move the other pointer one step at a time until they meet again. Count the number of steps taken - this gives the length of the loop. The algorithm has O(n) time complexity and O(1) space complexity.
+
 ```cpp
 /*
 

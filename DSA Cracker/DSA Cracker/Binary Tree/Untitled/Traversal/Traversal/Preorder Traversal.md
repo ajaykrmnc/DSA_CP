@@ -1,5 +1,11 @@
 # Preorder Traversal
 
+**Problem Statement:**
+Given a binary tree, perform preorder traversal and return the values of nodes in preorder sequence. Preorder traversal visits
+nodes in the order: root, left subtree, right subtree. This traversal is useful for creating a copy of the tree or for
+prefix expression evaluation. Can be implemented recursively (natural and simple) or iteratively using a stack. Both approaches
+have O(n) time complexity and the recursive version uses O(h) space where h is the height of the tree.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

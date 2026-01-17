@@ -1,5 +1,12 @@
 # Delete a node in BST
 
+**Problem Statement:**
+Given a Binary Search Tree and a value, delete the node with that value while maintaining the BST property. There are three
+cases: (1) Node has no children - simply remove it, (2) Node has one child - replace it with its child, (3) Node has two
+children - replace it with its inorder successor (or predecessor) and delete the successor. The key insight is finding the
+inorder successor (smallest node in right subtree) for the two-children case. Time complexity is O(h) where h is height,
+and space complexity is O(h) for recursion stack.
+
 ```cpp
 /**
  * Definition for a binary tree node.

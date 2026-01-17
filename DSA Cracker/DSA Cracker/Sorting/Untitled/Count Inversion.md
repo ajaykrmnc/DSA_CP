@@ -1,5 +1,12 @@
 # Count Inversion
 
+**Problem Statement:**
+Given an array, count the number of inversions in it. An inversion is a pair of indices (i, j) such that i < j but arr[i] > arr[j].
+This problem can be solved using a modified merge sort algorithm. During the merge process, when an element from the right array
+is smaller than an element from the left array, it forms inversions with all remaining elements in the left array. The naive O(n²)
+approach checks all pairs, but the merge sort approach achieves O(n log n) time complexity. This problem demonstrates how divide
+and conquer can be used to solve counting problems efficiently while maintaining the sorting property.
+
 ```cpp
 class Solution{
   public:

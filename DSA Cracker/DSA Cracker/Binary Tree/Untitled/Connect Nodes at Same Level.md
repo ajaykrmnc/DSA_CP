@@ -1,5 +1,8 @@
 # Connect Nodes at Same Level
 
+**Problem Statement:**
+Given a binary tree, connect all nodes at the same level using the nextRight pointer. Each node has a nextRight pointer that should point to the next node at the same level. For the rightmost node at each level, nextRight should point to NULL. Use level-order traversal (BFS) to process nodes level by level. For each level, connect consecutive nodes by setting their nextRight pointers. This problem is useful for tree traversal optimizations and is commonly asked in interviews. Time complexity is O(n) and space complexity is O(w) where w is the maximum width of the tree.
+
 ```cpp
 /* struct Node
 {

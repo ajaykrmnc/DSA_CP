@@ -1,5 +1,12 @@
 # Tree xor
 
+**Problem Statement:**
+Given a tree with n nodes, each node has a value. You can perform operations to flip the values of all nodes in a subtree
+(XOR with 1). Find the minimum number of operations needed to make all node values equal to 0. Use tree DP with DFS to
+solve this problem. For each node, calculate the minimum operations needed for its subtree. The key insight is that if
+a node's value is 1, you must perform an operation on its subtree. Use post-order traversal to ensure children are
+processed before parents, allowing optimal decision making for each subtree.
+
 [Problem - D - Codeforces](https://codeforces.com/contest/1882/problem/D)
 
 ```cpp
