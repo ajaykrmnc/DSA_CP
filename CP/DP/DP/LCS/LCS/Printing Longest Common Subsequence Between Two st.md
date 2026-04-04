@@ -1,1 +1,0 @@
-# Printing Longest Common Subsequence Between Two strings (LCS)

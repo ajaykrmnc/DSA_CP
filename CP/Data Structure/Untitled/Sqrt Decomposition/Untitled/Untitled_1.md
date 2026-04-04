@@ -1,4 +1,0 @@
-# Advanced Square Root Decomposition
-
-**Problem Statement:**
-This section covers advanced applications of Square Root Decomposition for complex range query problems. Advanced sqrt decomposition techniques include handling range updates with lazy propagation, combining with other data structures, and optimizing for specific problem constraints. These problems often involve maintaining multiple properties per block, handling complex update operations, and achieving optimal time complexity for challenging query patterns. The technique is particularly useful when segment trees are too complex or when memory constraints require simpler solutions.
