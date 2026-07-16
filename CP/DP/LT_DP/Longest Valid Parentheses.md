@@ -70,3 +70,4 @@ This approach uses a stack to keep track of the indices of opening parentheses. 
 1. Update the maximum length if necessary.
 
 This solution has a time complexity of O(n) and a space complexity of O(n), where n is the length of the input string.
+

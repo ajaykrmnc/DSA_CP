@@ -2,24 +2,16 @@
 
 **Problem Statement:**
 There are n cities and m roads between them. Your task is to process q queries where you have to determine the length of
-the shortest route between two given cities. This is a classic all-pairs shortest path problem solved using Floyd-Warshall
-algorithm. The algorithm uses dynamic programming with O(n³) time complexity to find shortest distances between all pairs
+the shortest route between two given cities.
+
+This is a classic all-pairs shortest path problem solved using Floyd-Warshall algorithm. The algorithm uses dynamic
+programming with O(n³) time complexity to find shortest distances between all pairs
 of vertices. It can handle negative edge weights but not negative cycles. Perfect for multiple shortest path queries.
 
 URL: https://cses.fi/problemset/task/1672
 Tags: floyyd warshall
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-#define pb push_back 
-#define int long long
-#define mkp make_pair
-#define all(x) (x).begin(), (x).end()
-#define nline '\n'
-#define mac(i,x,y) for(int i=(int)x; i<y; i++)
-#define speed() ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
-const int inf=LLONG_MAX;
 int32_t main()
 {
     speed()
@@ -31,7 +23,7 @@ int32_t main()
         for(int j=0;j<n+1;j++){
             if(i==j){
                 dp[i][j]=0;
-            }else 
+            }else
             dp[i][j]=inf;
         }
     }
@@ -43,7 +35,7 @@ int32_t main()
         dp[a][b]=min(dp[a][b],w);
         dp[b][a]=min(dp[b][a],w);
     }
-    
+
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++){
             for(int k=1;k<=n;k++){
@@ -57,9 +49,10 @@ int32_t main()
         cin>>a>>b;
         if(dp[a][b]==inf){
             cout<<-1<<nline;
-        }else 
+        }else
         cout<<dp[a][b]<<nline;
     }
     return 0;
 }
 ```
+

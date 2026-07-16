@@ -1,26 +1,28 @@
-# Directed Graph  Bellman Ford
+# Directed Graph Bellman Ford
 
 **Problem Statement:**
 You play a game consisting of n rooms and m tunnels. Your initial score is 0, and each tunnel increases your score by x
 where x may be both positive or negative. You may go through a tunnel several times. Your task is to walk from room 1 to
-room n and find the maximum score you can get. This is a longest path problem in a directed graph with possible cycles.
-Use modified Bellman-Ford algorithm to detect positive cycles and find maximum distances. Handle infinite score cases carefully.
+room n and find the maximum score you can get.
+
+This is a longest path problem in a directed graph with possible cycles. Use modified Bellman-Ford algorithm to detect
+positive cycles and find maximum distances. Handle infinite score cases carefully.
 
 URL: https://cses.fi/problemset/task/1673
 
 ```cpp
 const int INF=LLONG_MAX;
- 
+
 struct edge{
     int a, b, cost;
 };
- 
+
 int n,m;
 vector<edge>e;
 vector<vector<int>>adj;
 vector<int>vis;
 vector<int>d;
- 
+
 void dfs(int node){
     vis[node]=1;
     for(auto u: adj[node]){
@@ -36,7 +38,7 @@ void solve(){
             if (d[e[j].a] != -INF)
                 d[e[j].b] = max (d[e[j].b], d[e[j].a] + e[j].cost);
 }
- 
+
 int32_t main() {
     cin>>n>>m;
     e.resize(m);
@@ -46,7 +48,7 @@ int32_t main() {
     for(int i=0;i<m;i++){
         int a,b,c;
         cin>>a>>b>>c;
-        e[i]={a,b,c};  
+        e[i]={a,b,c};
         adj[a].pb(b);
     }
     solve();
@@ -57,10 +59,11 @@ int32_t main() {
     }
     if(!vis[n]){
         cout<<d[n]<<nline;
-    }else 
+    }else
       cout<<-1<<nline;
- 
-    
+
+
     return 0;
 }
 ```
+

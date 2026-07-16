@@ -8,30 +8,12 @@ the entire subarray is also > 1. Use binary search on the answer length and chec
 with the required property. Time complexity is O(n log n log(max_value)).
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-using ll = long long;
 using vb = vector<bool>;
 using vvb = vector<vb>;
 using vi = vector<int>;
 using vvi = vector<vi>;
 using vl = vector<ll>;
 using vvl = vector<vl>;
-using vc = vector<char>;
-using vvc = vector<vc>;
-using vs = vector<string>;
-const ll mod = 1e9 + 7,inf = 1e18;
-#define pb push_back
-#define fast ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-void setIO()
-{
-    fast;
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-    #endif
-}
-
 int main()
 {
     setIO();
@@ -44,12 +26,12 @@ int main()
         vl a(n + 1),b(n + 1);
         for (int i = 1;i<=n;i++)
             cin>>a[i];
-        
+
         for (int i = 1;i<=n;i++)
             b[i] = a[i] - a[i - 1];
 
         vvl table(n + 1,vl(21));
-        
+
         for (int i = 1;i<=n;i++)
             table[i][0] = b[i];
 
@@ -61,13 +43,13 @@ int main()
         }
 
         int l = 1,r = n,ans = 1;
-        
+
         while (l <= r){
             int mid = (l + r)/2;
             bool is = false;
 
             for (int i = 1;i<=n - mid + 1;i++){
-                    
+
                 int l = i + 1,r = i + mid - 1;
                 ll val = b[l];
 
@@ -78,7 +60,7 @@ int main()
                     }
                 }
                 if (abs(val) > 1 or val == 0){is = true;break;}
-            }   
+            }
             if (is){
                 ans = mid;
                 l = mid + 1;
@@ -90,3 +72,4 @@ int main()
     return 0;
 }
 ```
+

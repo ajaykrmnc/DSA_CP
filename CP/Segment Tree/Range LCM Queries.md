@@ -1,7 +1,11 @@
 # Range LCM Queries
 
 **Problem Statement:**
-Given an array of integers and multiple range queries, find the LCM (Least Common Multiple) of all elements in each given range [L, R]. LCM of a range can grow very large, so efficient computation and storage are crucial. Build a segment tree where each node stores the LCM of its range. For combining two LCM values, use the formula: LCM(a,b) = (a*b)/GCD(a,b). Handle overflow carefully as LCM values can exceed integer limits. The segment tree approach provides O(log n) query time after O(n log n) preprocessing, making it efficient for multiple queries.
+Given an array of integers and multiple range queries, find the LCM (Least Common Multiple) of all elements in each
+given range [L, R]. LCM of a range can grow very large, so efficient computation and storage are crucial. Build a
+segment tree where each node stores the LCM of its range. For combining two LCM values, use the formula: LCM(a,b) =
+(a\*b)/GCD(a,b). Handle overflow carefully as LCM values can exceed integer limits. The segment tree approach provides
+O(log n) query time after O(n log n) preprocessing, making it efficient for multiple queries.
 
 ```cpp
 // User function template in C++
@@ -23,7 +27,7 @@ ll gl(ll *st, int qs , int qe, int ss, int se, int si){
     return LCM(gl(st, qs, qe, ss, mid , 2*si + 1), gl(st, qs, qe, mid + 1, se, 2*si + 2));
 }
 
-ll getLCM(ll *st, int *arr, int n, int qs, int qe) 
+ll getLCM(ll *st, int *arr, int n, int qs, int qe)
 {
     return gl(st, qs , qe , 0, n - 1, 0);
 }
@@ -53,3 +57,4 @@ void updateValue(int *arr, ll *st, int n, int index, int new_val)
     return;
 }
 ```
+

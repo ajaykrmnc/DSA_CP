@@ -1,10 +1,10 @@
 # L-shapes
 
 **Problem Statement:**
-Given an n×m grid with '*' and '.' characters, determine if all '*' characters form valid L-shapes. An L-shape consists
-of exactly 3 '*' characters arranged in an L pattern (corner + two adjacent cells in perpendicular directions). Each '*'
-must be part of exactly one L-shape, and every L-shape must have exactly 3 '*' characters. The solution involves checking
-each '*' cell to see if it can form a valid L-shape with its neighbors, ensuring no '*' is left unused and no overlapping
+Given an n×m grid with '_' and '.' characters, determine if all '_' characters form valid L-shapes. An L-shape consists
+of exactly 3 '_' characters arranged in an L pattern (corner + two adjacent cells in perpendicular directions). Each '_'
+must be part of exactly one L-shape, and every L-shape must have exactly 3 '_' characters. The solution involves checking
+each '_' cell to see if it can form a valid L-shape with its neighbors, ensuring no '\*' is left unused and no overlapping
 L-shapes exist.
 
 problem link: https://codeforces.com/problemset/problem/1722/F
@@ -15,10 +15,6 @@ problem link: https://codeforces.com/problemset/problem/1722/F
 using namespace std;
 
 const int mod = 1e9 + 7, inf = 2e9;
-
-/*
-
-*/
 
 vector<vector<char>> a;
 
@@ -84,3 +80,4 @@ int main() {
     return 0;
 }
 ```
+

@@ -10,22 +10,6 @@ Consider both continuing existing paths and starting new paths at each chain.
 problem link: https://codeforces.com/problemset/problem/1476/C
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-#ifdef AJAY
-#define debug(x) cerr << #x <<" "; _print(x); cerr << endl;
-#include"mydebug.h"
-#else
-#define debug(x)
-#endif
-#define pb push_back 
-#define int long long
-#define mkp make_pair
-#define all(x) (x).begin(), (x).end()
-#define nline '\n'
-#define mac(i,x,y) for(int i=(int)x; i<y; i++)
-#define speed() ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
-
 int32_t main()
 {
     speed()
@@ -51,7 +35,7 @@ int32_t main()
         debug(t);
         for(int i=1;i<n;i++){
             //
-            // debug(curr); 
+            // debug(curr);
             maxi=max(curr+v[i]-1,maxi);
             // if not converge
             if(i<n-1)
@@ -71,3 +55,4 @@ int32_t main()
     return 0;
 }
 ```
+

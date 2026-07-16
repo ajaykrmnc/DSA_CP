@@ -6,26 +6,11 @@ Alice and Bob play a game on a tree. Alice starts at node a and Bob starts at no
 problem link: https://codeforces.com/contest/1404/problem/B
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-#ifdef AJAY
-#define debug(x) cerr << #x <<" "; _print(x); cerr << endl;
-#include"mydebug.h"
-#else
-#define debug(x)
-#endif
-#define pb push_back 
-#define int long long
-#define mkp make_pair
-#define all(x) (x).begin(), (x).end()
-#define nline '\n'
-#define mac(i,x,y) for(int i=(int)x; i<y; i++)
-#define speed() ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
 struct LCA {
     vector<int> height, euler, first, segtree;
     vector<bool> visited;
     int n;
- 
+
     LCA(vector<vector<int>> &adj, int root = 0) {
         n = adj.size();
         height.resize(n);
@@ -37,7 +22,7 @@ struct LCA {
         segtree.resize(m * 4);
         build(1, 0, m - 1);
     }
- 
+
     void dfs(vector<vector<int>> &adj, int node, int h = 0) {
         visited[node] = true;
         height[node] = h;
@@ -50,7 +35,7 @@ struct LCA {
             }
         }
     }
- 
+
     void build(int node, int b, int e) {
         if (b == e) {
             segtree[node] = euler[b];
@@ -62,21 +47,21 @@ struct LCA {
             segtree[node] = (height[l] < height[r]) ? l : r;
         }
     }
- 
+
     int query(int node, int b, int e, int L, int R) {
         if (b > R || e < L)
             return -1;
         if (b >= L && e <= R)
             return segtree[node];
         int mid = (b + e) >> 1;
- 
+
         int left = query(node << 1, b, mid, L, R);
         int right = query(node << 1 | 1, mid + 1, e, L, R);
         if (left == -1) return right;
         if (right == -1) return left;
         return height[left] < height[right] ? left : right;
     }
- 
+
     int lca(int u, int v) {
         int left = first[u], right = first[v];
         if (left > right)
@@ -142,3 +127,4 @@ int32_t main()
     return 0;
 }
 ```
+

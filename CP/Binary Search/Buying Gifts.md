@@ -1,48 +1,8 @@
 # Buying Gifts
 
 **Problem Statement:**
-Sasha wants to buy gifts for two friends from n departments, each having two stores with different prices. In
-each department,
-he must choose exactly one store and can either buy a gift for friend 1, friend 2, or both. The goal is to
-minimize the
-maximum difference between the total amounts spent on each friend. This is a binary search on answer problem
-where we binary
-search on the maximum allowed difference and check if it's achievable using greedy selection. For each
-department, choose
-the store and gift distribution that minimizes the current difference while staying within the allowed limit.
-
-Little Sasha has two friends, whom he wants to please with gifts on the Eighth
-of March. To do this, he went to the largest shopping center in the city.
-There are 𝑛 departments in the mall, each of which has exactly two stores. For convenience, we number the
-departments with integers from 1
-to 𝑛. It is known that gifts in the first store of the 𝑖 department cost 𝑎𝑖
-rubles, and in the second store of the 𝑖 department — 𝑏𝑖 rubles.
-
-Entering the mall, Sasha will visit each of the 𝑛 departments of the mall, and in each department, he will
-enter exactly one store. When Sasha gets into the 𝑖-th department, he will perform exactly one of two actions:
-
-Buy a gift for the first friend, spending 𝑎𝑖 rubles on it.
-Buy a gift for the second friend, spending 𝑏𝑖 rubles on it.
-Sasha is going to buy at least one gift for each friend. Moreover, he wants to pick up gifts in such a way
-that the price difference of the most expensive gifts bought for friends is as small as possible so that no
-one is offended.
-
-More formally: let 𝑚1
-be the maximum price of a gift bought to the first friend, and 𝑚2
-be the maximum price of a gift bought to the second friend. Sasha wants to choose gifts in such a way as to
-minimize the value of |𝑚1−𝑚2|
-.
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-#define pb push_back #define int long long
-#define mkp make_pair
-#define all(x) (x).begin(), (x).end()
-#define nline '\n'
-#define mac(i,x,y) for(int i=(int)x; i<y; i++)
-#define speed() ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
-#define inf LLONG_MAX
 int32_t main()
 {
   speed()

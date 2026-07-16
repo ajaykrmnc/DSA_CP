@@ -3,29 +3,6 @@
 problem link: https://codeforces.com/problemset/problem/1213/G
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-using ll = long long;
-using vb = vector<bool>;
-using vvb = vector<vb>;
-using vi = vector<int>;
-using vvi = vector<vi>;
-using vl = vector<ll>;
-using vvl = vector<vl>;
-using vc = vector<char>;
-using vvc = vector<vc>;
-using vs = vector<string>;
-const ll mod = 1e9 + 7,inf = 1e18;
-#define pb push_back
-#define fast ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-void setIO()
-{
-    fast;
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-    #endif
-}
 ll ans;
 struct DSU
 {
@@ -88,7 +65,7 @@ int main()
 
     DSU ds(n);
 
-    int pos = 0;//pos stores the index of the last added edge 
+    int pos = 0;//pos stores the index of the last added edge
     //from the edge list
     for (int i = 0;i<m;i++){
         //queries[i - 1][0] < queries[i][0]
@@ -106,3 +83,4 @@ int main()
     return 0;
 }
 ```
+

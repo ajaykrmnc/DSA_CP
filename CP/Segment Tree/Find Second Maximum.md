@@ -4,17 +4,6 @@
 Given an array and multiple queries, handle two types of operations: 1) Update an element at a given index, 2) Find the count of occurrences of the second maximum element in a given range [L, R]. For each range query, you need to identify the second largest value and return how many times it appears in that range. This problem requires a segment tree that maintains both the maximum and second maximum values along with their counts for efficient range queries and updates. Each segment tree node stores the maximum, second maximum, and their respective counts to enable efficient merging of child node information.
 
 ```cpp
-#include<bits/stdc++.h>
-using namespace std;
- 
-#ifdef AJAY
-#define debug(x) cerr << #x <<" "; _print(x); cerr << endl;
-#include "mylib/mydebug.h"
-#else
-#define debug(x)
-#endif
-
-#define int long long
 struct infor{
     int max1, max2, cnt1, cnt2;
 };
@@ -46,7 +35,7 @@ class SegmentTree
         int mid= (ss+se)/2;
         return maxi(maxUtil(l,r, ss, mid, 2 * si + 1), maxUtil(l,r, mid + 1, se, 2 * si + 2));
     }
-    infor findRangemax(int l, int r) 
+    infor findRangemax(int l, int r)
     {
         // code here
         return maxUtil(l, r, 0, n - 1, 0);
@@ -64,7 +53,7 @@ class SegmentTree
         st[si] = maxi(st[si * 2 + 1], st[si * 2 + 2]);
     }
     //Function to update a value in input array and segment tree.
-    void updateValue(int index, int new_val) 
+    void updateValue(int index, int new_val)
     {
         // code here
         arr[index]=new_val;
@@ -101,7 +90,7 @@ public:
 
     }
 };
- 
+
 int32_t main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL),cout.tie(NULL);
@@ -113,3 +102,4 @@ int32_t main() {
     return 0;
 }
 ```
+

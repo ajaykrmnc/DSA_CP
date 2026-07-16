@@ -3,25 +3,6 @@
 problem link: https://codeforces.com/contest/490/problem/C
 
 ```cpp
-#include<bits/stdc++.h>
-using namespace std;
-#ifndef AJAY
-#define debug(x)
-#else
-#include"mydebug.h"
-#define debug(x) cerr << #x <<" "; _print(x); cerr << endl;
-#endif
-
-#define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
-#define MOD 1000000007
-#define ll long long 
-
-#define inf 1e18
-#define nline "\n"
-#define pb push_back
-#define set_bits __builtin_popcountll
-#define all(x) (x).begin(), (x).end()
-
 int32_t main() {
     fastio();
     int t=1;
@@ -96,3 +77,4 @@ int32_t main() {
 
 }
 ```
+
