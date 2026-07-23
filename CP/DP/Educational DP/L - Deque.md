@@ -3,8 +3,11 @@
 **Problem Statement:**
 There are N integers in a deque (double-ended queue). Two players take turns removing either the leftmost or rightmost
 element and adding its value to their score. The first player wants to maximize the score difference (their score minus
-second player's score), while the second player wants to minimize it. Find the final score difference if both play optimally.
-This is a classic interval DP problem where dp[l][r] represents the maximum advantage the current player can achieve on subarray [l,r].
+second player's score), while the second player wants to minimize it. Find the final score difference if both play
+optimally.
+
+This is a classic interval DP problem where dp[l][r] represents the maximum advantage the current player can achieve on
+subarray \[l,r].
 
 Tags: game
 
@@ -31,3 +34,4 @@ int main() {
 	cout << dp[0][n - 1] << '\n';
 }
 ```
+

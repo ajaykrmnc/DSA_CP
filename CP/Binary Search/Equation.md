@@ -3,7 +3,9 @@
 **Problem Statement:**
 Given a number n, find the maximum value of x such that x² + √x ≤ n. This is a mathematical optimization
 problem that can be solved using binary search on the answer. Since the function f(x) = x² + √x is
-monotonically increasing, we can use binary search to find the largest value of x that satisfies the
+monotonically increasing,
+
+we can use binary search to find the largest value of x that satisfies the
 inequality. The search space is from 0 to a reasonable upper bound, and we need to handle floating-point
 precision carefully. The solution requires implementing a predicate function that checks if a given x
 satisfies the condition, then using binary search to find the optimal answer.
@@ -61,4 +63,3 @@ int32_t main() {
   return 0;
 }
 ```
-

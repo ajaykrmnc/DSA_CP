@@ -1,6 +1,6 @@
 # GCD on a Grid
 
-problem link: https://codeforces.com/contest/1955/problem/G
+problem link: [Link Url](https://codeforces.com/contest/1955/problem/G)
 
 ```cpp
 #include <bits/stdc++.h>
@@ -69,3 +69,4 @@ int32_t main() {
 }
 
 ```
+

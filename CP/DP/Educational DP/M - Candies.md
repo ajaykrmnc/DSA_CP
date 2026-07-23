@@ -3,7 +3,9 @@
 **Problem Statement:**
 There are N children and K candies. Distribute all K candies among the children such that child i gets at most a[i] candies.
 Find the number of ways to distribute the candies modulo 10^9+7. This is a classic DP problem with optimization using prefix
-sums. Let dp[i][j] be the number of ways to distribute j candies among the first i children. Use prefix sum optimization
+sums. 
+
+Let dp\[i]\[j] be the number of ways to distribute j candies among the first i children. Use prefix sum optimization
 to reduce time complexity from O(NK²) to O(NK) by avoiding redundant calculations in the transition.
 
 Tags: prefix

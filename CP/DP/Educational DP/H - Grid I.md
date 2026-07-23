@@ -9,15 +9,6 @@ The recurrence is: dp[i][j] = dp[i-1][j] + dp[i][j-1] if the cell is free, and 0
 Tags: grid
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-#define pb push_back 
-#define int long long
-#define mkp make_pair
-#define all(x) (x).begin(), (x).end()
-#define nline '\n'
-#define mac(i,x,y) for(int i=(int)x; i<y; i++)
-#define speed() ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
 const int mod=1e9+7;
 int32_t main()
 {
@@ -62,3 +53,4 @@ int32_t main()
     return 0;
 }
 ```
+

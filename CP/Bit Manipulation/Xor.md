@@ -3,8 +3,9 @@
 **Problem Statement:**
 Given an array of integers, perform various XOR operations to solve a specific problem. XOR (exclusive OR) is
 a bitwise operation where bits are 1 if they differ and 0 if they're the same. Common XOR problems involve
-finding unique elements, calculating XOR of subarrays, or using XOR properties like a⊕a=0 and a⊕0=a. The
-solution typically leverages XOR's mathematical properties such as associativity, commutativity, and
+finding unique elements, calculating XOR of subarrays, or using XOR properties like a⊕a=0 and a⊕0=a.
+
+The solution typically leverages XOR's mathematical properties such as associativity, commutativity, and
 self-inverse nature. Depending on the specific problem, you might need to use prefix XOR, bit manipulation
 techniques, or mathematical insights about XOR operations.
 
@@ -70,4 +71,3 @@ int main(){
   return 0;
 }
 ```
-

@@ -4,9 +4,9 @@
 Given a tree with n nodes (0 to n-1) and n-1 edges, find all possible root nodes that result in minimum height trees
 (MHTs). The height of a rooted tree is the number of edges on the longest path from root to any leaf.
 
-Use topological
-sorting approach: repeatedly remove leaf nodes (nodes with degree 1) until 1 or 2 nodes remain. These remaining nodes
-are the centroids of the tree and will be the roots of MHTs. The key insight is that MHT roots are always the center
+Use `topological` sorting approach: repeatedly remove leaf nodes (nodes with degree 1) until 1 or 2 nodes remain. These
+remaining nodes are the **centroids** of the tree and will be the roots of MHTs. The key insight is that MHT roots are
+always the center
 nodes of the tree.
 
 Time complexity is O(n) and space complexity is O(n).

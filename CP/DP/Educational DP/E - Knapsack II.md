@@ -2,7 +2,9 @@
 
 **Problem Statement:**
 There are N items, numbered 1, 2, ..., N. For each i (1 ≤ i ≤ N), Item i has a weight of w_i and a value of v_i.
-Taro has decided to choose some of the N items and carry them home in a knapsack. The capacity of the knapsack is W,
+Taro has decided to choose some of the N items and carry them home in a knapsack.
+
+The capacity of the knapsack is W,
 which means that the sum of the weights of items taken must be at most W. Find the maximum possible sum of the values
 of items that Taro takes home. This is a variation of the classic knapsack problem where W can be very large (up to 10^9)
 but the values are small (up to 10^3), requiring a different DP approach based on values rather than weights.
@@ -37,9 +39,9 @@ int32_t main()
     for (int i = 0; i < n; i++)
     {
         cin >> vec[i][0] >> vec[i][1];
-        
+
     }
-    
+
     int sum=100005;
     for (int i = sum; i >=0; i--)
     {
@@ -53,3 +55,4 @@ int32_t main()
     return 0;
 }
 ```
+

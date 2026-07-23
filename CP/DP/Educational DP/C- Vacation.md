@@ -3,8 +3,11 @@
 **Problem Statement:**
 Taro's summer vacation lasts for N days. For each day i (1 ≤ i ≤ N), he can choose to do one of three activities: A, B, or C.
 Each activity gives him happiness points: a[i], b[i], or c[i] respectively on day i. However, he cannot do the same activity
-on two consecutive days. Find the maximum total happiness Taro can achieve during his vacation. This is a dynamic programming
-problem where dp[i][j] represents the maximum happiness achievable up to day i when the last activity chosen was j (0=A, 1=B, 2=C).
+on two consecutive days.
+
+Find the maximum total happiness Taro can achieve during his vacation. This is a dynamic programming
+problem where dp\[i]\[j] represents the maximum happiness achievable up to day i when the last activity chosen was j
+(0=A, 1=B, 2=C).
 The recurrence considers all valid transitions from the previous day's activities.
 
 ```cpp
@@ -39,3 +42,4 @@ signed main()
    cout << ans << endl;
 }
 ```
+
