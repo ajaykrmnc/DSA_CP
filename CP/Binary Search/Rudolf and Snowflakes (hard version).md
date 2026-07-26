@@ -1,22 +1,18 @@
-# Rudolf and Snowflakes (hard version)
+# Binary search with power
 
 **Problem Statement:**
-Given a number n, determine if it can be represented as 1 + b + b² + ... + b^k for some integers b ≥ 2 and k ≥ 2. This is essentially checking if n can be written as a geometric series sum. Use binary search on the base b
+Given a number n, determine if it can be represented as 1 + b + b² + ... + b^k for some integers b ≥ 2 and k ≥ 2. This
+is essentially checking if n can be written as a geometric series sum. Use binary search on the base b
 for each possible length k. For each k, binary search to find if there exists a base b such that the geometric
 series equals n. Handle overflow carefully when computing powers.
 
 Problem link: [Codeforces](https://codeforces.com/problemset/problem/1846/E2)
 
-**Problem Statement:**
-Rudolf is looking at snowflakes and wants to determine if a given number n can be represented as 1 + k + k² +
-k³ + ... + k^m
-for some integers k ≥ 2 and m ≥ 2. This is essentially asking if n can be written as a geometric series sum
-(k^(m+1) - 1)/(k - 1).
-The problem requires checking if n is a "beautiful number" that can be expressed in this specific form. Since
-k ≥ 2 and m ≥ 2,
-we need to iterate through possible values of k and check if the resulting geometric series equals n. Binary
-search or mathematical
-optimization can be used to efficiently find valid combinations of k and m.
+we'll do binary search on power. If power varies from 0 to x, and base can be 1 to n. Binary search from 1 to n, and if
+sum is less than req, then l = mid + 1, else high = mid - 1, if sum == req then reqturn 1; we'll do the same for the
+every power from 1 to 64
+
+---
 
 ```cpp
 //{ Driver Code Starts
@@ -94,4 +90,3 @@ int main()
 
 // } Driver Code Ends
 ```
-

@@ -1,5 +1,11 @@
 # Interval Problem
 
+Complete notes for this topic are now organized here:
+
+- [Interval Problem/README.md](Interval%20Problem/README.md)
+- [Interval Problem/56 Merge Intervals.md](Interval%20Problem/56%20Merge%20Intervals.md)
+- [Interval Problem/2406 Divide Intervals Into Minimum Number of Groups.md](Interval%20Problem/2406%20Divide%20Intervals%20Into%20Minimum%20Number%20of%20Groups.md)
+
 **Problem Statement:**
 This section contains problems involving intervals and sweep line algorithms. Interval problems typically
 involve processing ranges or segments on a coordinate system to find overlaps, merge intervals, or calculate

@@ -1,4 +1,4 @@
-# Count the array
+# Count tdsfhe array
 
 **Problem Statement:**
 Given an array of integers, find the minimum number of subarrays needed to partition the array such that each subarray

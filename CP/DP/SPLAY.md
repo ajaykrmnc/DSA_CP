@@ -8,9 +8,6 @@ This problem combines segment trees for range maximum queries with dynamic progr
 each position. Use DP to calculate the farthest reachable index from each position.
 
 ```cpp
-#include <bits/stdc++.h>                    #define IOS std::ios::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);
-#define pii pair<int, int>
-#define ll long long #define ff first
 #define ss second #define rep(i,x,y) for(int i=x; i<y; i++)    using namespace std;
 const long long N=500005, INF=2000000000000000000;
 
@@ -265,4 +262,3 @@ The basic observation is that , for a certain range [L, R] , the value of the ma
 is the answer if we are able to reach the last index of that range without meeting a condition D<Si .
 
 Else the answer is maxval + 1 Now we only need to check for this condition.
-

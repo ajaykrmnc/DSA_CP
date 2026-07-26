@@ -30,7 +30,7 @@ while(t--){
                 if(j-i>=0) arr[i][j]+=arr[i][j-i];
             }
         }
-        
+
         for(int i=1;i<=sn;i++){
             for(int j=1;j<n;j++){
                 int x = j/i + 1;
@@ -38,6 +38,7 @@ while(t--){
                 if(j-i>=0) arr2[i][j]+=arr2[i][j-i];
             }
         }
-        
+
         debug(arr2)
 ```
+
