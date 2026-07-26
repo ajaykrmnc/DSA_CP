@@ -10,8 +10,6 @@ Return *an edge that can be removed so that the resulting graph is a tree of* 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/02/reduntant1-1-graph.jpg)
-
 ```cpp
 class Solution {
     bool dfs(int node, int parent, vector<vector<int>>& adj, vector<bool>& vis) {
@@ -27,7 +25,7 @@ public:
     vector<int> findRedundantConnection(vector<vector<int>>& edge) {
         int n = edge.size();
         vector<vector<int>> adj(n+1);
-        vector<bool> vis(n+1, 0);                
+        vector<bool> vis(n+1, 0);
         for(auto i : edge) {
             fill(begin(vis), end(vis), 0);
             adj[i[0]].push_back(i[1]);
@@ -72,3 +70,4 @@ public:
     }
 };
 ```
+
