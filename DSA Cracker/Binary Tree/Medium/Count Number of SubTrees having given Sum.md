@@ -14,16 +14,16 @@ struct Node
 //Function to count number of subtrees having sum equal to given sum.
 int cnt = 0;
 int recur(Node *root,int x){
-    if(root == NULL){
-        return 0;
-    }
-    int temp = root->data;
-    temp += recur(root->left,x);
-    temp += recur(root->right,x);
-    if(temp == x){
-        cnt++;
-    }
-    return temp;
+  if(root == NULL){
+    return 0;
+  }
+  int temp = root->data;
+  temp += recur(root->left,x);
+  temp += recur(root->right,x);
+  if(temp == x){
+    cnt++;
+  }
+  return temp;
 }
 int countSubtreesWithSumX(Node* root, int X)
 {
@@ -33,3 +33,4 @@ int countSubtreesWithSumX(Node* root, int X)
 	return cnt;
 }
 ```
+

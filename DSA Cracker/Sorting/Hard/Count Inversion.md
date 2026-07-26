@@ -77,7 +77,7 @@ public:
             {
                 temp[k++]=arr[i++];
             }
-            else 
+            else
             {
                 temp[k++]=arr[j++];
             }
@@ -101,7 +101,7 @@ public:
             merge(arr,low,mid,high,ans);
         }
     }
-    vector<int> countSmaller(vector<int>&nums) 
+    vector<int> countSmaller(vector<int>&nums)
     {
         int n=nums.size();
         vector<pair<int,int>> arr(n);
@@ -113,3 +113,4 @@ public:
     }
 };
 ```
+

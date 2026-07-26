@@ -2,7 +2,9 @@
 
 **Problem Statement:**
 Given an array, find the maximum length of a subarray with sum greater than zero. This problem uses prefix sums and
-coordinate compression with Fenwick Tree for efficient range maximum queries. Convert the problem to finding the maximum
+coordinate compression with Fenwick Tree for efficient range maximum queries.
+
+Convert the problem to finding the maximum
 difference between indices with specific prefix sum constraints. Use coordinate compression to map prefix sums to a
 smaller range, then apply dynamic programming with BIT to track maximum values efficiently. The solution runs in O(n log
 n) time complexity.
@@ -88,4 +90,3 @@ int main()
 [https://youtu.be/HkGdJod75Po?t=2852](https://youtu.be/HkGdJod75Po?t=2852)
 
 [Fenwick Tree - Algorithms for Competitive Programming](https://cp-algorithms.com/data_structures/fenwick.html)
-

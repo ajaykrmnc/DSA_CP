@@ -76,3 +76,56 @@ public:
 };
 ```
 
+## What kind of problems can be addressed?
+
+Euler tour is useful when a tree problem can be converted into a range problem on an array. After DFS flattening:
+
+- Each node gets an entry time `start[node]`.
+- The full subtree of `node` becomes one continuous range:
+
+```cpp
+[start[node], end[node])
+```
+
+So any data structure that works on array ranges, like prefix sum, Fenwick tree, segment tree, sparse table, or ordered
+set, can be used on trees.
+
+Common problem types:
+
+1. **Subtree queries**
+   - Find sum/min/max/xor/gcd of values in a subtree.
+   - Example: "What is the sum of all nodes inside subtree `u`?"
+
+2. **Subtree updates**
+   - Add/set/xor a value to every node in a subtree.
+   - Since subtree `u` is `[start[u], end[u])`, this becomes a range update.
+
+3. **Dynamic node value queries**
+   - Update value of one node and query subtree aggregate later.
+   - Use `start[node]` as the position of that node in the flattened array.
+
+4. **Ancestor/subtree checks**
+   - Check whether `u` is ancestor of `v`:
+
+```cpp
+start[u] <= start[v] && start[v] < end[u]
+```
+
+5. **Offline tree updates**
+   - Apply operations that affect all currently existing nodes in a subtree.
+   - Process queries using Euler order plus prefix difference/range updates.
+
+6. **Path queries with extra technique**
+   - Euler tour alone is best for subtree ranges.
+   - For path queries like `u` to `v`, combine it with LCA, Heavy-Light Decomposition, or prefix-from-root values.
+
+Typical examples:
+
+- Subtree sum queries.
+- Count colors/frequencies in a subtree.
+- Add value to every node in a subtree.
+- Check if one node lies inside another node's subtree.
+- Answer offline queries on dynamically built trees.
+- Compute entry/exit times for ancestor logic.
+
+---

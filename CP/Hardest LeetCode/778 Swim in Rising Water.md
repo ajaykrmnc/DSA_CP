@@ -47,10 +47,4 @@ public:
     }
 };
 ```
-
-## Submission
-
-- Status: Accepted
-- Language: C++
-- Runtime: 16 ms
-- Memory: 14.1 MB
+[](2026-07-26_.md)

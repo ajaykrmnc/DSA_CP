@@ -5,8 +5,6 @@
 Given an array of intervals `intervals[i] = [start, end]`, merge all overlapping intervals and return the final list of
 non-overlapping intervals.
 
-## C++ Code
-
 ```cpp
 class Solution {
 public:
@@ -30,19 +28,5 @@ public:
   }
 };
 ```
-
-## Complexity
-
-```text
-Time:  O(n log n)
-Space: O(n)
-```
-
-Sorting dominates the time complexity. The answer array takes `O(n)` space in the worst case.
-
-## Key Point
-
-For merge intervals, you do not need a full sweep line. Sorting by start is enough because the only active interval that
-matters is the last merged interval.
 
 ---

@@ -1,4 +1,9 @@
 # Maximum of minimum for every window size
 
 **Problem Statement:**
-Given an array of integers, find the maximum of minimum elements for every possible window size from 1 to n. For each window size k, slide a window of size k across the array, find the minimum element in each window, and then return the maximum of all these minimums. This problem can be solved efficiently using a stack-based approach to find the next smaller and previous smaller elements for each element. For each element, calculate the maximum window size where it can be the minimum, then update the result array accordingly. Time complexity is O(n).
+Given an array of integers, find the maximum of minimum elements for every possible window size from 1 to n. For each
+window size k, slide a window of size k across the array, find the minimum element in each window, and then return the
+maximum of all these minimums. This problem can be solved efficiently using a stack-based approach to find the next
+smaller and previous smaller elements for each element. For each element, calculate the maximum window size where it can
+be the minimum, then update the result array accordingly. Time complexity is O(n).
+

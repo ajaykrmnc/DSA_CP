@@ -1,45 +1,46 @@
 # K Most occurring element
 
 **Problem Statement:**
-Given an array of integers and a number k, find the sum of frequencies of k most occurring elements. First, count the frequency of each element using a hash map. Then find the k elements with the highest frequencies and return the sum of their frequencies. This can be solved using a min-heap of size k to efficiently track the k most frequent elements. The approach involves building frequency map, using heap to find top k frequencies, and summing them up.
+Given an array of integers and a number k, find the sum of frequencies of k most occurring elements. First, count the
+frequency of each element using a hash map. Then find the k elements with the highest frequencies and return the sum of
+their frequencies. This can be solved using a min-heap of size k to efficiently track the k most frequent elements. The
+approach involves building frequency map, using heap to find top k frequencies, and summing them up.
 
 ```cpp
-// Function to print the k numbers with most occurrences 
+// Function to print the k numbers with most occurrences
 
 class Solution
 {
-    public:
-    //Function to return the sum of frequencies of k numbers
-    //with most occurrences in an array.
-    int kMostFrequent(int arr[], int n, int k) 
-    { 
-    	unordered_map<int, int> mp;
-    	int ans = 0;
-    	vector<int> v;
-    	
-    	for(int i=0; i<n; i++){
-    	    mp[arr[i]]++;
+public:
+  //Function to return the sum of frequencies of k numbers
+  //with most occurrences in an array.
+  int kMostFrequent(int arr[], int n, int k) { unordered_map<int, int> mp;
+    int ans = 0;
+    vector<int> v;
+
+    for(int i=0; i<n; i++){
+    	mp[arr[i]]++;
+    }
+
+    for(auto i : mp){
+    	v.push_back(i.second);
+    }
+
+    priority_queue<int, vector<int>, greater<int> > pq(v.begin(), v.begin()+k);
+
+    for(int i=k; i<v.size(); i++){
+    	if(v[i] > pq.top()){
+    	  pq.pop();
+    	  pq.push(v[i]);
     	}
-    	
-    	for(auto i : mp){
-    	    v.push_back(i.second);
-    	}
-    	
-    	priority_queue<int, vector<int>, greater<int> > pq(v.begin(), v.begin()+k);
-    	
-    	for(int i=k; i<v.size(); i++){
-    	    if(v[i] > pq.top()){
-    	        pq.pop();
-    	        pq.push(v[i]);
-    	    }
-    	}
-    	
-    	while(!pq.empty()){
-    	    ans += pq.top();
-    	    pq.pop();
-    	}
-    	
-    	return ans;
-    } 
-};
+    }
+
+    while(!pq.empty()){
+    	ans += pq.top();
+    	pq.pop();
+    }
+
+    return ans;
+  } };
 ```
+
