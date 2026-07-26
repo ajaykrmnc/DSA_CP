@@ -64,11 +64,6 @@ int32_t main()
       cout<<vis[i].second+1<<' ';
     }
   }
-
-
-
-
   return 0;
 }
 ```
-
