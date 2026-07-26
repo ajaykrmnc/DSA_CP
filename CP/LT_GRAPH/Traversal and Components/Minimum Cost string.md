@@ -1,7 +1,11 @@
 # Minimum Cost string
 
 **Problem Statement:**
-Given integers n and k, construct a string of length n using the first k letters of the alphabet such that the number of distinct substrings is minimized. The key insight is to use Eulerian path in a De Bruijn graph. Create a directed graph where each node represents a string of length (k-1), and edges represent adding one character. Find an Eulerian path that visits each edge exactly once. This generates the lexicographically smallest string with minimum distinct substrings. Use DFS to traverse the graph and construct the optimal string.
+Given integers n and k, construct a string of length n using the first k letters of the alphabet such that the number of
+distinct substrings is minimized. The key insight is to use Eulerian path in a De Bruijn graph. Create a directed graph
+where each node represents a string of length (k-1), and edges represent adding one character. Find an Eulerian path
+that visits each edge exactly once. This generates the lexicographically smallest string with minimum distinct
+substrings. Use DFS to traverse the graph and construct the optimal string.
 
 problem link: https://codeforces.com/contest/1511/problem/D
 
@@ -30,3 +34,4 @@ int main() {
     printf("%c", path[i % path.size()] + 'a');
 }
 ```
+

@@ -14,7 +14,7 @@ problem link: https://codeforces.com/problemset/problem/1615/C
         cin >> n;
         string a, b;
         cin >> a >> b;
- 
+
         int zero, one, one2;
         zero = one = one2 = 0;
         for (int i = 0; i < n; ++i) {
@@ -44,6 +44,6 @@ problem link: https://codeforces.com/problemset/problem/1615/C
     }
 
     return 0;
-
 }
 ```
+

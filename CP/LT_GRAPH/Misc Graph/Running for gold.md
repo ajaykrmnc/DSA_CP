@@ -1,7 +1,11 @@
 # Running for gold
 
 **Problem Statement:**
-Given n athletes with their performance in 5 different sports, determine if there exists a clear winner. An athlete is a clear winner if they are better than every other athlete in at least 3 out of 5 sports. If such an athlete exists, output their 1-indexed position, otherwise output -1. The solution involves comparing each athlete with all others to check if they can be a potential winner, then verifying if this winner is indeed better than everyone else in at least 3 sports.
+Given n athletes with their performance in 5 different sports, determine if there exists a clear winner. An athlete is a
+clear winner if they are better than every other athlete in at least 3 out of 5 sports. If such an athlete exists,
+output their 1-indexed position, otherwise output -1. The solution involves comparing each athlete with all others to
+check if they can be a potential winner, then verifying if this winner is indeed better than everyone else in at least 3
+sports.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -47,3 +51,4 @@ int main() {
   return 0;
 }
 ```
+

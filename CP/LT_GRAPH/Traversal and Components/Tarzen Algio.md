@@ -14,7 +14,7 @@ class Solution {
         //update discovery and low valuesfor a node that has not been visited earier
         //update timer
         disc[node] = low[node] = time++;
-        
+
         //dfs on all the nodes that are connected from the current node
         for(int i = 0; i < adjList[node].size(); ++i)
         {
@@ -25,10 +25,10 @@ class Solution {
                 //update parent information for child node
                 parent[child] = node;
                 DFSHelper(child);
-                
+
                 //while backtracking, update low value of parent to check if there is a back-edge
                 low[node] = min(low[node],low[child]);
-                
+
                 //check if the edge is a bridge and not a back-edge from child/sub-graph of child
                 //to it's parent or any of it's ancestors
                 if(low[child] > disc[node])
@@ -47,7 +47,7 @@ public:
         low.resize(n,-1);
         parent.resize(n,-1);
         time = 0;
-        
+
         //build undirected graph
         for(auto& conn : connections)
         {
@@ -58,8 +58,9 @@ public:
         for(int i = 0; i < n; ++i)
             if(disc[i] == -1)
                 DFSHelper(i);
-        
+
         return bridges;
     }
 };
 ```
+

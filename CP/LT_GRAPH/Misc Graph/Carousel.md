@@ -1,11 +1,11 @@
 # Carousel
 
 **Problem Statement:**
-You have a circular carousel with n seats arranged in a circle, where each seat has a type t[i]. You need to color the seats
-such that no two adjacent seats of the same type have the same color. Find the minimum number of colors needed and assign
-colors to each seat. This is a graph coloring problem where you create edges between adjacent seats of different types,
-then use DFS to assign colors. The solution involves building a graph, performing DFS traversal, and handling conflicts
-when adjacent seats of the same type need different colors.
+You have a circular carousel with n seats arranged in a circle, where each seat has a type t[i]. You need to color the
+seats such that no two adjacent seats of the same type have the same color. Find the minimum number of colors needed and
+assign colors to each seat. This is a graph coloring problem where you create edges between adjacent seats of different
+types, then use DFS to assign colors. The solution involves building a graph, performing DFS traversal, and handling
+conflicts when adjacent seats of the same type need different colors.
 
 problem link: https://codeforces.com/contest/1328/problem/D
 
@@ -79,4 +79,3 @@ int main()
     return 0;
 }
 ```
-

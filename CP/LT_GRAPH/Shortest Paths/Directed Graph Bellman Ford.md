@@ -14,7 +14,7 @@ URL: https://cses.fi/problemset/task/1673
 const int INF=LLONG_MAX;
 
 struct edge{
-    int a, b, cost;
+  int a, b, cost;
 };
 
 int n,m;
@@ -24,46 +24,45 @@ vector<int>vis;
 vector<int>d;
 
 void dfs(int node){
-    vis[node]=1;
-    for(auto u: adj[node]){
-        if(!vis[u]){
-            dfs(u);
-        }
+  vis[node]=1;
+  for(auto u: adj[node]){
+    if(!vis[u]){
+      dfs(u);
     }
+  }
 }
 void solve(){
-    d[1] = 0;
-    for (int i=0; i<n-1; ++i)
-        for (int j=0; j<m; ++j)
-            if (d[e[j].a] != -INF)
-                d[e[j].b] = max (d[e[j].b], d[e[j].a] + e[j].cost);
+  d[1] = 0;
+  for (int i=0; i<n-1; ++i)
+    for (int j=0; j<m; ++j)
+      if (d[e[j].a] != -INF)
+        d[e[j].b] = max (d[e[j].b], d[e[j].a] + e[j].cost);
 }
 
 int32_t main() {
-    cin>>n>>m;
-    e.resize(m);
-    adj.resize(n+1);
-    vis.resize(n+1,0);
-    d.resize(n+1,-INF);
-    for(int i=0;i<m;i++){
-        int a,b,c;
-        cin>>a>>b>>c;
-        e[i]={a,b,c};
-        adj[a].pb(b);
+  cin>>n>>m;
+  e.resize(m);
+  adj.resize(n+1);
+  vis.resize(n+1,0);
+  d.resize(n+1,-INF);
+  for(int i=0;i<m;i++){
+    int a,b,c;
+    cin>>a>>b>>c;
+    e[i]={a,b,c};
+    adj[a].pb(b);
+  }
+  solve();
+  for(int i=0;i<m;i++){
+    if(d[e[i].a]!=-INF && d[e[i].b]<d[e[i].a]+e[i].cost){
+      dfs(e[i].a);
     }
-    solve();
-    for(int i=0;i<m;i++){
-        if(d[e[i].a]!=-INF && d[e[i].b]<d[e[i].a]+e[i].cost){
-            dfs(e[i].a);
-        }
-    }
-    if(!vis[n]){
-        cout<<d[n]<<nline;
-    }else
-      cout<<-1<<nline;
+  }
+  if(!vis[n]){
+    cout<<d[n]<<nline;
+  }else
+  cout<<-1<<nline;
 
 
-    return 0;
+  return 0;
 }
 ```
-

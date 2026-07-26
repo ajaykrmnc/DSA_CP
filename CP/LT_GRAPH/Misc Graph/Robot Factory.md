@@ -12,13 +12,13 @@ problem link: https://codeforces.com/contest/1600/problem/J
 vector<vector<int> >v(1010,vector<int>(1010)),vis;
 int cnt=0;
 vector<pair<int,int> >dir{{-1,0},{0,1},{1,0},{0,-1}};
- 
+
 int isin(int x,int y){
     if(x>-1 and x<n and y>-1 and y<m)
         return 1;
     return 0;
 }
- 
+
 void dfs(int x,int y)
 {
     vis[x][y]=1;
@@ -31,8 +31,8 @@ void dfs(int x,int y)
             dfs(x+dir[i].first,y+dir[i].second);
     }
 }
- 
- 
+
+
 int main()
 {
     for(int i=0;i<16;i++)
@@ -64,3 +64,4 @@ int main()
     VecPrint<int>(ans);
 }
 ```
+
