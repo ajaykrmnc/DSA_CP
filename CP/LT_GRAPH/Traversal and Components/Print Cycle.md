@@ -2,15 +2,12 @@
 
 **Problem Statement:**
 Given an undirected graph, find and print any cycle in the graph. If no cycle exists, print "IMPOSSIBLE". A cycle is a
-path that starts and ends at the same vertex with at least 3 edges. This problem uses DFS to detect cycles by 
-maintaining parent
-information during traversal. When visiting a node, if we encounter an already visited node that is not the parent,
-we've found
-a cycle. The solution involves tracking the path during DFS and reconstructing the cycle when found. Time complexity is
-O(V + E)
-where V is vertices and E is edges.
+path that starts and ends at the same vertex with at least 3 edges. This problem uses DFS to detect cycles by
+maintaining parent information during traversal. When visiting a node, if we encounter an already visited node that is
+not the parent, we've found a cycle. The solution involves tracking the path during DFS and reconstructing the cycle
+when found. Time complexity is O(V + E) where V is vertices and E is edges.
 
-URL: https://cses.fi/problemset/task/1669
+URL: [Link](https://cses.fi/problemset/task/1669)
 
 ```cpp
 #include <bits/stdc++.h>
@@ -87,4 +84,3 @@ int32_t main()
   return 0;
 }
 ```
-

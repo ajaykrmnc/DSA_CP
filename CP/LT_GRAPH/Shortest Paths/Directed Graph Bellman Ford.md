@@ -8,7 +8,7 @@ room n and find the maximum score you can get.
 This is a longest path problem in a directed graph with possible cycles. Use modified Bellman-Ford algorithm to detect
 positive cycles and find maximum distances. Handle infinite score cases carefully.
 
-URL: https://cses.fi/problemset/task/1673
+URL: [Link](https://cses.fi/problemset/task/1673)
 
 ```cpp
 const int INF=LLONG_MAX;

@@ -5,15 +5,9 @@
 **Pattern:** Slow writer pointer  
 **Tags:** Array, Two Pointers
 
-## Problem
-
 Remove extra duplicates from a sorted array so each value appears at most twice.
 
-## Approach
-
 Keep a write index for the valid prefix. A value can be written if fewer than two copies already exist at the end of that prefix.
-
-## Solution
 
 ```cpp
 class Solution {
@@ -31,17 +25,10 @@ public:
             cnt = min(cnt, 2);
             for(int j = 0; j < cnt; j++) {
                 nums[l] = curr;
-                l++; 
+                l++;
             }
         }
         return l;
     }
 };
 ```
-
-## Submission
-
-- Status: Accepted
-- Language: C++
-- Runtime: 0 ms
-- Memory: 13.6 MB

@@ -4,9 +4,7 @@
 Given a directed acyclic graph (DAG) with N vertices and M edges, find the length of the longest path in the graph.
 Since the graph is acyclic, we can use dynamic programming with topological sorting. For each vertex, calculate the
 maximum path length ending at that vertex. Use DFS with memoization or topological sort with DP. The answer is the
-maximum value among all dp[i] values. Time complexity is O(N + M) using topological sorting approach.
-
-Tags: tree
+maximum value among all `dp[i]` values. Time complexity is O(N + M) using topological sorting approach.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -49,3 +47,4 @@ int main(){
 	cout << ans;
 }
 ```
+

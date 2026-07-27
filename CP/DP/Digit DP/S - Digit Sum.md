@@ -6,13 +6,11 @@ Tags: digit-dp
 
 ![Untitled](S%20-%20Digit%20Sum/Untitled.png)
 
-### Why iterative?
 
 I learned digit DP few years back but only recently I realised that the recursive solution is sometimes hard to debug
 and difficult to reason about. So this article aims to provide an iterative solution template that can be extended to
 solve similar problems.
 
-## The Problem
 
 Find count of numbers in range [L, R] such that sum of its digits is a prime number.
 
@@ -34,7 +32,7 @@ $$
 ### Detailed Explanation
 
 - Let us declare our dp as follow
-  - dp[20][2][200]
+  - `dp[20][2][200]`
   - 20→ maximum no of digits that our dp support
   - 2 → tight condition discussed later discussed
   - 200→ maximum possible sum of digits of a number

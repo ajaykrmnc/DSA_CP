@@ -5,9 +5,9 @@ Given an array of integers and a target sum, determine if there exists a subset 
 to the target.
 This is a classic 0/1 knapsack variation where each element can be either included or excluded from the
 subset. The problem can
-be solved using dynamic programming where dp[i][sum] represents whether it's possible to achieve the sum using
+be solved using dynamic programming where `dp[i][sum]` represents whether it's possible to achieve the sum using
 first i elements.
-The recurrence relation is: dp[i][sum] = dp[i-1][sum] || dp[i-1]sum-arr[i]]. Time complexity is O(n\*sum) and
+The recurrence relation is: `dp[i][sum] = dp[i-1][sum] || dp[i-1]sum-arr[i]]`. Time complexity is O(n\*sum) and
 space can be
 optimized to O(sum) using 1D array. This problem forms the basis for many other DP problems.
 
@@ -34,4 +34,3 @@ class Solution{   public:
   }
 };
 ```
-

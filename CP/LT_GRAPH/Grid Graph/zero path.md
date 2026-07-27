@@ -6,7 +6,7 @@ difference between the number of 1s and 0s encountered is exactly 0. You can onl
 programming with bitset optimization to track all possible differences efficiently. The key insight is to maintain a
 bitset for each cell representing all possible difference values that can be achieved when reaching that cell.
 
-problem link: https://codeforces.com/problemset/problem/1695/C
+problem link: [Link](https://codeforces.com/problemset/problem/1695/C)
 
 ```cpp
 #include <bits/stdc++.h>
@@ -84,4 +84,3 @@ void solve() {
   else cout << "NO\n";
 }
 ```
-
