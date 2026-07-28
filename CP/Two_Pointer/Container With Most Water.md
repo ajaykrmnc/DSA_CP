@@ -25,4 +25,3 @@ while(left<right)
 ```
 
 ![image.png](Container%20With%20Most%20Water/image.png)
-

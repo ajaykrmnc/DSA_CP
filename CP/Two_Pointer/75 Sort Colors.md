@@ -5,15 +5,9 @@
 **Pattern:** Dutch national flag  
 **Tags:** Array, Two Pointers, Sorting
 
-## Problem
-
 Sort an array containing only 0, 1, and 2 in one pass.
 
-## Approach
-
 Maintain three regions: placed zeroes, unknown middle, and placed twos. Swap zeroes forward and twos backward while scanning.
-
-## Solution
 
 ```cpp
 class Solution {
@@ -34,10 +28,3 @@ public:
     }
 };
 ```
-
-## Submission
-
-- Status: Accepted
-- Language: C++
-- Runtime: 0 ms
-- Memory: 10.3 MB

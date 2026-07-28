@@ -7,17 +7,6 @@ segment whose sum equals a target value s. A segment is "good" if you can choose
 each segment length and find the minimum length segment that can achieve the target sum.
 
 ```cpp
-#include<bits/stdc++.h>
-using namespace std;
-#ifdef AJAY
-#define debug(x) cerr << #x <<" "; _print(x); cerr << endl;
-#include"mylib/mydebug.h"
-#else
-#define debug(x)
-#endif
-#define ll long long
-const int mx = INT_MAX;
-
 void solve(){
   int n,sum;
   cin>>n>>sum;
@@ -67,14 +56,4 @@ void solve(){
     cout<<min(ans,vis[sum].second);
   }
 }
-
-int32_t main() {
-  int t=1;
-  // cin>>t;
-  while(t--){
-    solve();
-  }
-  return 0;
-}
 ```
-

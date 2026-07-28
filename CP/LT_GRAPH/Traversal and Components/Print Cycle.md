@@ -77,10 +77,6 @@ int32_t main()
 	{
 		cout << c << " ";
 	}
-
-
-
-
   return 0;
 }
 ```
