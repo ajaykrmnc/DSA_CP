@@ -1,173 +1,222 @@
-# Theory
-
-**Problem Statement:**
-This section provides comprehensive theory and implementation details for Square Root Decomposition technique. Sqrt
-decomposition divides an array into √n blocks to achieve O(√n) time complexity for range queries and updates. The
-technique involves preprocessing blocks to store aggregate information, then answering queries by combining complete
-block results with partial block calculations. This approach is simpler than segment trees but still efficient for many
-range query problems including range sum, range minimum/maximum, and range updates.
-
 # Sqrt Decomposition
 
-Sqrt Decomposition is a method (or a data structure) that allows you to perform some common operations (finding sum of
-the elements of the sub-array, finding the minimal/maximal element, etc.) in $O(\sqrt n)$ operations, which is much
-faster than $O(n)$ for the trivial algorithm.
+Sqrt decomposition splits data into blocks of size about `sqrt(n)`. Each operation handles at most two partial blocks element-by-element and uses precomputed information for the complete blocks between them.
 
-First we describe the data structure for one of the simplest applications of this idea, then show how to generalize it
-to solve some other problems, and finally look at a slightly different use of this idea: splitting the input requests
-into sqrt blocks.
+Use it when:
 
-## Sqrt-decomposition based data structure
+- `n, q` are around `1e5` to `2e5` and `O(nq)` is too slow;
+- the operation is easier than a segment tree or the query shape is unusual;
+- constraints suggest `O((n + q) * sqrt(n))`, `O(n * sqrt(n))`, or offline block ordering;
+- query/update logic can be separated into "small residue classes" and "large direct walks".
 
-Given an array $a[0 \dots n-1]$, implement a data structure that allows to find the sum of the elements $a[l \dots r]$
-for arbitrary $l$ and $r$ in $O(\sqrt n)$ operations.
+Avoid it when a Fenwick tree or segment tree gives a cleaner `O(log n)` solution with less memory.
 
-### Description
+## Core Template: Range Sum With Point Update
 
-![Untitled](Theory/Untitled.png)
-
-The basic idea of sqrt decomposition is preprocessing. We'll divide the array $a$ into blocks of length approximately
-$\sqrt n$, and for each block $i$ we'll precalculate the sum of elements in it $b[i]$.
-
-We can assume that both the size of the block and the number of blocks are equal to $\sqrt n$ rounded up:
-
-$s = \lceil \sqrt n \rceil$
-
-Then the array $a$ is divided into blocks in the following way:
-
-$\underbrace{a[0], a[1], \dots, a[s-1]}{\text{b[0]}}, \underbrace{a[s], \dots, a[2s-1]}{\text{b[1]}}, \dots, 
- \underbrace{a[(s-1) \cdot s], \dots, a[n-1]}_{\text{b[s-1]}}$
-
-The last block may have fewer elements than the others (if $n$ not a multiple of $s$), it is not important to the
-discussion (as it can be handled easily).
-Thus, for each block $k$, we know the sum of elements on it $b[k]$:
-
-$b[k] = \sum\limits_{i=k\cdot s}^{\min {(n-1,(k+1)\cdot s - 1})} a[i]$
-
-So, we have calculated the values of $b[k]$ (this required $O(n)$ operations). How can they help us to answer each query
-$[l, r]$ $?$
-
-Notice that if the interval $[l, r]$ is long enough, it will contain several whole blocks, and for those blocks we can
-find the sum of elements in them in a single operation. As a result, the interval $[l, r]$ will contain parts of only
-two blocks, and we'll have to calculate the sum of elements in these parts trivially.
-
-Thus, in order to calculate the sum of elements on the interval $[l, r]$ we only need to sum the elements of the two
-"tails":
-$[l\dots (k + 1)\cdot s-1]$ and $[p\cdot s\dots r]$ , and sum the values $b[i]$ in all the blocks from $k + 1$ to $p-1$:
-
-$\sum\limits_{i=l}^r a[i] = \sum\limits_{i=l}^{(k+1) \cdot s-1} a[i] + \sum\limits_{i=k+1}^{p-1} b[i] + 
- \sum\limits_{i=p\cdot s}^r a[i]$
-
-_Note: When $k = p$, i.e. $l$ and $r$ belong to the same block, the formula can't be applied, and the sum should be
-calculated trivially._
-
-This approach allows us to significantly reduce the number of operations. Indeed, the size of each "tail" does not
-exceed the block length $s$, and the number of blocks in the sum does not exceed $s$. Since we have chosen $s \approx 
-\sqrt n$, the total number of operations required to find the sum of elements on the interval $[l, r]$ is $O(\sqrt n)$.
-
-### Implementation
-
-Let's start with the simplest implementation:
+Block size:
 
 ```cpp
-// input data
-int n;
-vector<int> a (n);
-
-// preprocessing
-int len = (int) sqrt (n + .0) + 1; // size of the block and the number of blocks
-vector<int> b (len);
-for (int i=0; i<n; ++i)
-  b[i / len] += a[i];
-
-// answering the queries
-for (;;) {
-  int l, r;
-  // read input data for the next query
-  int sum = 0;
-  for (int i=l; i<=r; )
-    if (i % len == 0 && i + len - 1 <= r) {
-      // if the whole block starting at i belongs to [l, r]
-      sum += b[i / len];
-      i += len;
-    }
-    else {
-      sum += a[i];
-      ++i;
-    }
-}
-
+int B = max(1, (int)sqrt(n));
+int blocks = (n + B - 1) / B;
 ```
 
-This implementation has unreasonably many division operations (which are much slower than other arithmetical
-operations). Instead, we can calculate the indices of the blocks $c_l$ and $c_r$ which contain indices $l$ and $r$, and
-loop through blocks $c_l+1 \dots c_r-1$ with separate processing of the "tails" in blocks $c_l$ and $c_r$. This approach
-corresponds to the last formula in the description, and makes the case $c_l = c_r$ a special case.
+For range sums, keep `a[i]` and `blockSum[id]`.
 
 ```cpp
-int sum = 0;
-int c_l = l / len,   c_r = r / len;
-if (c_l == c_r)
-  for (int i=l; i<=r; ++i)
-    sum += a[i];
-else {
-  for (int i=l, end=(c_l+1)*len-1; i<=end; ++i)
-    sum += a[i];
-  for (int i=c_l+1; i<=c_r-1; ++i)
-    sum += b[i];
-  for (int i=c_r*len; i<=r; ++i)
-    sum += a[i];
-}
+struct SqrtSum {
+    int n, B, blocks;
+    vector<long long> a, blockSum;
 
+    SqrtSum(const vector<long long>& v) {
+        a = v;
+        n = (int)a.size();
+        B = max(1, (int)sqrt(n));
+        blocks = (n + B - 1) / B;
+        blockSum.assign(blocks, 0);
+        for (int i = 0; i < n; i++) {
+            blockSum[i / B] += a[i];
+        }
+    }
+
+    void setValue(int idx, long long val) {
+        int b = idx / B;
+        blockSum[b] += val - a[idx];
+        a[idx] = val;
+    }
+
+    long long query(int l, int r) {
+        long long ans = 0;
+        int lb = l / B, rb = r / B;
+
+        if (lb == rb) {
+            for (int i = l; i <= r; i++) ans += a[i];
+            return ans;
+        }
+
+        int lend = min(n - 1, (lb + 1) * B - 1);
+        for (int i = l; i <= lend; i++) ans += a[i];
+
+        for (int b = lb + 1; b <= rb - 1; b++) ans += blockSum[b];
+
+        for (int i = rb * B; i <= r; i++) ans += a[i];
+        return ans;
+    }
+};
 ```
 
-## Other problems
+Complexities:
 
-So far we were discussing the problem of finding the sum of elements of a continuous subarray. This problem can be
-extended to allow to **update individual array elements**. If an element $a[i]$ changes, it's sufficient to update the
-value of $b[k]$ for the block to which this element belongs ($k = i / s$) in one operation:
+| Operation | Time |
+|---|---:|
+| Build | `O(n)` |
+| Point update | `O(1)` for sum |
+| Range query | `O(sqrt(n))` |
 
-$b[k] += a_{new}[i] - a_{old}[i]$
+## Range Min/Max With Point Update
 
-On the other hand, the task of finding the sum of elements can be replaced with the task of finding minimal/maximal
-element of a subarray. If this problem has to address individual elements' updates as well, updating the value of $b[k]$
-is also possible, but it will require iterating through all values of block $k$ in $O(s) = O(\sqrt{n})$ operations.
+For `min`, `max`, `gcd`, or any block aggregate that cannot be adjusted by a delta, rebuild the touched block after a point update.
 
-Sqrt decomposition can be applied in a similar way to a whole class of other problems: finding the number of zero
-elements, finding the first non-zero element, counting elements which satisfy a certain property etc.
+```cpp
+const long long INF = (1LL << 60);
 
-Another class of problems appears when we need to **update array elements on intervals**: increment existing elements or
-replace them with a given value.
+struct SqrtMin {
+    int n, B, blocks;
+    vector<long long> a, blockMin;
 
-For example, let's say we can do two types of operations on an array: add a given value $\delta$ to all array elements
-on interval $[l, r]$ or query the value of element $a[i]$. Let's store the value which has to be added to all elements
-of block $k$ in $b[k]$ (initially all $b[k] = 0$). During each "add" operation we need to add $\delta$ to $b[k]$ for all
-blocks which belong to interval $[l, r]$ and to add $\delta$ to $a[i]$ for all elements which belong to the "tails" of
-the interval. The answer a query $i$ is simply $a[i] + b[i/s]$. This way "add" operation has $O(\sqrt{n})$ complexity,
-and answering a query has $O(1)$ complexity.
+    SqrtMin(const vector<long long>& v) {
+        a = v;
+        n = (int)a.size();
+        B = max(1, (int)sqrt(n));
+        blocks = (n + B - 1) / B;
+        blockMin.assign(blocks, INF);
+        for (int i = 0; i < n; i++) blockMin[i / B] = min(blockMin[i / B], a[i]);
+    }
 
-Finally, those two classes of problems can be combined if the task requires doing **both** element updates on an
-interval and queries on an interval. Both operations can be done with $O(\sqrt{n})$ complexity. This will require two
-block arrays $b$ and $c$: one to keep track of element updates and another to keep track of answers to the query.
+    void rebuild(int b) {
+        blockMin[b] = INF;
+        int l = b * B;
+        int r = min(n, l + B);
+        for (int i = l; i < r; i++) blockMin[b] = min(blockMin[b], a[i]);
+    }
 
-There exist other problems which can be solved using sqrt decomposition, for example, a problem about maintaining a set
-of numbers which would allow adding/deleting numbers, checking whether a number belongs to the set and finding $k$-th
-largest number. To solve it one has to store numbers in increasing order, split into several blocks with $\sqrt{n}$
-numbers in each. Every time a number is added/deleted, the blocks have to be rebalanced by moving numbers between
-beginnings and ends of adjacent blocks.
+    void setValue(int idx, long long val) {
+        a[idx] = val;
+        rebuild(idx / B);
+    }
+
+    long long query(int l, int r) {
+        long long ans = INF;
+        int lb = l / B, rb = r / B;
+        if (lb == rb) {
+            for (int i = l; i <= r; i++) ans = min(ans, a[i]);
+            return ans;
+        }
+        for (int i = l; i < (lb + 1) * B; i++) ans = min(ans, a[i]);
+        for (int b = lb + 1; b <= rb - 1; b++) ans = min(ans, blockMin[b]);
+        for (int i = rb * B; i <= r; i++) ans = min(ans, a[i]);
+        return ans;
+    }
+};
+```
+
+Point update becomes `O(B)`, query stays `O(B + n / B)`, so choose `B ~= sqrt(n)`.
+
+## Lazy Blocks: Range Add, Point Query
+
+If updates are on ranges and queries ask for one position, store lazy additions per block.
+
+```cpp
+vector<long long> a(n), lazy(blocks, 0);
+
+void rangeAdd(int l, int r, long long x) {
+    int lb = l / B, rb = r / B;
+    if (lb == rb) {
+        for (int i = l; i <= r; i++) a[i] += x;
+        return;
+    }
+    for (int i = l; i < (lb + 1) * B; i++) a[i] += x;
+    for (int b = lb + 1; b <= rb - 1; b++) lazy[b] += x;
+    for (int i = rb * B; i <= r; i++) a[i] += x;
+}
+
+long long pointQuery(int idx) {
+    return a[idx] + lazy[idx / B];
+}
+```
+
+For range add plus range sum, maintain both `lazy[b]` and `blockSum[b]`. When a full block receives `+x`, update `lazy[b] += x` and `blockSum[b] += x * blockLength`.
+
+## Small/Large Split Pattern
+
+Many sqrt problems are not literal range queries. They split a parameter into:
+
+- small values: precompute answers for all values up to `sqrt(n)`;
+- large values: each query touches at most `sqrt(n)` elements, so direct iteration is enough.
+
+Typical examples:
+
+- query positions `s, s + d, s + 2d, ...`;
+- jump pointers where large jumps finish quickly;
+- counting by small divisors or residues.
+
+For a query that walks by step `d`:
+
+```text
+if d <= sqrt(n): answer from precomputed table
+else: visit at most n / d <= sqrt(n) elements
+```
+
+See [Sum of progression](<Sum of progression.md>) for a complete weighted example.
+
+## Mo's Algorithm
+
+Mo's algorithm is another sqrt technique for offline range queries. Sort queries by left block and right endpoint, then maintain a moving window.
+
+Use it when:
+
+- all queries are known before answering;
+- adding/removing one element can update the answer quickly;
+- there are no online point updates, or updates are handled with the harder "Mo with modifications" variant.
+
+Basic complexity is `O((n + q) * sqrt(n) * update_cost)`.
+
+Mo's algorithm belongs to the same family, but detailed notes are in [Range Query Advanced: Offline Queries And Mo's Algorithm](<../Range Query Advanced/02-offline-queries-mos.md>).
+
+## Choosing Block Size
+
+`sqrt(n)` is the default, but the best constant depends on the operation.
+
+| Work Per Query | Good Block Size |
+|---|---|
+| scan tails plus full block aggregates | `sqrt(n)` |
+| expensive per block operation | larger blocks may help |
+| expensive per element operation | smaller blocks may help |
+| Mo's algorithm | usually `sqrt(n)` or tuned near `n / sqrt(q)` |
+
+For contests, start with:
+
+```cpp
+int B = max(1, (int)sqrt(n));
+```
+
+If TLE is close, try constants such as `450`, `700`, or `1000` for `n = 2e5`.
+
+## Common Mistakes
+
+1. Forgetting the last block can be shorter than `B`.
+2. Mixing 0-indexed and 1-indexed query inputs.
+3. Using `int` for sums when values and query lengths require `long long`.
+4. Updating `a[i]` but not the block aggregate.
+5. Applying a lazy block value twice when partially rebuilding or scanning a block.
+6. Building tables for all `d <= sqrt(n)` when memory is actually `sqrt(n) * n`; check limits first.
 
 ## Practice Problems
 
-- [Codeforces - Kuriyama Mirai's Stones](https://codeforces.com/problemset/problem/433/B)
-- [UVA - 12003 - Array
-  Transformer](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3154)
-- [UVA - 11990 Dynamic
-  Inversion](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3141)
-- [SPOJ - Give Away](http://www.spoj.com/problems/GIVEAWAY/)
-- [Codeforces - Till I Collapse](http://codeforces.com/contest/786/problem/C)
-- [Codeforces - Destiny](http://codeforces.com/contest/840/problem/D)
-- [Codeforces - Holes](http://codeforces.com/contest/13/problem/E)
-- [Codeforces - XOR and Favorite Number](https://codeforces.com/problemset/problem/617/E)
-- [Codeforces - Powerful array](http://codeforces.com/problemset/problem/86/D)
-- [SPOJ - DQUERY](https://www.spoj.com/problems/DQUERY)
-
+| Problem | Pattern |
+|---|---|
+| [Codeforces 1921F - Sum of Progression](<Sum of progression.md>) | small/large step split, weighted prefix by residue |
+| [Codeforces - Integers Have Friends](<Integers Have Friends.md>) | gcd over adjacent differences; sparse table/segment tree alternative |
+| SPOJ GIVEAWAY | sorted blocks, count greater than or equal in range |
+| SPOJ DQUERY | offline distinct queries; Mo's algorithm or Fenwick |
+| Codeforces 86D - Powerful Array | Mo's algorithm |
+| Codeforces 13E - Holes | jump pointers with block rebuild |

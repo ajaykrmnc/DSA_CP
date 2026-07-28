@@ -20,6 +20,7 @@ Use this section for problems where the main invariant is gcd/lcm over ratios, a
 - [GCD on a Grid](02-GCD%20LCM%20Patterns/GCD%20on%20a%20Grid.md)
 - [GCD over subarray](02-GCD%20LCM%20Patterns/GCD%20over%20subarray.md)
 - [Integers Have Friends](02-GCD%20LCM%20Patterns/Integers%20Have%20Friends.md)
+- [1819 Number of Different Subsequences GCDs](02-GCD%20LCM%20Patterns/1819%20Number%20of%20Different%20Subsequences%20GCDs.md)
 
 ## 03. Divisors Primes and Factorization
 
@@ -28,6 +29,7 @@ Use this section for divisor enumeration, prime residue checks, sieve/SPF, and f
 - [Divisible Numbers (hard version)](03-Divisors%20Primes%20and%20Factorization/Divisible%20Numbers%20%28hard%20version%29.md)
 - [Koxia and Number Theory](03-Divisors%20Primes%20and%20Factorization/Koxia%20and%20Number%20Theory.md)
 - [Multiplicity](03-Divisors%20Primes%20and%20Factorization/Multiplicity.md)
+- [2818 Apply Operations to Maximize Score](03-Divisors%20Primes%20and%20Factorization/2818%20Apply%20Operations%20to%20Maximize%20Score.md)
 - [Quiz Master](03-Divisors%20Primes%20and%20Factorization/Quiz%20Master.md)
 - [Vasilije Loves Number Theory](03-Divisors%20Primes%20and%20Factorization/Vasilije%20Loves%20Number%20Theory.md)
 
@@ -35,6 +37,7 @@ Use this section for divisor enumeration, prime residue checks, sieve/SPF, and f
 
 Use this section for counting with divisibility, inclusion-exclusion, combinatorics, prime masks, and gcd-class counts.
 
+- [Inclusion-Exclusion Principle](04-Advanced%20Counting%20and%20Inclusion-Exclusion/Inclusion-Exclusion%20Principle.md)
 - [Count GCD](04-Advanced%20Counting%20and%20Inclusion-Exclusion/Count%20GCD.md)
 - [Counting Factorizations](04-Advanced%20Counting%20and%20Inclusion-Exclusion/Counting%20Factorizations.md)
 - [Even Subarrays](04-Advanced%20Counting%20and%20Inclusion-Exclusion/Even%20Subarrays.md)
@@ -48,3 +51,9 @@ Use this section for problems that combine number theory with greedy, sorting, o
 
 - [D1 Chopping Carrots (Easy Version)](05-Mixed%20Constructive%20Number%20Theory/D1%20Chopping%20Carrots%20%28Easy%20Version%29.md)
 - [Equate Multiset](05-Mixed%20Constructive%20Number%20Theory/Equate%20Multiset.md)
+
+## 06. Advanced Combinatorics and Recurrences
+
+Use this section for modular combinatorics, Catalan/Burnside-style counting, matrix exponentiation, linear recurrences, and Grundy game theory.
+
+- [Advanced Combinatorics and Recurrences](06-Advanced%20Combinatorics%20and%20Recurrences/README.md)

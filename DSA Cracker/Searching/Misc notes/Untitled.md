@@ -1,0 +1,9 @@
+# Searching Algorithms
+
+**Problem Statement:**
+This section contains fundamental searching algorithms and problems. Searching involves finding a specific element or
+determining its position in a data structure. Common searching techniques include linear search (O(n) time), binary
+search (O(log n) time for sorted arrays), and specialized searches for specific data structures. Key concepts include
+search space reduction, divide and conquer approach, and handling edge cases like element not found. These algorithms
+form the foundation for more complex search-based problems in competitive programming and software development.
+

@@ -12,4 +12,5 @@ Merged graph notes from the old `Tree` and `LT_GRAPH` folders. Problems are orga
 - `Grid Graph` - graph traversal over matrices, grids, mazes, and coordinate states. `9` notes.
 - `Bipartite Graph` - two-coloring and partition checks. `3` notes.
 - `MST` - minimum spanning tree and critical edge problems. `1` note.
+- `Advanced Graph` - SCC, 2-SAT, functional graphs, Eulerian paths, flow, and matching.
 - `Misc Graph` - graph-adjacent notes that do not fit the sections above yet. `10` notes.

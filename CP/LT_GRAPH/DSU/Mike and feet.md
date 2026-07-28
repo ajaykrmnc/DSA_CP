@@ -1,6 +1,6 @@
 # Mike and feet
 
-problem link: https://codeforces.com/problemset/problem/547/B
+problem link: [Link](https://codeforces.com/problemset/problem/547/B)
 
 ```cpp
 #include <algorithm>
@@ -57,3 +57,4 @@ int main()
 	return 0;
 }
 ```
+

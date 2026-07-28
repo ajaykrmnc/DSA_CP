@@ -2,6 +2,18 @@
 
 Interesting accepted LeetCode string problems pulled from leetcode.nvim/LeetCode account data.
 
+## Core CSES String Algorithms
+
+| Pattern | Note | Use When |
+|---|---|---|
+| KMP / prefix function | [01-kmp-prefix-function](01-kmp-prefix-function.md) | exact matching, borders, periods |
+| Z-function | [02-z-function](02-z-function.md) | prefix match from every position |
+| Manacher | [03-manacher](03-manacher.md) | all palindrome centers in linear time |
+| Suffix array | [04-suffix-array](04-suffix-array.md) | suffix order, distinct substrings, kth substring |
+| Aho-Corasick | [05-aho-corasick](05-aho-corasick.md) | many-pattern matching |
+
+## Existing Problem Notes
+
 | Problem | Difficulty |
 | --- | --- |
 | [3. Longest Substring Without Repeating Characters](<3 Longest Substring Without Repeating Characters.md>) | Medium |

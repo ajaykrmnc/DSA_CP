@@ -114,4 +114,8 @@ The `log n` usually comes from sorting intervals or sorting event coordinates.
 ## Files
 
 - [56 Merge Intervals](56%20Merge%20Intervals.md)
+- [732 My Calendar III](732%20My%20Calendar%20III.md)
+- [1326 Minimum Number of Taps to Open to Water a Garden](1326%20Minimum%20Number%20of%20Taps%20to%20Open%20to%20Water%20a%20Garden.md)
+- [1851 Minimum Interval to Include Each Query](1851%20Minimum%20Interval%20to%20Include%20Each%20Query.md)
+- [2402 Meeting Rooms III](2402%20Meeting%20Rooms%20III.md)
 - [2406 Divide Intervals Into Minimum Number of Groups](2406%20Divide%20Intervals%20Into%20Minimum%20Number%20of%20Groups.md)

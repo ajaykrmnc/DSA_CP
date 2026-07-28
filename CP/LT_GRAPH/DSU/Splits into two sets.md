@@ -1,6 +1,6 @@
 # Splits into two sets
 
-problem link: https://codeforces.com/problemset/problem/1702/E
+problem link: [Link](https://codeforces.com/problemset/problem/1702/E)
 
 ```cpp
 struct dsu{
@@ -67,3 +67,4 @@ int32_t main()
     return 0;
 }
 ```
+

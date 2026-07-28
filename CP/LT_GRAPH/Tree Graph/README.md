@@ -36,3 +36,4 @@ Tree-specific graph notes organized by the main technique used in the solution.
 - `08 Tree Games and Strategy` - pursuit, profit, and adversarial movement on trees.
   - `2467 Most Profitable Path in a Tree`
   - `Tree Tag`
+- `09 Advanced Tree Techniques` - HLD, centroid decomposition, DSU on tree, virtual tree, and path aggregates.
